@@ -30,6 +30,8 @@ namespace MoreMountains.CorgiEngine
 		public CanvasGroup Joystick;
 		/// the points counter
 		public Text PointsText;
+        /// the chip points text
+        public Text ChipPointsText;
 		/// the level display
 		public Text LevelText;
 		/// the screen used for all fades
@@ -60,6 +62,7 @@ namespace MoreMountains.CorgiEngine
 	    /// </summary>
 	    protected virtual void Start()
 		{
+            RefreshChipPoints();
 			RefreshPoints();
 		}
 
@@ -77,6 +80,8 @@ namespace MoreMountains.CorgiEngine
 	        { 
 	            PointsText.enabled = state;
 	        }
+            if (PointsText != null)
+                PointsText.enabled = state;
 	        if (LevelText!= null)
 	        { 
 	            LevelText.enabled = state;
@@ -226,6 +231,16 @@ namespace MoreMountains.CorgiEngine
 	    		PointsText.text = GameManager.Instance.Points.ToString("000000");
 	        }
 	    }
+
+        /// <summary>
+        /// Sets the text to the game manager's chip points. 
+        /// </summary>
+        /// 
+        public virtual void RefreshChipPoints() {
+            if (ChipPointsText != null) {
+                ChipPointsText.text = GameManager.Instance.ChipPoints.ToString("00");
+            }
+        }
 
 	    /// <summary>
 	    /// Updates the health bar.

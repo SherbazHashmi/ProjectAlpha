@@ -9,7 +9,7 @@ namespace MoreMountains.CorgiEngine
     public class MenuObjectHandler : MonoBehaviour
     {
 
-        protected float _threshold = 0.1f;
+        protected float _threshold = 0.5f;
         public MenuObject currentObject;
 		protected float _horizontalMove;
 		protected float _verticalMove;
@@ -35,6 +35,10 @@ namespace MoreMountains.CorgiEngine
         void Update()
         {
           handleInput();
+        }
+
+        IEnumerator waitFor3Seconds() {
+            yield return new WaitForSeconds(3);
         }
 
 
@@ -106,6 +110,7 @@ namespace MoreMountains.CorgiEngine
                                 currentObject.aboveObject.setTextColour(Color.blue);
 								currentObject = currentObject.getAboveObject();
 								lastTapTime = Time.time;
+                                StartCoroutine(waitFor3Seconds());
                             }
 
 
@@ -124,9 +129,9 @@ namespace MoreMountains.CorgiEngine
                                 currentObject.belowObject.setTextColour(Color.white);
 								currentObject = currentObject.getBelowObject();
 								lastTapTime = Time.time;
-                            }
+								StartCoroutine(waitFor3Seconds());
 
-                         
+							}
 
                         }
 

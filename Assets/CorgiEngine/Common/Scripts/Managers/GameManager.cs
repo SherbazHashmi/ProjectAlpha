@@ -63,6 +63,32 @@ namespace MoreMountains.CorgiEngine
 		}
 	}
 
+    /// <summary>
+    /// A list of the methods availble to change the number of chips
+    /// </summary>
+
+    public enum ChipsMethods {
+        Add,
+        Set,
+        Spend
+    }
+
+    public struct CorgiEngineChipsEvent {
+        public ChipsMethods ChipsMethod;
+        public int ChipPoints;
+        ///<summary> 
+        /// Initialises a new instance of the chips struct. 
+        /// <param name="chipsMethod"> Chips Method</param>
+        /// <param name="
+        /// </summary>
+
+
+        public CorgiEngineChipsEvent (ChipsMethods chipsMethod, int chipPoints){
+            ChipsMethod = chipsMethod;
+            ChipPoints = chipPoints;
+        }
+    }
+
 	/// <summary>
 	/// A list of the methods available to change the current score
 	/// </summary>
@@ -101,12 +127,15 @@ namespace MoreMountains.CorgiEngine
 								MMEventListener<MMGameEvent>, 
 								MMEventListener<CorgiEngineEvent>, 
 								MMEventListener<CorgiEnginePointsEvent>,
+                                MMEventListener<CorgiEngineChipsEvent>,
 								MMEventListener<CorgiEngineTimeScaleEvent>
 	{		
 		/// the target frame rate for the game
 		public int TargetFrameRate=300;
 		/// the current number of game points
 		public int Points { get; private set; }
+        /// players's current number of chips
+        public int ChipPoints { get; private set; }
 		/// true if the game is currently paused
 		public bool Paused { get; set; } 
 		// true if we've stored a map position at least once
@@ -135,9 +164,11 @@ namespace MoreMountains.CorgiEngine
 		public virtual void Reset()
 		{
 			Points = 0;
+            ChipPoints = 0;
 			Time.timeScale = 1f;
 			Paused = false;
 			GUIManager.Instance.RefreshPoints ();
+            GUIManager.Instance.RefreshChipPoints();
 		}	
 			
 		/// <summary>
@@ -149,6 +180,17 @@ namespace MoreMountains.CorgiEngine
 			Points += pointsToAdd;
 			GUIManager.Instance.RefreshPoints ();
 		}
+
+        /// <summary>
+        /// Adds the ChipPoints in parameters to the current game ChipPoints.
+        /// </summary>
+        /// <param name="ChipPointsToAdd">ChipPoints to add.</param>
+        public virtual void AddChipPoints(int chipPointsToAdd)
+        {
+            ChipPoints += chipPointsToAdd;
+            Debug.Log("Added "+chipPointsToAdd+" chip points");
+			GUIManager.Instance.RefreshChipPoints();
+		}
 		
 		/// <summary>
 		/// use this to set the current points to the one you pass as a parameter
@@ -159,6 +201,34 @@ namespace MoreMountains.CorgiEngine
 			Points = points;
 			GUIManager.Instance.RefreshPoints ();
 		}
+
+		/// <summary>
+		/// use this to set the remove points to the one you pass as a parameter
+		/// </summary>
+		/// <param name="points">Points.</param>
+		public virtual void RemovePoints(int chipPointsToRemove)
+		{
+            if (ChipPoints >= 1)
+            {
+                ChipPoints = ChipPoints - 1;
+                GUIManager.Instance.RefreshChipPoints();
+            } 
+		}
+
+
+
+        /// <summary>
+        /// use this to set chip points
+        /// </summary>
+        /// <param name="chipPointsToSet">Chip points to set.</param>
+
+        public virtual void SetChipPoints (int chipPointsToSet) {
+            ChipPoints = chipPointsToSet;
+			GUIManager.Instance.RefreshChipPoints();
+
+		}
+
+
 		
 		/// <summary>
 		/// sets the timescale to the one in parameters
@@ -296,8 +366,32 @@ namespace MoreMountains.CorgiEngine
 					break;
 
 				case PointsMethods.Add:
+					Debug.LogError("Adding");
 					AddPoints (pointEvent.Points);
 					break;
+			}
+		}
+
+		/// <summary>
+		/// Catches CorgiEngineChipsEvents and acts on them, playing the corresponding sounds
+		/// </summary>
+		/// <param name="pointEvent">CorgiEngineChipsEvent event.</param>
+		public virtual void OnMMEvent(CorgiEngineChipsEvent chipsEvent)
+		{
+			switch (chipsEvent.ChipsMethod)
+			{
+                case ChipsMethods.Spend:
+                    RemovePoints(chipsEvent.ChipPoints);
+                    break;
+
+				case ChipsMethods.Add:
+                    Debug.LogError("Adding");
+                    AddChipPoints(chipsEvent.ChipPoints);
+					break;
+
+                case ChipsMethods.Set:
+                    SetChipPoints(chipsEvent.ChipPoints);
+                    break;
 			}
 		}
 
@@ -334,13 +428,14 @@ namespace MoreMountains.CorgiEngine
 		}
 
 		/// <summary>
-		/// OnDisable, we start listening to events.
+		/// OnEnable, we start listening to events.
 		/// </summary>
 		protected virtual void OnEnable()
 		{
 			this.MMEventStartListening<MMGameEvent> ();
 			this.MMEventStartListening<CorgiEngineEvent> ();
 			this.MMEventStartListening<CorgiEnginePointsEvent> ();
+            this.MMEventStartListening<CorgiEngineChipsEvent>();
 			this.MMEventStartListening<CorgiEngineTimeScaleEvent> ();
 		}
 
@@ -352,6 +447,7 @@ namespace MoreMountains.CorgiEngine
 			this.MMEventStopListening<MMGameEvent> ();
 			this.MMEventStopListening<CorgiEngineEvent> ();
 			this.MMEventStopListening<CorgiEnginePointsEvent> ();
+			this.MMEventStartListening<CorgiEngineChipsEvent>();
 			this.MMEventStopListening<CorgiEngineTimeScaleEvent> ();
 		}
 	}
