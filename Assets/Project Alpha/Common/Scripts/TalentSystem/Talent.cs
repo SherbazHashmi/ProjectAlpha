@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 
-using namespace MoreMountains.CorgiEngine {
+namespace MoreMountains.CorgiEngine {
     
 	/// <summary>
 	/// Type of Attack This Talent Replaces (As Outlined in Documentation)
@@ -34,10 +34,14 @@ using namespace MoreMountains.CorgiEngine {
     /// Talent Class denoting the name, ability, whether the talent is active, type of weapon, type of attack to replace, and the level of the talent. 
     /// </summary>
 
+
+    // TODO : Modify CharacterAbility class to work with talent class by adding TypeOfWeapon and TypeOfAbility parameters. 
+
     public class Talent
     {
 
         string name;
+        string upgradePath;
         bool isActive;
         CharacterAbility ability;
         TypeOfWeapon typeOfWeapon;
@@ -45,12 +49,17 @@ using namespace MoreMountains.CorgiEngine {
         int level;
 
 
-        public Talent (string name, bool isActive, CharacterAbility ability) {
+        public Talent (string name, string upgradePath, bool isActive, CharacterAbility ability) {
             this.name = name;
             this.isActive = isActive;
             this.ability = ability;
             this.typeOfWeapon = ability.typeOfWeapon;
             this.typeOfAttackToReplace = ability.typeOfAttack;
+        }
+
+
+        public string toString () {
+            return name;
         }
 
     }

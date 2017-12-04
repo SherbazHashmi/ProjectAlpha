@@ -17,6 +17,12 @@ namespace MoreMountains.CorgiEngine
 		/// the sound fx to play when the ability stops
 		public AudioClip AbilityStopSfx;
 
+        /// the type of weapon this ability is created for 
+        public TypeOfWeapon typeOfWeapon;
+
+        /// the type of attack this ability is intended for (Weak,Strong,Ultimate)
+        public TypeOfAttack typeOfAttack;
+
 		/// if true, this ability can perform as usual, if not, it'll be ignored. You can use this to unlock abilities over time for example
 		public bool AbilityPermitted = true;
 
