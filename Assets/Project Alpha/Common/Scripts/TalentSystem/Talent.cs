@@ -49,8 +49,9 @@ namespace MoreMountains.CorgiEngine {
         int level;
 
 
-        public Talent (string name, string upgradePath, bool isActive, CharacterAbility ability) {
-            this.name = name;
+        public Talent (string upgradePath, bool isActive, CharacterAbility ability) {
+            this.name = ability.name;
+            this.upgradePath = upgradePath;
             this.isActive = isActive;
             this.ability = ability;
             this.typeOfWeapon = ability.typeOfWeapon;
@@ -58,8 +59,28 @@ namespace MoreMountains.CorgiEngine {
         }
 
 
+		/// <summary>
+		/// Produces a HashCode for a given Talent.
+		/// Used for implementing the BST of talents. 
+		/// </summary>
+		/// <returns>The code.</returns>
+		/// <param name="talent">Talent.</param>
+
+		int hashCode()
+		{
+			int hash = 0;
+			string name = this.name;
+
+			for (int i = 0; i < name.Length; i++)
+			{
+				hash = name[i] + (31 * hash);
+			}
+
+			return hash;
+		}
+
         public string toString () {
-            return name;
+            return "name : " + name + ", upgrade path : " + upgradePath + ", isActive : " + isActive + ", type of weapon : " + typeOfWeapon + ", type of attack to replace : " + typeOfAttackToReplace+".";
         }
 
     }
