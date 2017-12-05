@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using MoreMountains.CorgiEngine;
 
 
 namespace MoreMountains.CorgiEngine {
@@ -26,7 +27,8 @@ namespace MoreMountains.CorgiEngine {
         SawDropper,
         RocketLauncher,
         Shotgun,
-        PelletGun
+        PelletGun,
+        Unarmed
     }
 
 
@@ -37,52 +39,35 @@ namespace MoreMountains.CorgiEngine {
 
     // TODO : Modify CharacterAbility class to work with talent class by adding TypeOfWeapon and TypeOfAbility parameters. 
 
-    public class Talent
+    public class CombatAbility : CharacterAbility
     {
 
         string name;
         string upgradePath;
-        bool isActive;
+        bool isTalentAbility;
         CharacterAbility ability;
-        TypeOfWeapon typeOfWeapon;
-        TypeOfAttack typeOfAttackToReplace;
-        int level;
+        int requiredTalentPoints;
+        public TypeOfAttack attackType { get; set; }
+        public TypeOfWeapon weaponType { get; set; }
 
 
-        public Talent (string upgradePath, bool isActive, CharacterAbility ability) {
+        public CombatAbility (string upgradePath, bool isTalentAbility, int requiredTalentPoints, TypeOfAttack attackType, TypeOfWeapon weaponType) {
             this.name = ability.name;
+            this.isTalentAbility = isTalentAbility;
             this.upgradePath = upgradePath;
-            this.isActive = isActive;
-            this.ability = ability;
-            this.typeOfWeapon = ability.typeOfWeapon;
-            this.typeOfAttackToReplace = ability.typeOfAttack;
+            this.requiredTalentPoints = requiredTalentPoints;
+            this.attackType = attackType;
+            this.weaponType = weaponType;
+
         }
 
 
-		/// <summary>
-		/// Produces a HashCode for a given Talent.
-		/// Used for implementing the BST of talents. 
-		/// </summary>
-		/// <returns>The code.</returns>
-		/// <param name="talent">Talent.</param>
-
-		int hashCode()
-		{
-			int hash = 0;
-			string name = this.name;
-
-			for (int i = 0; i < name.Length; i++)
-			{
-				hash = name[i] + (31 * hash);
-			}
-
-			return hash;
-		}
 
         public string toString () {
-            return "name : " + name + ", upgrade path : " + upgradePath + ", isActive : " + isActive + ", type of weapon : " + typeOfWeapon + ", type of attack to replace : " + typeOfAttackToReplace+".";
+            return "name : " + name + ", upgrade path : " + upgradePath + ", isActive : " +  ", type of weapon : " + weaponType + ", type of attack to replace : " + attackType + ".";
         }
 
+      
     }
 
 }
