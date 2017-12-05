@@ -39,7 +39,7 @@ namespace MoreMountains.CorgiEngine {
 
     // TODO : Modify CharacterAbility class to work with talent class by adding TypeOfWeapon and TypeOfAbility parameters. 
 
-    public class CombatAbility : CharacterAbility
+    public class CombatAbility : Weapon
     {
 
         string name;
