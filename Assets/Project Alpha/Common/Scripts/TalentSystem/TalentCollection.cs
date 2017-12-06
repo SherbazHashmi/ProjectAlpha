@@ -13,16 +13,16 @@ namespace MoreMountains.CorgiEngine
         /// Add all abilities to here.
 
 
-        Dictionary<CombatAbility, bool> talents () {
-			Dictionary<CombatAbility, bool> tals = new Dictionary<CombatAbility, bool>();
+        Dictionary<Weapon, bool> talents () {
+			Dictionary<Weapon, bool> tals = new Dictionary<Weapon, bool>();
             return tals;
 		}
 
-        Dictionary<CombatAbility, bool> activateTalent (Dictionary<CombatAbility, bool> talents, CombatAbility talentToActivate) {
+        Dictionary<Weapon, bool> activateTalent (Dictionary<Weapon, bool> talents, Weapon talentToActivate) {
             bool isActiveInDictionary;
             talents.TryGetValue(talentToActivate, out isActiveInDictionary);
             if (isActiveInDictionary == false) {
-                CombatAbility desiredCombatAbility = talentToActivate;
+                Weapon desiredCombatAbility = talentToActivate;
                 talents.Remove(desiredCombatAbility);
                 talents.Add(desiredCombatAbility,true);
             } else {
@@ -32,7 +32,7 @@ namespace MoreMountains.CorgiEngine
             return talents;
         }
 
-        Dictionary<CombatAbility, bool> deactivateTalent (Dictionary<CombatAbility, bool> talents, CombatAbility talentToDeactivate){
+        Dictionary<Weapon, bool> deactivateTalent (Dictionary<Weapon, bool> talents, Weapon talentToDeactivate){
 			bool isActiveInDictionary;
             talents.TryGetValue(talentToDeactivate, out isActiveInDictionary);
             if (isActiveInDictionary == true) {

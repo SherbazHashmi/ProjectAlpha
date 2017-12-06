@@ -4,7 +4,8 @@ using MoreMountains.CorgiEngine;
 
 
 namespace MoreMountains.CorgiEngine {
-    
+    // FIXME : If you can find a more elegant way to do this tell me. 
+
 	/// <summary>
 	/// Type of Attack This Talent Replaces (As Outlined in Documentation)
 	/// Ref : https://docs.google.com/document/d/14MyKsqf8reATkkiQ2IGxU-T1GgR7HDV_C2v7vzJpwIs
@@ -39,20 +40,19 @@ namespace MoreMountains.CorgiEngine {
 
     // TODO : Modify CharacterAbility class to work with talent class by adding TypeOfWeapon and TypeOfAbility parameters. 
 
-    public class CombatAbility : Weapon
+    public class RangedCombatAbility : ProjectileWeapon
     {
 
         string name;
         string upgradePath;
         bool isTalentAbility;
-        CharacterAbility ability;
         int requiredTalentPoints;
         public TypeOfAttack attackType { get; set; }
         public TypeOfWeapon weaponType { get; set; }
 
 
-        public CombatAbility (string upgradePath, bool isTalentAbility, int requiredTalentPoints, TypeOfAttack attackType, TypeOfWeapon weaponType) {
-            this.name = ability.name;
+        public RangedCombatAbility (string name, string upgradePath, bool isTalentAbility, int requiredTalentPoints, TypeOfAttack attackType, TypeOfWeapon weaponType) {
+            this.name = name;
             this.isTalentAbility = isTalentAbility;
             this.upgradePath = upgradePath;
             this.requiredTalentPoints = requiredTalentPoints;
@@ -68,6 +68,25 @@ namespace MoreMountains.CorgiEngine {
         }
 
       
+    }
+
+
+    public class MeleeCombatAbility : MeleeWeapon 
+    {
+		public string name;
+		public string upgradePath;
+		public bool isTalentAbility;
+		public int requiredTalentPoints;
+		public TypeOfAttack attackType { get; set; }
+		public TypeOfWeapon weaponType { get; set; }
+
+
+
+
+		public string toString()
+		{
+			return "name : " + name + ", upgrade path : " + upgradePath + ", isActive : " + ", type of weapon : " + weaponType + ", type of attack to replace : " + attackType + ".";
+		}
     }
 
 }
