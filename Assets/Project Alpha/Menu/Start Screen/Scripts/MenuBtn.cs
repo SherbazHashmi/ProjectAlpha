@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class MenuBtn : MonoBehaviour {
 
-	// Use this for initialization
 	void Start () {
 		
 	}

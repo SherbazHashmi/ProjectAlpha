@@ -80,3 +80,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/CorgiEngine/Demos/Minimal/OneWayLevelVertical.unity
     guid: c8d1ba4ad1f68a5449b10a0921eabb7a
+  - enabled: 1
+    path: Assets/Project Alpha/Menu/Main Menu/Scenes/MainMenuScene.unity
+    guid: f1a42800410906145a06c73b6e31ee1a
+  - enabled: 1
+    path: Assets/Project Alpha/Levels/Test Level/testScene.unity
+    guid: f6898457e6a4d4426a0267ff9dcc3cc6
