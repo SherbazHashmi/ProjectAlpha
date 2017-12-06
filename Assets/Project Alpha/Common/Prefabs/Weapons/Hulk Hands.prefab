@@ -97,5 +97,5 @@ MonoBehaviour:
   InvincibilityDuration: 0.5
   name: Hulk Hands
   upgradePath: Unarmed
-  isTalentAbility: 0
+  isTalentAbility: 1
   requiredTalentPoints: 5
