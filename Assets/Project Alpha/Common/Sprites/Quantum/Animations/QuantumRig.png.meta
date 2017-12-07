@@ -1,0 +1,412 @@
+fileFormatVersion: 2
+guid: b433325cec5a20246906cd965edf05a2
+timeCreated: 1512431289
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Quantum_Head
+    21300002: Back_U_Arm
+    21300004: Back_Shoulder
+    21300006: Front_U_Arm
+    21300008: Front_Shoulder
+    21300010: QuantumRig_5
+    21300012: Back_U_Leg
+    21300014: Back_Hand
+    21300016: Front_Hand
+    21300018: QuantumRig_9
+    21300020: Back_L_Arm
+    21300022: QuantumRig_11
+    21300024: Front_L_Arm
+    21300026: Quantum_Torso
+    21300028: QuantumRig_14
+    21300030: QuantumRig_15
+    21300032: QuantumRig_16
+    21300034: QuantumRig_17
+    21300036: QuantumRig_18
+    21300038: QuantumRig_19
+    21300040: QuantumRig_20
+    21300042: Back_L_Leg
+    21300044: QuantumRig_22
+    21300046: QuantumRig_23
+    21300048: QuantumRig_24
+    21300050: QuantumRig_25
+    21300052: Front_L_Leg
+    21300054: QuantumRig_27
+    21300056: QuantumRig_28
+    21300058: QuantumRig_29
+    21300060: Front_U_Leg
+    21300062: QuantumRig_31
+    21300064: QuantumRig_32
+    21300066: QuantumRig_33
+    21300068: Quantum_Waist
+    21300070: QuantumRig_35
+    21300072: QuantumRig_36
+    21300074: QuantumRig_37
+    21300076: QuantumRig_38
+    21300078: QuantumRig_39
+    21300080: QuantumRig_40
+    21300082: QuantumRig_41
+    21300084: QuantumRig_42
+    21300086: QuantumRig_43
+    21300088: QuantumRig_44
+    21300090: QuantumRig_45
+    21300092: QuantumRig_46
+    21300094: QuantumRig_47
+    21300096: QuantumRig_48
+    21300098: Back_Foot
+    21300100: QuantumRig_50
+    21300102: Front_Foot
+    21300104: QuantumRig_52
+    21300106: QuantumRig_53
+    21300108: QuantumRig_54
+    21300110: QuantumRig_55
+    21300112: QuantumRig_56
+    21300114: QuantumRig_57
+    21300116: QuantumRig_58
+    21300118: QuantumRig_59
+    21300120: QuantumRig_60
+    21300122: QuantumRig_61
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Quantum_Head
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 3318
+        width: 410
+        height: 537
+      alignment: 9
+      pivot: {x: 0.32029456, y: 0.22558913}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Back_U_Arm
+      rect:
+        serializedVersion: 2
+        x: 2102
+        y: 3229
+        width: 394
+        height: 629
+      alignment: 9
+      pivot: {x: 0.687003, y: 0.8874535}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Back_Shoulder
+      rect:
+        serializedVersion: 2
+        x: 2655
+        y: 3536
+        width: 306
+        height: 464
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47557068}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Front_U_Arm
+      rect:
+        serializedVersion: 2
+        x: 3139
+        y: 3230
+        width: 366
+        height: 633
+      alignment: 9
+      pivot: {x: 0.6858237, y: 0.89395887}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Front_Shoulder
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 3600
+        width: 307
+        height: 463
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5122413}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Back_U_Leg
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 2335
+        width: 428
+        height: 979
+      alignment: 9
+      pivot: {x: 0.51324236, y: 0.88787687}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Back_Hand
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 3101
+        width: 286
+        height: 292
+      alignment: 9
+      pivot: {x: 0.18292962, y: 0.88819444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Front_Hand
+      rect:
+        serializedVersion: 2
+        x: 3677
+        y: 3099
+        width: 308
+        height: 309
+      alignment: 9
+      pivot: {x: 0.1503724, y: 0.92186314}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Back_L_Arm
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 2152
+        width: 357
+        height: 826
+      alignment: 9
+      pivot: {x: 0.5952538, y: 0.7744616}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Front_L_Arm
+      rect:
+        serializedVersion: 2
+        x: 3131
+        y: 2172
+        width: 358
+        height: 823
+      alignment: 9
+      pivot: {x: 0.5633258, y: 0.79612213}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Quantum_Torso
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 1657
+        width: 688
+        height: 1264
+      alignment: 9
+      pivot: {x: 0.46704856, y: 0.105417855}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Back_L_Leg
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 743
+        width: 454
+        height: 1145
+      alignment: 9
+      pivot: {x: 0.36267844, y: 0.8415429}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Front_L_Leg
+      rect:
+        serializedVersion: 2
+        x: 3396
+        y: 744
+        width: 459
+        height: 1099
+      alignment: 9
+      pivot: {x: 0.40121773, y: 0.8713101}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Front_U_Leg
+      rect:
+        serializedVersion: 2
+        x: 2331
+        y: 728
+        width: 439
+        height: 979
+      alignment: 9
+      pivot: {x: 0.53873104, y: 0.8531421}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Quantum_Waist
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 733
+        width: 518
+        height: 510
+      alignment: 9
+      pivot: {x: 0.51094145, y: 0.8000512}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Back_Foot
+      rect:
+        serializedVersion: 2
+        x: 2270
+        y: 79
+        width: 571
+        height: 318
+      alignment: 9
+      pivot: {x: 0.24192882, y: 1.0168598}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Front_Foot
+      rect:
+        serializedVersion: 2
+        x: 3335
+        y: 44
+        width: 573
+        height: 333
+      alignment: 9
+      pivot: {x: 0.2626118, y: 1.0616575}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
