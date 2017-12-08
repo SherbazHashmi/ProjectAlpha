@@ -86,3 +86,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Project Alpha/Levels/Test Level/testScene.unity
     guid: f6898457e6a4d4426a0267ff9dcc3cc6
+  - enabled: 1
+    path: Assets/Project Alpha/Menu/Options/Scenes/Options.unity
+    guid: e2e09dec8101c4b6f93442a5b4308f99

@@ -15,14 +15,14 @@ namespace MoreMountains.CorgiEngine
 		public bool MusicOn=true;
 		/// the music volume
 		[Range(0,1)]
-		public float MusicVolume=0.3f;
+		public float MusicVolume = 0.3f;
 
 		[Header("Sound Effects")]
 		/// true if the sound fx are enabled
 		public bool SfxOn=true;
 		/// the sound fx volume
 		[Range(0,1)]
-		public float SfxVolume=1f;
+		public float SfxVolume = 1f;
 
 	    protected AudioSource _backgroundMusic;	
 					
