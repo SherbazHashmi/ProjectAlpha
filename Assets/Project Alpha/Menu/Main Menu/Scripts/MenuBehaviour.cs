@@ -31,7 +31,7 @@ public class MenuBehaviour : MonoBehaviour
     public void NewGamePressed()
     {
         startGamePopup.SetActive(false);                                    //hides popup, if player wants to return to menu, this makes sure the popup is not still displayed
-        SceneManager.LoadScene("testScene");                                //loads first scene
+        SceneManager.LoadScene("DifficultySelectScene");                    //loads scene indicated with ""
     }
 
     public void ConitnuePressed()
@@ -46,12 +46,17 @@ public class MenuBehaviour : MonoBehaviour
 
     public void CreditsPressed()
     {
-        //SceneManager.LoadScene("");                                       //loads credits scene
+        SceneManager.LoadScene("Credits");                                  //loads credits scene
     }
 
     public void QuitButtonPressed()
     {
         quitGamePopup.SetActive(true);                                      //displayes quit popup
+    }
+
+    public void LoadPressed()
+    {
+        SceneManager.LoadScene("loadScene");                                //loads scene indicated with ""
     }
 
     public void ExitGame()

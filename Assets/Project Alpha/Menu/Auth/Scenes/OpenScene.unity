@@ -571,6 +571,16 @@ Prefab:
       propertyPath: fadePanel
       value: 
       objectReference: {fileID: 443034841}
+    - target: {fileID: 114177574361989874, guid: 9f6dc94e784966c40935b46a3fb2b8a9,
+        type: 2}
+      propertyPath: fadeTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114177574361989874, guid: 9f6dc94e784966c40935b46a3fb2b8a9,
+        type: 2}
+      propertyPath: timeToLoad
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9f6dc94e784966c40935b46a3fb2b8a9, type: 2}
   m_IsPrefabParent: 0

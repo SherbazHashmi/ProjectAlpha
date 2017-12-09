@@ -84,8 +84,20 @@ EditorBuildSettings:
     path: Assets/Project Alpha/Menu/Main Menu/Scenes/MainMenuScene.unity
     guid: f1a42800410906145a06c73b6e31ee1a
   - enabled: 1
+    path: Assets/Project Alpha/Menu/Difficulty/scenes/DifficultySelectScene.unity
+    guid: 4ed50aba2616a2649940140d3f9a9b8a
+  - enabled: 1
     path: Assets/Project Alpha/Levels/Test Level/testScene.unity
     guid: f6898457e6a4d4426a0267ff9dcc3cc6
   - enabled: 1
     path: Assets/Project Alpha/Menu/Options/Scenes/Options.unity
     guid: e2e09dec8101c4b6f93442a5b4308f99
+  - enabled: 1
+    path: Assets/Project Alpha/Menu/Credits/Credits.unity
+    guid: f5ee33cf5699b4af1a3ce26d6d6bb9a6
+  - enabled: 1
+    path: Assets/Project Alpha/Menu/SaveLoadData/Scenes/saveScene.unity
+    guid: 1b4ca3219fc21214e858c9113097c3d0
+  - enabled: 1
+    path: Assets/Project Alpha/Menu/SaveLoadData/Scenes/loadScene.unity
+    guid: c9c60303c9a32f34b835b711d64b41ea
