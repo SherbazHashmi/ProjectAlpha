@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class CurrencyIconLocation : MonoBehaviour {
 
     [SerializeField] Text currencyText;
-    [SerializeField] Image icon;
+    [SerializeField] GameObject icon;
     [SerializeField] Camera cam;
   
 
