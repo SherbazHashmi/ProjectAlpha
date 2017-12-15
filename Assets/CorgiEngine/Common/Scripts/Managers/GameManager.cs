@@ -119,6 +119,7 @@ namespace MoreMountains.CorgiEngine
 		Inventory
 	}
 
+
 	/// <summary>
 	/// The game manager is a persistent singleton that handles points and time
 	/// </summary>
@@ -128,7 +129,8 @@ namespace MoreMountains.CorgiEngine
 								MMEventListener<CorgiEngineEvent>, 
 								MMEventListener<CorgiEnginePointsEvent>,
                                 MMEventListener<CorgiEngineChipsEvent>,
-								MMEventListener<CorgiEngineTimeScaleEvent>
+								MMEventListener<CorgiEngineTimeScaleEvent>,
+                                MMEventListener<EnergyEvent>
 	{		
 		/// the target frame rate for the game
 		public int TargetFrameRate=300;
@@ -136,6 +138,8 @@ namespace MoreMountains.CorgiEngine
 		public int Points { get; private set; }
         /// players's current number of chips
         public int ChipPoints { get; private set; }
+        /// player's current energy level
+        public int EnergyLevel = 100;
 		/// true if the game is currently paused
 		public bool Paused { get; set; } 
 		// true if we've stored a map position at least once
@@ -225,7 +229,6 @@ namespace MoreMountains.CorgiEngine
         public virtual void SetChipPoints (int chipPointsToSet) {
             ChipPoints = chipPointsToSet;
 			GUIManager.Instance.RefreshChipPoints();
-
 		}
 
 
@@ -317,6 +320,27 @@ namespace MoreMountains.CorgiEngine
 			}
 	    }
 
+
+        ///<summary> 
+        /// Adds an amount of Energy To Total Game Energy
+        /// </summary>
+
+
+        public virtual void AddEnergy (int amount) {
+            EnergyLevel += amount;
+            Debug.Log("Added "+amount+"Energy");
+        } 
+
+        public virtual void RemoveEnergy (int amount) {
+            EnergyLevel -= amount;
+            Debug.Log("Added "+amount + "Energy");
+        }
+
+
+        ///<summary>
+        /// 
+        /// </summary>
+
 		/// <summary>
 		/// Catches MMGameEvents and acts on them, playing the corresponding sounds
 		/// </summary>
@@ -375,7 +399,7 @@ namespace MoreMountains.CorgiEngine
 		/// <summary>
 		/// Catches CorgiEngineChipsEvents and acts on them, playing the corresponding sounds
 		/// </summary>
-		/// <param name="pointEvent">CorgiEngineChipsEvent event.</param>
+		/// <param name="chipEvent">CorgiEngineChipsEvent event.</param>
 		public virtual void OnMMEvent(CorgiEngineChipsEvent chipsEvent)
 		{
 			switch (chipsEvent.ChipsMethod)
@@ -385,7 +409,6 @@ namespace MoreMountains.CorgiEngine
                     break;
 
 				case ChipsMethods.Add:
-                    Debug.LogError("Adding");
                     AddChipPoints(chipsEvent.ChipPoints);
 					break;
 
@@ -394,6 +417,27 @@ namespace MoreMountains.CorgiEngine
                     break;
 			}
 		}
+
+
+        /// <summary>
+        /// Catches CorgiEngineEnergyEvents and acts on them 
+        /// </summary>
+        /// <param name="EnergyEvent">EnergyEvent</param> 
+        /// 
+
+        public virtual void OnMMEvent(EnergyEvent energyEvent) {
+            switch(energyEvent.energyEventType) {
+                case (EnergyEventType.Add) :
+                    AddEnergy(energyEvent.amount);
+                    break;
+
+                case (EnergyEventType.Remove) :
+                    RemoveEnergy(energyEvent.amount);
+                    break;
+            }
+
+        }
+
 
 		/// <summary>
 		/// Catches CorgiEngineTimeScaleEvents and acts on them, playing the corresponding sounds
@@ -437,6 +481,7 @@ namespace MoreMountains.CorgiEngine
 			this.MMEventStartListening<CorgiEnginePointsEvent> ();
             this.MMEventStartListening<CorgiEngineChipsEvent>();
 			this.MMEventStartListening<CorgiEngineTimeScaleEvent> ();
+            this.MMEventStartListening<EnergyEvent>();
 		}
 
 		/// <summary>
@@ -447,8 +492,9 @@ namespace MoreMountains.CorgiEngine
 			this.MMEventStopListening<MMGameEvent> ();
 			this.MMEventStopListening<CorgiEngineEvent> ();
 			this.MMEventStopListening<CorgiEnginePointsEvent> ();
-			this.MMEventStartListening<CorgiEngineChipsEvent>();
+			this.MMEventStopListening<CorgiEngineChipsEvent>();
 			this.MMEventStopListening<CorgiEngineTimeScaleEvent> ();
+            this.MMEventStopListening<EnergyEvent>();
 		}
 	}
 }

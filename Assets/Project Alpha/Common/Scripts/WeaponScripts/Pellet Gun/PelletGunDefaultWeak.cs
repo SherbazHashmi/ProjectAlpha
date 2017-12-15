@@ -5,18 +5,13 @@ using MoreMountains.CorgiEngine;
 namespace MoreMountains.CorgiEngine
 {
 
-    public class PelletGunBaseConfiguration : ProjectileWeapon
+    public class PelletGunDefaultWeak : ProjectileWeapon
     {
-        // Use this for initialization
-        void Start()
-        {
+        public PelletGunDefaultWeak () {
+            TriggerMode = TriggerModes.Auto;
+            TimeBetweenUses = 0.1f;
+            MagazineBased = false;
 
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
+        } 
     }
 }

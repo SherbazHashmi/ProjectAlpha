@@ -35,6 +35,9 @@ namespace MoreMountains.CorgiEngine
 		public float ReloadTime = 2f;
 		/// the amount of ammo consumed everytime the weapon fires
 		public int AmmoConsumedPerShot = 1;
+
+        public int EnergyConsumedPerShot = 5;
+
 		[ReadOnly]
 		/// the current amount of ammo loaded inside the weapon
 		public int CurrentAmmoLoaded = 0;
