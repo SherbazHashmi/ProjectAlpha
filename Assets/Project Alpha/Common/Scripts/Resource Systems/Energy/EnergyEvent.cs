@@ -19,10 +19,12 @@ namespace MoreMountains.CorgiEngine
         /// the type of event 
         public EnergyEventType energyEventType;
         public int amount;
+        public int multiplier;
 
-        public EnergyEvent (EnergyEventType energyEventType, int amount) {
+        public EnergyEvent (EnergyEventType energyEventType, int amount, int multiplier) {
             this.energyEventType = energyEventType;
             this.amount = amount;
+            this.multiplier = multiplier;
         }
 
     }
