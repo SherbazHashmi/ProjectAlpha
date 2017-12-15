@@ -140,6 +140,8 @@ namespace MoreMountains.CorgiEngine
         public int ChipPoints { get; private set; }
         /// player's current energy level
         public int EnergyLevel = 100;
+        /// player's current energy regeneration rate
+        public float EnergyRegenerationSpeed = 1;
 		/// true if the game is currently paused
 		public bool Paused { get; set; } 
 		// true if we've stored a map position at least once
@@ -184,6 +186,11 @@ namespace MoreMountains.CorgiEngine
 			Points += pointsToAdd;
 			GUIManager.Instance.RefreshPoints ();
 		}
+
+
+        /// <summary>
+        /// 
+        /// </summary>
 
         /// <summary>
         /// Adds the ChipPoints in parameters to the current game ChipPoints.
@@ -337,9 +344,42 @@ namespace MoreMountains.CorgiEngine
         }
 
 
-        ///<summary>
-        /// 
+        /// <summary>
+        /// Sets Amount of Energy
         /// </summary>
+
+        public virtual void SetEnergyLevel (int amount) {
+            EnergyLevel = amount;
+        }
+
+
+
+		///<summary>
+		/// Sets Rate of Energy Regeneration
+		/// </summary>
+
+		public virtual void SetEnergyRegen (float percentage) {
+            EnergyRegenerationSpeed = percentage;
+        }
+
+        ///<summary>
+        /// Gets Rate of Energy Regeneration
+        /// </summary>
+
+        public virtual float getEnergyRegeneration () {
+            return EnergyRegenerationSpeed;
+        }
+
+        /// <summary>
+        /// Gets Energy 
+        /// </summary>
+
+        public virtual int getEnergyLevel () {
+            return EnergyLevel;
+        }
+
+
+
 
 		/// <summary>
 		/// Catches MMGameEvents and acts on them, playing the corresponding sounds
