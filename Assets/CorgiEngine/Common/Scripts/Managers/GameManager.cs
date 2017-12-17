@@ -545,12 +545,14 @@ namespace MoreMountains.CorgiEngine
 			switch (powerEvent.powerEventType)
 			{
                 case (PowerEventType.Add):
-					AddEnergy(powerEvent.amount);
+                    AddPower(powerEvent.amount);
 					break;
-
                 case (PowerEventType.Remove):
-					RemoveEnergy(powerEvent.amount);
+					RemovePower(powerEvent.amount);
 					break;
+                case (PowerEventType.Set):
+                    SetPower(powerEvent.amount);
+                    break;
 			}
 
 		}

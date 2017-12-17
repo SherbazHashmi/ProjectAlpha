@@ -39,17 +39,5 @@ namespace MoreMountains.CorgiEngine
 			}
 
 		}
-
-        void Update()
-        {
-            EnergyManager
-        }
-
-
- 
-
-
-
-
     }
 }
