@@ -76,6 +76,7 @@ namespace MoreMountains.CorgiEngine
     public struct CorgiEngineChipsEvent {
         public ChipsMethods ChipsMethod;
         public int ChipPoints;
+       
         ///<summary> 
         /// Initialises a new instance of the chips struct. 
         /// <param name="chipsMethod"> Chips Method</param>
@@ -88,6 +89,7 @@ namespace MoreMountains.CorgiEngine
             ChipPoints = chipPoints;
         }
     }
+
 
 	/// <summary>
 	/// A list of the methods available to change the current score
@@ -130,7 +132,8 @@ namespace MoreMountains.CorgiEngine
 								MMEventListener<CorgiEnginePointsEvent>,
                                 MMEventListener<CorgiEngineChipsEvent>,
 								MMEventListener<CorgiEngineTimeScaleEvent>,
-                                MMEventListener<EnergyEvent>
+                                MMEventListener<EnergyEvent>,
+                                MMEventListener<PowerEvent>
 	{		
 		/// the target frame rate for the game
 		public int TargetFrameRate=300;
@@ -139,9 +142,15 @@ namespace MoreMountains.CorgiEngine
         /// players's current number of chips
         public int ChipPoints { get; private set; }
         /// player's current energy level
-        public int EnergyLevel = 100;
+        public int EnergyLevel { get; private set; }
+        /// the current power level
+        public int PowerLevel {get; private set;}
+        /// the current charge 
+        public int Charge { get; private set; }
+        /// power threshold (the point at which a charge is generated)
+        [SerializeField] int PowerThreshold = 30;
         /// player's current energy regeneration rate
-        public float EnergyRegenerationSpeed = 1;
+		public float EnergyRegenerationSpeed = 1;
 		/// true if the game is currently paused
 		public bool Paused { get; set; }
         /// true if energy regen is enabled
@@ -218,7 +227,7 @@ namespace MoreMountains.CorgiEngine
 		/// <summary>
 		/// use this to set the remove points to the one you pass as a parameter
 		/// </summary>
-		/// <param name="points">Points.</param>
+		/// <param name="pointsToRemove">Points to Remove.</param>
 		public virtual void RemovePoints(int chipPointsToRemove)
 		{
             if (ChipPoints >= 1)
@@ -241,7 +250,51 @@ namespace MoreMountains.CorgiEngine
 		}
 
 
-		
+		/// <summary>
+		/// use this to add power
+		/// </summary>
+
+        public virtual void AddPower (int powerToAdd) {
+            /// add power
+            PowerLevel = PowerLevel + powerToAdd;
+            /// update charges
+            updateCharge();
+        }
+
+
+        ///<summary>
+        /// use this to remove power
+        /// </summary>
+
+        public virtual void RemovePower (int powerToRemove) {
+            PowerLevel = PowerLevel - powerToRemove;
+            updateCharge();
+        }
+
+        ///<summary>
+        /// use this to set power
+        /// </summary>
+        /// <param name="powerToSet">Power to Set </param>
+
+        public virtual void SetPower (int powerToSet) {
+            PowerLevel = powerToSet;
+            updateCharge();
+        }
+
+
+        ///<summary>
+        /// use this to update charges, usually in all events where power is modified.
+        /// </summary>
+
+
+        public virtual void updateCharge () {
+			Charge = Mathf.Abs(PowerLevel / PowerThreshold);
+		}
+         
+
+
+
+
 		/// <summary>
 		/// sets the timescale to the one in parameters
 		/// </summary>
@@ -482,6 +535,28 @@ namespace MoreMountains.CorgiEngine
 
 
 		/// <summary>
+		/// Catches PowerEvent and acts on them 
+		/// </summary>
+		/// <param name="PowerEvent">PowerEvent</param> 
+		/// 
+
+		public virtual void OnMMEvent(PowerEvent powerEvent)
+		{
+			switch (powerEvent.powerEventType)
+			{
+                case (PowerEventType.Add):
+					AddEnergy(powerEvent.amount);
+					break;
+
+                case (PowerEventType.Remove):
+					RemoveEnergy(powerEvent.amount);
+					break;
+			}
+
+		}
+
+
+		/// <summary>
 		/// Catches CorgiEngineTimeScaleEvents and acts on them, playing the corresponding sounds
 		/// </summary>
 		/// <param name="timeScaleEvent">CorgiEngineTimeScaleEvent event.</param>
@@ -524,6 +599,7 @@ namespace MoreMountains.CorgiEngine
             this.MMEventStartListening<CorgiEngineChipsEvent>();
 			this.MMEventStartListening<CorgiEngineTimeScaleEvent> ();
             this.MMEventStartListening<EnergyEvent>();
+            this.MMEventStartListening<PowerEvent>();
 		}
 
 		/// <summary>
@@ -537,6 +613,8 @@ namespace MoreMountains.CorgiEngine
 			this.MMEventStopListening<CorgiEngineChipsEvent>();
 			this.MMEventStopListening<CorgiEngineTimeScaleEvent> ();
             this.MMEventStopListening<EnergyEvent>();
+			this.MMEventStopListening<PowerEvent>();
+
 		}
 	}
 }

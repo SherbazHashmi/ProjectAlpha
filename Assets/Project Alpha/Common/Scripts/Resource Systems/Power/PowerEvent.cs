@@ -6,17 +6,18 @@ using MoreMountains.CorgiEngine;
 
 namespace MoreMountains.CorgiEngine
 {
-    [RequireComponent(typeof(Weapon))]
-    public class Power : MonoBehaviour 
+    public enum PowerEventType {Add, Remove, Set}
+
+
+    public struct PowerEvent 
     {
+        public PowerEventType powerEventType;
+        public int amount;
 
-        public int Energy = 200;
-
-        public Weapon weapon;
-
-        public virtual void ConsumeEnergy () {
-            
-        } 
+        public PowerEvent (PowerEventType powerEventType, int amount) {
+            this.powerEventType = powerEventType;
+            this.amount = amount;
+        }
    
     }
 

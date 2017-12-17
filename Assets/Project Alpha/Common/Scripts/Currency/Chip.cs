@@ -23,7 +23,7 @@ public class Chip : PickableItem
 		/// Triggered when something collides with the chip
 		/// </summary>
 		/// <param name="collider">Other.</param>
-        /// 
+        /// a
 
 		protected override void Pick()
     {

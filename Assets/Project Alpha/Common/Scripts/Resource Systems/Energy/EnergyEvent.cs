@@ -22,6 +22,5 @@ namespace MoreMountains.CorgiEngine
             this.amount = amount;
             this.multiplier = multiplier;
         }
-
     }
 }

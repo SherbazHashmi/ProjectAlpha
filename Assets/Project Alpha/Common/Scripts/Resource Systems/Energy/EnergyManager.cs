@@ -46,6 +46,9 @@ namespace MoreMountains.CorgiEngine
 
         void Update()
         {
+            /// Resets Passed Decimal Point Number
+
+            havePassedDecimalPoint = false;
             if (gameManager.Paused == false && gameManager.EnergyActive == false && isWholeNumber(Time.timeSinceLevelLoad))
             {
                 MMEventManager.TriggerEvent(new EnergyEvent(EnergyEventType.Add, energyAmountToAdd, multiplier));
