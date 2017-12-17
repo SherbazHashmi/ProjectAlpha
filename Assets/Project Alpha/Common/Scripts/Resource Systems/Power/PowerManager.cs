@@ -4,12 +4,17 @@ using MoreMountains.CorgiEngine;
 namespace MoreMountains.CorgiEngine
 {
 
-    public class PowerManager : MonoBehaviour
+	/// <summary>
+    /// Added This Class Just In Case We Choose To Passively Modify Power in Some Way. (Remove Power as Discussed with Ten).
+	/// </summary>
+
+	public class PowerManager : MonoBehaviour
     {
+
 		GameObject gameManagerObject;
 		GameManager gameManager;
 
-        // TODO :  You can clean this up but creating a general function that initialises a Game Manager Object. If I get time, clean up. 
+       
         void Start()
         {
 			try
@@ -38,6 +43,6 @@ namespace MoreMountains.CorgiEngine
 				Debug.Log("gameManager Object Returning Null");
 			}
 
-		}
+		}  
     }
 }
