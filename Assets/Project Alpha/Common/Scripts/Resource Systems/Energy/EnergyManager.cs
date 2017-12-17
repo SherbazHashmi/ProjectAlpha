@@ -8,9 +8,9 @@ namespace MoreMountains.CorgiEngine
     {
 
         [SerializeField] bool isRegenActive = true;
-        static bool havePassedDecimalPoint = false;
         GameObject gameManagerObject;
         GameManager gameManager;
+        Utilities utils = new Utilities();
         int energyAmountToAdd = 1;
         int multiplier = 1;
 
@@ -48,44 +48,12 @@ namespace MoreMountains.CorgiEngine
         {
             /// Resets Passed Decimal Point Number
 
-            havePassedDecimalPoint = false;
-            if (gameManager.Paused == false && gameManager.EnergyActive == false && isWholeNumber(Time.timeSinceLevelLoad))
+            if (gameManager.Paused == false && gameManager.EnergyActive == false && utils.isWholeNumber(Time.timeSinceLevelLoad))
             {
                 MMEventManager.TriggerEvent(new EnergyEvent(EnergyEventType.Add, energyAmountToAdd, multiplier));
             }
         }
 
 
-        static bool isWholeNumber(double num)
-        {
-            string str = num.ToString();
-            string afterDecimalPoint = getAfterDecimalPoint(str);
-            return (afterDecimalPoint.Equals("0"));
-        }
-
-        static string getAfterDecimalPoint(string str)
-        {
-            if (str.Length > 0)
-            {
-                if (str[0] == '.')
-                {
-                    havePassedDecimalPoint = true;
-                    return getAfterDecimalPoint(str.Substring(1));
-                }
-                else if (havePassedDecimalPoint)
-                {
-
-                    return str[0] + getAfterDecimalPoint(str.Substring(1));
-                }
-                else
-                {
-                    return getAfterDecimalPoint(str.Substring(1));
-                }
-            }
-            else
-            {
-                return "";
-            }
-        }
     }
 }
