@@ -1,6 +1,4 @@
 using UnityEngine;
-using System.Collections;
-using MoreMountains.CorgiEngine;
 using MoreMountains.Tools;
 
 namespace MoreMountains.CorgiEngine
@@ -18,12 +16,6 @@ namespace MoreMountains.CorgiEngine
 
         void Start()
         {
-            /// Setup Time Variable
-            /// 
-            float time = Time.time;
-
-
-
             try
             {
                 /// Finding Object Called GameManager 
@@ -54,7 +46,7 @@ namespace MoreMountains.CorgiEngine
 
         void Update()
         {
-            if (gameManager.Paused == false && gameManager.EnergyActive == false && isWholeNumber(Time.time))
+            if (gameManager.Paused == false && gameManager.EnergyActive == false && isWholeNumber(Time.timeSinceLevelLoad))
             {
                 MMEventManager.TriggerEvent(new EnergyEvent(EnergyEventType.Add, energyAmountToAdd, multiplier));
             }
