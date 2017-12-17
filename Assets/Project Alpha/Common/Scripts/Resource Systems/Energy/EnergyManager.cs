@@ -13,8 +13,8 @@ namespace MoreMountains.CorgiEngine
         static bool havePassedDecimalPoint = false;
         GameObject gameManagerObject;
         GameManager gameManager;
-        int energyAmountToAdd;
-        int multiplier;
+        int energyAmountToAdd = 1;
+        int multiplier = 1;
 
         void Start()
         {
