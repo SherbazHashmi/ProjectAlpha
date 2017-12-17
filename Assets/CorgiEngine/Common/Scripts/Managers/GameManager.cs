@@ -143,8 +143,10 @@ namespace MoreMountains.CorgiEngine
         /// player's current energy regeneration rate
         public float EnergyRegenerationSpeed = 1;
 		/// true if the game is currently paused
-		public bool Paused { get; set; } 
-		// true if we've stored a map position at least once
+		public bool Paused { get; set; }
+        /// true if energy regen is enabled
+        public bool EnergyActive { get; set; }
+		/// true if we've stored a map position at least once
 		public bool StoredLevelMapPosition{ get; set; }
 		/// the current player
 		public Vector2 LevelMapPosition { get; set; }
