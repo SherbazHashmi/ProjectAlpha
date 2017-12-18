@@ -9,7 +9,7 @@ namespace MoreMountains.CorgiEngine
         [SerializeField] int powerToAdd;
 
 	
-        public virtual void Kill()
+        public override void Kill()
         {
             // we make our handheld device vibrate
             if (VibrateOnDeath)
