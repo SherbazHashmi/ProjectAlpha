@@ -10,7 +10,7 @@ namespace MoreMountains.CorgiEngine
         {
             string str = num.ToString();
             string afterDecimalPoint = getAfterDecimalPoint(str);
-            return (afterDecimalPoint.Equals("0"));
+			return (afterDecimalPoint.Equals("0") || afterDecimalPoint.Equals(""));
         }
 
         public string getAfterDecimalPoint(string str)
