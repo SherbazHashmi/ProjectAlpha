@@ -31,7 +31,7 @@ namespace MoreMountains.Tools
 			ClipToPlay = clipToPlay;
 		}
 	}
-
+     
 	/// <summary>
 	/// This class handles event management, and can be used to broadcast events throughout the game, to tell one class (or many) that something's happened.
 	/// Events are structs, you can define any kind of events you want. This manager comes with MMGameEvents, which are 

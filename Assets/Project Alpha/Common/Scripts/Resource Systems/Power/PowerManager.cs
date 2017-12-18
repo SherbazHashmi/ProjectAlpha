@@ -13,10 +13,10 @@ namespace MoreMountains.CorgiEngine
 
 		GameObject gameManagerObject;
         GameManager gameManager;
-        protected int DepletionRate { get; set; }
+        [SerializeField] int DepletionRate { get; set; }
         Utilities utils;
 
-
+         
 
 		void Start()
         {
@@ -25,8 +25,7 @@ namespace MoreMountains.CorgiEngine
 
             /// Setting Depletion Rate
             /// (PowerPoints per Second)
-            DepletionRate = 0;
-
+            /// 
 			try
 			{
 				/// Finding Object Called GameManager 
