@@ -13,12 +13,14 @@ namespace MoreMountains.CorgiEngine
         /// Add all abilities to here.
 
 
-        Dictionary<Weapon, bool> talents () {
+        public Dictionary<Weapon, bool> talents () {
 			Dictionary<Weapon, bool> tals = new Dictionary<Weapon, bool>();
+            ProjectileWeapon pelletGunDefaultWeak = new PelletGunDefaultWeak();
+			tals.Add(pelletGunDefaultWeak, false);
             return tals;
 		}
 
-        Dictionary<Weapon, bool> activateTalent (Dictionary<Weapon, bool> talents, Weapon talentToActivate) {
+        public Dictionary<Weapon, bool> activateTalent (Dictionary<Weapon, bool> talents, Weapon talentToActivate) {
             bool isActiveInDictionary;
             talents.TryGetValue(talentToActivate, out isActiveInDictionary);
             if (isActiveInDictionary == false) {
@@ -32,7 +34,7 @@ namespace MoreMountains.CorgiEngine
             return talents;
         }
 
-        Dictionary<Weapon, bool> deactivateTalent (Dictionary<Weapon, bool> talents, Weapon talentToDeactivate){
+        public Dictionary<Weapon, bool> deactivateTalent (Dictionary<Weapon, bool> talents, Weapon talentToDeactivate){
 			bool isActiveInDictionary;
             talents.TryGetValue(talentToDeactivate, out isActiveInDictionary);
             if (isActiveInDictionary == true) {

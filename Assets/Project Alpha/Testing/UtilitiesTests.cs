@@ -2,12 +2,13 @@
 using NUnit.Framework;
 using MoreMountains.CorgiEngine;
 
+[TestFixture]
 public class UtilitiesTest
 {
-
+	[TestFixture]
 	public class DecimalPlaceTest {
 
-		[Test]
+		[Test, Category("DecimalPlaceTest")]
 		public void testSingleDecimalPlace()
 		{
 			Utilities util = new Utilities();
@@ -16,7 +17,7 @@ public class UtilitiesTest
 			Assert.AreEqual(actual, expected, "The Get After Decimal Point Method with an input of 1.2 expected :  " + expected +  ", but the actual output was  : " + actual);
 		}
 
-		[Test]
+		[Test, Category("DecimalPlaceTest")]
 		public void testTwoDecimalPlaces()
 		{
 			Utilities util = new Utilities();
@@ -25,9 +26,8 @@ public class UtilitiesTest
 			Assert.AreEqual(actual, expected, "The Get After Decimal Point Method with an input of 1.19 expected : " + expected +  ", but the actual output was  : " + actual);
 		}
 
-		[Test]
-		public void testThreeDecimalPlaces()
-		{
+		[Test, Category("DecimalPlaceTest")]
+        public void testThreeDecimalPlaces() {
 			Utilities util = new Utilities();
 			string actual = util.getAfterDecimalPoint("1.234");
 			string expected = "234";
@@ -35,7 +35,7 @@ public class UtilitiesTest
 		}
 
 
-		[Test]
+		[Test, Category("DecimalPlaceTest")]
 		public void testWholeNumber()
 		{
 			Utilities util = new Utilities();
@@ -45,9 +45,11 @@ public class UtilitiesTest
 		}
 	}
 
+
+	[TestFixture]
 	public class WholeNumberTest {
 
-		[Test]
+		[Test, Category("WholeNumberTest")]
 		public void testSingleDecimalPlace()
 		{
 			Utilities util = new Utilities();
@@ -56,7 +58,7 @@ public class UtilitiesTest
 			Assert.AreEqual(actual, expected, "The Test Single Decimal Place Method with an input of 1.2 expected : " + expected +  ", but the actual output was  : " + actual);
 		}
 
-		[Test]
+		[Test, Category("WholeNumberTest")]
 		public void testTwoDecimalPlaces()
 		{
 			Utilities util = new Utilities();
@@ -66,7 +68,7 @@ public class UtilitiesTest
 		}
 
 
-		[Test]
+		[Test, Category("WholeNumberTest")]
 		public void testThreeDecimalPlaces()
 		{
 			Utilities util = new Utilities();
@@ -75,7 +77,7 @@ public class UtilitiesTest
 			Assert.AreEqual(actual, expected, "The Test Single Decimal Place Method with an input of 1.987 expected : " + expected +  ", but the actual output was  : " + actual);
 		}
 
-		[Test]
+		[Test, Category("WholeNumberTest")]
 		public void testOne()
 		{
 			Utilities util = new Utilities();
@@ -85,7 +87,7 @@ public class UtilitiesTest
 		}
 
 
-		[Test]
+		[Test, Category("WholeNumberTest")]
 		public void testTwelve()
 		{
 			Utilities util = new Utilities();
@@ -94,7 +96,7 @@ public class UtilitiesTest
 			Assert.AreEqual(actual, expected, "The Test Single Decimal Place Method with an input of 12 expected : " + expected +  ", but the actual output was  : " + actual);
 		}
 
-		[Test]
+		[Test, Category("WholeNumberTest")]
 		public void testNineHundredAndThirtySeven()
 		{
 			Utilities util = new Utilities();
@@ -103,7 +105,7 @@ public class UtilitiesTest
 			Assert.AreEqual(actual, expected, "The Test Single Decimal Place Method with an input of 937 expected : " + expected +  ", but the actual output was  : " + actual);
 		}
 
-		[Test]
+		[Test, Category("WholeNumberTest")]
 		public void testZero()
 		{
 			Utilities util = new Utilities();
@@ -112,6 +114,4 @@ public class UtilitiesTest
 			Assert.AreEqual(actual, expected, "The Test Single Decimal Place Method with an input of 0 expected : " + expected + ", but the actual output was  : " + actual);
 		}
 	}
-
-
 }
