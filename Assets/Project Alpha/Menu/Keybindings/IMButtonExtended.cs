@@ -19,15 +19,22 @@ namespace MoreMountains.CorgiEngine
 
         public void changeButtonID(string buttonID)
         {
-            string playerID = getPlayerID(ButtonID);
-            ButtonID = playerID + "_" + buttonID;
-
-
-        }
+        
+        try {
+        string playerID = getPlayerID(ButtonID);
+        ButtonID = playerID + "_" + buttonID;
+            }
+        catch (System.NullReferenceException playerIDEx) {
+        
+        Debug.Log("Null buttonID passed");
+            }
+         }
+        
 
 
         public string getPlayerID(string ButtonID)
         {
+        i
             if (ButtonID.Equals("_"))
             {
                 return "";
