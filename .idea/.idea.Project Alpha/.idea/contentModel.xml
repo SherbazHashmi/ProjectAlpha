@@ -635,6 +635,9 @@
                 <e p="DifficultyBackgroundChange.cs" t="Include" />
               </e>
             </e>
+            <e p="Keybindings" t="Include">
+              <e p="IMButtonExtended.cs" t="Include" />
+            </e>
             <e p="Main Menu" t="Include">
               <e p="Scripts" t="Include">
                 <e p="MenuBehaviour.cs" t="Include" />
@@ -669,11 +672,8 @@
       <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
-      <e p="packages.config" t="Include" />
       <e p="Project Alpha.sln" t="IncludeFlat" />
-      <e p="Temp" t="ExcludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-      </e>
+      <e p="Temp/bin" t="ExcludeRecursive" />
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2017.2/resharper-host/local/Transient/ReSharperHost/v10/SolutionCaches/_Project Alpha.-1893604161.00" t="ExcludeRecursive" />
   </component>
