@@ -14,8 +14,6 @@ namespace MoreMountains.CorgiEngine
         }
         
         
-        
-
 
         public void changeButtonID(string buttonID)
         {

@@ -67,7 +67,6 @@ public class UtilitiesTest
 			Assert.AreEqual(actual, expected, "The Test Single Decimal Place Method with an input of 1.45 expected : " + expected +  ", but the actual output was  : " + actual);
 		}
 
-
 		[Test, Category("WholeNumberTest")]
 		public void testThreeDecimalPlaces()
 		{
@@ -85,7 +84,6 @@ public class UtilitiesTest
 			bool expected = true;
 			Assert.AreEqual(actual, expected, "The Test Single Decimal Place Method with an input of 1 expected : " + expected +  ", but the actual output was  : " + actual);
 		}
-
 
 		[Test, Category("WholeNumberTest")]
 		public void testTwelve()

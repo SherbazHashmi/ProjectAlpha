@@ -1,0 +1,1268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9dd4b885-968e-4880-806a-e0a0cb9fae05" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Project Alpha/Menu/Options/Prefabs.meta" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.Project Alpha/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.Project Alpha/.idea/contentModel.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Project Alpha/Menu/Keybindings/IMButtonExtended.cs" afterPath="$PROJECT_DIR$/Assets/Project Alpha/Menu/Keybindings/IMButtonExtended.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Project Alpha/Testing/UtilitiesTests.cs" afterPath="$PROJECT_DIR$/Assets/Project Alpha/Testing/UtilitiesTests.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages.config" afterPath="$PROJECT_DIR$/packages.config" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="TargetInvocationException.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BF8183A4-5D58-47D8-85EE-DFFD83533A7B/cb/d9dca27a/TargetInvocationException.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MMControlsTestInputManager.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/CorgiEngine/MMTools/MMControls/MMControlsTestInputManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+              <folding>
+                <marker date="1507124641000" expanded="true" signature="6:71" ph="..." />
+                <marker date="1507124641000" expanded="true" signature="107:219" ph="/// This persistent singleton handles the inputs and sends commands to the player ... " />
+                <marker date="1507124641000" expanded="true" signature="276:2968" ph="{...}" />
+                <marker date="1507124641000" expanded="true" signature="407:453" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InputManager.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Managers/InputManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1875">
+              <caret line="129" column="77" lean-forward="false" selection-start-line="129" selection-start-column="73" selection-end-line="129" selection-end-column="77" />
+              <folding>
+                <marker date="1507124970000" expanded="false" signature="6:131" ph="..." />
+                <marker date="1507124970000" expanded="true" signature="173:607" ph="/// This persistent singleton handles the inputs and sends commands to the player. ... " />
+                <marker date="1507124970000" expanded="true" signature="719:15076" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="4729:4846" ph="/// On Start we look for what mode to use, and initialize our axis and buttons ... " />
+                <marker date="1507124970000" expanded="true" signature="4882:4964" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="4968:5119" ph="/// Turns mobile controls on or off depending on what's been defined in the inspector, and what target device we' ... " />
+                <marker date="1507124970000" expanded="true" signature="5168:5940" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="5206:5936" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="5316:5474" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="5518:5624" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="5669:5766" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="5802:5931" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="5944:6071" ph="/// Initializes the buttons. If you want to add more buttons, make sure to register them here. ... " />
+                <marker date="1507124970000" expanded="true" signature="6116:7221" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="7225:7291" ph="/// Initializes the axis strings. ... " />
+                <marker date="1507124970000" expanded="true" signature="7333:7588" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="7592:7672" ph="/// On LateUpdate, we process our button states ... " />
+                <marker date="1507124970000" expanded="true" signature="7710:7744" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="7751:7880" ph="/// At update, we check the various commands and update our values and states accordingly. ... " />
+                <marker date="1507124970000" expanded="true" signature="7917:8059" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="7941:8046" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="8063:8193" ph="/// If we're not on mobile, watches for input changes, and updates our buttons states accordingly ... " />
+                <marker date="1507124970000" expanded="true" signature="8236:8575" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="8290:8571" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="8337:8386" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="8432:8478" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="8522:8566" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="8579:8705" ph="/// Called at LateUpdate(), this method processes the button states of all registered buttons ... " />
+                <marker date="1507124970000" expanded="true" signature="8749:9236" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="8926:9232" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="9001:9084" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="9153:9226" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="9240:9354" ph="/// Called every frame, if not on mobile, gets primary movement values from input ... " />
+                <marker date="1507124970000" expanded="true" signature="9390:9721" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="9412:9717" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="9441:9569" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="9578:9712" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="9725:9841" ph="/// Called every frame, if not on mobile, gets secondary movement values from input ... " />
+                <marker date="1507124970000" expanded="true" signature="9886:10261" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="9908:10257" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="9937:10087" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="10096:10252" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="10265:10373" ph="/// Called every frame, if not on mobile, gets shoot axis values from input ... " />
+                <marker date="1507124970000" expanded="true" signature="10413:10531" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="10435:10527" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="10535:10691" ph="/// If you're using a touch joystick, bind your main joystick to this method ... " />
+                <marker date="1507124970000" expanded="true" signature="10743:10853" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="10764:10849" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="10857:11018" ph="/// If you're using a touch joystick, bind your secondary joystick to this method ... " />
+                <marker date="1507124970000" expanded="true" signature="11079:11193" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="11100:11189" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="11197:11337" ph="/// If you're using touch arrows, bind your left/right arrows to this method ... " />
+                <marker date="1507124970000" expanded="true" signature="11404:11481" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="11425:11477" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="11485:11632" ph="/// If you're using touch arrows, bind your secondary down/up arrows to this method ... " />
+                <marker date="1507124970000" expanded="true" signature="11695:11770" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="11716:11766" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="11774:11924" ph="/// If you're using touch arrows, bind your secondary left/right arrows to this method ... " />
+                <marker date="1507124970000" expanded="true" signature="12000:12079" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="12021:12075" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="12083:12220" ph="/// If you're using touch arrows, bind your down/up arrows to this method ... " />
+                <marker date="1507124970000" expanded="true" signature="12292:12369" ph="{...}" />
+                <marker date="1507124970000" expanded="true" signature="12313:12365" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InputBindings.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Menu/Options/Scripts/InputBindings.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1050">
+              <caret line="73" column="49" lean-forward="false" selection-start-line="73" selection-start-column="49" selection-end-line="73" selection-end-column="49" />
+              <folding>
+                <marker date="1513826363385" expanded="false" signature="6:100" ph="..." />
+                <marker date="1513826363385" expanded="true" signature="144:3725" ph="{...}" />
+                <marker date="1513826363385" expanded="true" signature="689:2922" ph="{...}" />
+                <marker date="1513826363385" expanded="true" signature="2948:3338" ph="{...}" />
+                <marker date="1513826363385" expanded="true" signature="2986:3332" ph="{...}" />
+                <marker date="1513826363385" expanded="true" signature="3059:3322" ph="{...}" />
+                <marker date="1513826363385" expanded="true" signature="3365:3405" ph="{...}" />
+                <marker date="1513826363385" expanded="true" signature="3452:3535" ph="{...}" />
+                <marker date="1513826363385" expanded="true" signature="3563:3723" ph="{...}" />
+                <marker date="1513826363385" expanded="true" signature="3603:3689" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnergyEvent.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Common/Scripts/Resource Systems/Energy/EnergyEvent.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1513509009649" expanded="true" signature="35:637" ph="{...}" />
+                <marker date="1513509009649" expanded="true" signature="42:109" ph="/// The Possible Energy Events ... " />
+                <marker date="1513509009649" expanded="true" signature="162:225" ph="/// Energy Event Structure ... " />
+                <marker date="1513509009649" expanded="true" signature="256:635" ph="{...}" />
+                <marker date="1513509009649" expanded="true" signature="490:629" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnergyManager.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Common/Scripts/Resource Systems/Energy/EnergyManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding>
+                <marker date="1513557048644" expanded="false" signature="6:45" ph="..." />
+                <marker date="1513557048644" expanded="true" signature="82:1522" ph="{...}" />
+                <marker date="1513557048644" expanded="true" signature="132:1520" ph="{...}" />
+                <marker date="1513557048644" expanded="true" signature="390:1145" ph="{...}" />
+                <marker date="1513557048644" expanded="true" signature="416:978" ph="{...}" />
+                <marker date="1513557048644" expanded="true" signature="447:506" ph="/* Finding Object Called GameManager ... */" />
+                <marker date="1513557048644" expanded="true" signature="595:785" ph="{...}" />
+                <marker date="1513557048644" expanded="true" signature="859:963" ph="{...}" />
+                <marker date="1513557048644" expanded="true" signature="1042:1134" ph="{...}" />
+                <marker date="1513557048644" expanded="true" signature="1168:1512" ph="{...}" />
+                <marker date="1513557048644" expanded="true" signature="1360:1502" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TalentTests.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Testing/TalentTests.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+              <folding>
+                <marker date="1513826334652" expanded="false" signature="6:108" ph="..." />
+                <marker date="1513826334652" expanded="true" signature="153:390" ph="{...}" />
+                <marker date="1513826334652" expanded="true" signature="177:388" ph="{...}" />
+                <marker date="1513826334652" expanded="true" signature="241:383" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UtilitiesTests.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Testing/UtilitiesTests.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <marker date="1513828785041" expanded="false" signature="6:74" ph="..." />
+                <marker date="1513828785041" expanded="true" signature="116:4168" ph="{...}" />
+                <marker date="1513828785041" expanded="true" signature="165:1646" ph="{...}" />
+                <marker date="1513828785041" expanded="true" signature="245:536" ph="{...}" />
+                <marker date="1513828785041" expanded="true" signature="613:906" ph="{...}" />
+                <marker date="1513828785041" expanded="true" signature="992:1285" ph="{...}" />
+                <marker date="1513828785041" expanded="true" signature="1358:1643" ph="{...}" />
+                <marker date="1513828785041" expanded="true" signature="1694:4166" ph="{...}" />
+                <marker date="1513828785041" expanded="true" signature="1773:2054" ph="{...}" />
+                <marker date="1513828785041" expanded="true" signature="2130:2413" ph="{...}" />
+                <marker date="1513828785041" expanded="true" signature="2491:2776" ph="{...}" />
+                <marker date="1513828785041" expanded="true" signature="2839:3115" ph="{...}" />
+                <marker date="1513828785041" expanded="true" signature="3181:3459" ph="{...}" />
+                <marker date="1513828785041" expanded="true" signature="3544:3824" ph="{...}" />
+                <marker date="1513828785041" expanded="true" signature="3888:4163" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MMInput.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/CorgiEngine/MMTools/MMHelpers/MMInput.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1005">
+              <caret line="68" column="57" lean-forward="false" selection-start-line="68" selection-start-column="57" selection-end-line="68" selection-end-column="57" />
+              <folding>
+                <marker date="1507124686000" expanded="false" signature="6:44" ph="..." />
+                <marker date="1507124686000" expanded="true" signature="75:2707" ph="{...}" />
+                <marker date="1507124686000" expanded="true" signature="80:202" ph="/// Various static methods used throughout the Infinite Runner Engine and the Corgi Engine. ... " />
+                <marker date="1507124686000" expanded="true" signature="242:2703" ph="{...}" />
+                <marker date="1507124686000" expanded="true" signature="248:350" ph="/// All possible states for a button. Can be used in a state machine. ... " />
+                <marker date="1507124686000" expanded="true" signature="426:907" ph="/// Takes an axis and returns a ButtonState depending on whether the axis is pressed or not (useful for xbox trig ... " />
+                <marker date="1507124686000" expanded="true" signature="1018:1520" ph="{...}" />
+                <marker date="1507124686000" expanded="true" signature="1135:1309" ph="{...}" />
+                <marker date="1507124686000" expanded="true" signature="1192:1246" ph="{...}" />
+                <marker date="1507124686000" expanded="true" signature="1255:1304" ph="{...}" />
+                <marker date="1507124686000" expanded="true" signature="1317:1493" ph="{...}" />
+                <marker date="1507124686000" expanded="true" signature="1364:1420" ph="{...}" />
+                <marker date="1507124686000" expanded="true" signature="1429:1488" ph="{...}" />
+                <marker date="1507124686000" expanded="true" signature="1524:1582" ph="/// IM button, short for  ... " />
+                <marker date="1507124686000" expanded="true" signature="1606:2700" ph="{...}" />
+                <marker date="1507124686000" expanded="true" signature="2189:2457" ph="{...}" />
+                <marker date="1507124686000" expanded="true" signature="2501:2536" ph="{...}" />
+                <marker date="1507124686000" expanded="true" signature="2583:2621" ph="{...}" />
+                <marker date="1507124686000" expanded="true" signature="2663:2696" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/MMTools/MMControls/MMTouchJoystick.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Managers/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Project Alpha/Common/Scripts/Resource Systems/Energy/EnergyManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1C906369-94AB-4A5D-8811-47E9993D6792/47/39a6f1ad/FrameworkController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Project Alpha/Common/Scripts/Resource Systems/Energy/EnergyEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/MMTools/MMControls/MMTouchControls.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Project Alpha/Common/Scripts/Currency/Chip.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Project Alpha/Menu/Start Screen/Scripts/SimpleMenuObjectHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Project Alpha/Testing/TalentTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Project Alpha/Common/Scripts/Currency/CurrencyIconLocation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/68038E69-8340-449B-8C26-5DC9F5B644DF/39/25c3edd7/Input.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Project Alpha/Common/Scripts/Utilities/Utils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/MMTools/MMControls/MMControlsTestInputManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Project Alpha/Menu/Keybindings/IMButtonExtended.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/CorgiEngine/MMTools/MMHelpers/MMInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Project Alpha/Testing/UtilitiesTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BF8183A4-5D58-47D8-85EE-DFFD83533A7B/cb/d9dca27a/TargetInvocationException.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Project Alpha/Menu/Options/Scripts/InputBindings.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/NCrunchAdapterForUnity-master/NCrunchAdapterForUnity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Project Alpha/Testing/TalentTests.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Managers/InputManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Project Alpha/Menu/Keybindings/IMButtonExtended.cs" />
+        <option value="$PROJECT_DIR$/Assets/Project Alpha/Testing/UtilitiesTests.cs" />
+        <option value="$PROJECT_DIR$/Assets/CorgiEngine/MMTools/MMHelpers/MMInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Project Alpha/IMButtonExtendedII.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="1027" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Project Alpha (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="inputbind&#9;FILE&#9;file:///Users/sherbaz/Development/Unity/Project Alpha/Assets/Project Alpha/Menu/Options/Scripts/InputBindings.cs&#10;exten&#9;FILE&#9;file:///Users/sherbaz/Development/Unity/Project Alpha/Assets/Project Alpha/Menu/Keybindings/IMButtonExtended.cs&#10;IMbut&#9;FILE&#9;file:///Users/sherbaz/Development/Unity/Project Alpha/Assets/Project Alpha/Menu/Keybindings/IMButtonExtended.cs" />
+    <property name="settings.editor.selected.configurable" value="RiderUnitTestingPageId" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Unity Debug.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Unity Debug.Attach to Unity Editor" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9dd4b885-968e-4880-806a-e0a0cb9fae05" name="Default" comment="" />
+      <created>1513991061202</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1513991061202</updated>
+      <workItem from="1513991065609" duration="129000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4477000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31518325" sideWeight="0.50238097" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32296136" sideWeight="0.49761903" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17704518" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17338218" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914164" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1C906369-94AB-4A5D-8811-47E9993D6792/47/39a6f1ad/FrameworkController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5385">
+          <caret line="359" column="7" lean-forward="false" selection-start-line="359" selection-start-column="7" selection-end-line="359" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/68038E69-8340-449B-8C26-5DC9F5B644DF/39/25c3edd7/Input.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="66" column="47" lean-forward="false" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/CorgiEngine/MMTools/MMHelpers/MMInput.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="58" column="9" lean-forward="false" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+          <folding>
+            <marker date="1507124686000" expanded="false" signature="6:44" ph="..." />
+            <marker date="1507124686000" expanded="true" signature="75:2707" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="80:202" ph="/// Various static methods used throughout the Infinite Runner Engine and the Corgi Engine. ... " />
+            <marker date="1507124686000" expanded="true" signature="242:2703" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="248:350" ph="/// All possible states for a button. Can be used in a state machine. ... " />
+            <marker date="1507124686000" expanded="true" signature="426:907" ph="/// Takes an axis and returns a ButtonState depending on whether the axis is pressed or not (useful for xbox trig ... " />
+            <marker date="1507124686000" expanded="true" signature="1018:1520" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1135:1309" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1192:1246" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1255:1304" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1317:1493" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1364:1420" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1429:1488" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1524:1582" ph="/// IM button, short for  ... " />
+            <marker date="1507124686000" expanded="true" signature="1606:2700" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="2189:2457" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="2501:2536" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="2583:2621" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="2663:2696" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Managers/InputManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2640">
+          <caret line="180" column="49" lean-forward="false" selection-start-line="180" selection-start-column="49" selection-end-line="180" selection-end-column="49" />
+          <folding>
+            <marker date="1507124970000" expanded="false" signature="6:131" ph="..." />
+            <marker date="1507124970000" expanded="true" signature="173:607" ph="/// This persistent singleton handles the inputs and sends commands to the player. ... " />
+            <marker date="1507124970000" expanded="true" signature="719:15076" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="4729:4846" ph="/// On Start we look for what mode to use, and initialize our axis and buttons ... " />
+            <marker date="1507124970000" expanded="true" signature="4882:4964" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="4968:5119" ph="/// Turns mobile controls on or off depending on what's been defined in the inspector, and what target device we' ... " />
+            <marker date="1507124970000" expanded="true" signature="5168:5940" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5206:5936" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5316:5474" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5518:5624" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5669:5766" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5802:5931" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5944:6071" ph="/// Initializes the buttons. If you want to add more buttons, make sure to register them here. ... " />
+            <marker date="1507124970000" expanded="true" signature="6116:7221" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="7225:7291" ph="/// Initializes the axis strings. ... " />
+            <marker date="1507124970000" expanded="true" signature="7333:7588" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="7592:7672" ph="/// On LateUpdate, we process our button states ... " />
+            <marker date="1507124970000" expanded="true" signature="7710:7744" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="7751:7880" ph="/// At update, we check the various commands and update our values and states accordingly. ... " />
+            <marker date="1507124970000" expanded="true" signature="7917:8059" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="7941:8046" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8063:8193" ph="/// If we're not on mobile, watches for input changes, and updates our buttons states accordingly ... " />
+            <marker date="1507124970000" expanded="true" signature="8236:8575" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8290:8571" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8337:8386" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8432:8478" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8522:8566" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8579:8705" ph="/// Called at LateUpdate(), this method processes the button states of all registered buttons ... " />
+            <marker date="1507124970000" expanded="true" signature="8749:9236" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8926:9232" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9001:9084" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9153:9226" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9240:9354" ph="/// Called every frame, if not on mobile, gets primary movement values from input ... " />
+            <marker date="1507124970000" expanded="true" signature="9390:9721" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9412:9717" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9441:9569" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9578:9712" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9725:9841" ph="/// Called every frame, if not on mobile, gets secondary movement values from input ... " />
+            <marker date="1507124970000" expanded="true" signature="9886:10261" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9908:10257" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9937:10087" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10096:10252" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10265:10373" ph="/// Called every frame, if not on mobile, gets shoot axis values from input ... " />
+            <marker date="1507124970000" expanded="true" signature="10413:10531" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10435:10527" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10535:10691" ph="/// If you're using a touch joystick, bind your main joystick to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="10743:10853" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10764:10849" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10857:11018" ph="/// If you're using a touch joystick, bind your secondary joystick to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="11079:11193" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11100:11189" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11197:11337" ph="/// If you're using touch arrows, bind your left/right arrows to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="11404:11481" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11425:11477" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11485:11632" ph="/// If you're using touch arrows, bind your secondary down/up arrows to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="11695:11770" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11716:11766" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11774:11924" ph="/// If you're using touch arrows, bind your secondary left/right arrows to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="12000:12079" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="12021:12075" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="12083:12220" ph="/// If you're using touch arrows, bind your down/up arrows to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="12292:12369" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="12313:12365" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BF8183A4-5D58-47D8-85EE-DFFD83533A7B/cb/d9dca27a/TargetInvocationException.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/CorgiEngine/MMTools/MMControls/MMControlsTestInputManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <folding>
+            <marker date="1507124641000" expanded="true" signature="6:71" ph="..." />
+            <marker date="1507124641000" expanded="true" signature="107:219" ph="/// This persistent singleton handles the inputs and sends commands to the player ... " />
+            <marker date="1507124641000" expanded="true" signature="276:2968" ph="{...}" />
+            <marker date="1507124641000" expanded="true" signature="407:453" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1C906369-94AB-4A5D-8811-47E9993D6792/47/39a6f1ad/FrameworkController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5385">
+          <caret line="359" column="7" lean-forward="false" selection-start-line="359" selection-start-column="7" selection-end-line="359" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Managers/InputManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2640">
+          <caret line="180" column="49" lean-forward="false" selection-start-line="180" selection-start-column="49" selection-end-line="180" selection-end-column="49" />
+          <folding>
+            <marker date="1507124970000" expanded="false" signature="6:131" ph="..." />
+            <marker date="1507124970000" expanded="true" signature="173:607" ph="/// This persistent singleton handles the inputs and sends commands to the player. ... " />
+            <marker date="1507124970000" expanded="true" signature="719:15076" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="4729:4846" ph="/// On Start we look for what mode to use, and initialize our axis and buttons ... " />
+            <marker date="1507124970000" expanded="true" signature="4882:4964" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="4968:5119" ph="/// Turns mobile controls on or off depending on what's been defined in the inspector, and what target device we' ... " />
+            <marker date="1507124970000" expanded="true" signature="5168:5940" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5206:5936" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5316:5474" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5518:5624" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5669:5766" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5802:5931" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5944:6071" ph="/// Initializes the buttons. If you want to add more buttons, make sure to register them here. ... " />
+            <marker date="1507124970000" expanded="true" signature="6116:7221" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="7225:7291" ph="/// Initializes the axis strings. ... " />
+            <marker date="1507124970000" expanded="true" signature="7333:7588" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="7592:7672" ph="/// On LateUpdate, we process our button states ... " />
+            <marker date="1507124970000" expanded="true" signature="7710:7744" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="7751:7880" ph="/// At update, we check the various commands and update our values and states accordingly. ... " />
+            <marker date="1507124970000" expanded="true" signature="7917:8059" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="7941:8046" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8063:8193" ph="/// If we're not on mobile, watches for input changes, and updates our buttons states accordingly ... " />
+            <marker date="1507124970000" expanded="true" signature="8236:8575" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8290:8571" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8337:8386" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8432:8478" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8522:8566" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8579:8705" ph="/// Called at LateUpdate(), this method processes the button states of all registered buttons ... " />
+            <marker date="1507124970000" expanded="true" signature="8749:9236" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8926:9232" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9001:9084" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9153:9226" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9240:9354" ph="/// Called every frame, if not on mobile, gets primary movement values from input ... " />
+            <marker date="1507124970000" expanded="true" signature="9390:9721" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9412:9717" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9441:9569" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9578:9712" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9725:9841" ph="/// Called every frame, if not on mobile, gets secondary movement values from input ... " />
+            <marker date="1507124970000" expanded="true" signature="9886:10261" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9908:10257" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9937:10087" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10096:10252" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10265:10373" ph="/// Called every frame, if not on mobile, gets shoot axis values from input ... " />
+            <marker date="1507124970000" expanded="true" signature="10413:10531" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10435:10527" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10535:10691" ph="/// If you're using a touch joystick, bind your main joystick to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="10743:10853" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10764:10849" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10857:11018" ph="/// If you're using a touch joystick, bind your secondary joystick to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="11079:11193" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11100:11189" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11197:11337" ph="/// If you're using touch arrows, bind your left/right arrows to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="11404:11481" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11425:11477" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11485:11632" ph="/// If you're using touch arrows, bind your secondary down/up arrows to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="11695:11770" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11716:11766" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11774:11924" ph="/// If you're using touch arrows, bind your secondary left/right arrows to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="12000:12079" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="12021:12075" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="12083:12220" ph="/// If you're using touch arrows, bind your down/up arrows to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="12292:12369" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="12313:12365" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/CorgiEngine/MMTools/MMHelpers/MMInput.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="68" column="57" lean-forward="false" selection-start-line="68" selection-start-column="57" selection-end-line="68" selection-end-column="57" />
+          <folding>
+            <marker date="1507124686000" expanded="false" signature="6:44" ph="..." />
+            <marker date="1507124686000" expanded="true" signature="75:2707" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="80:202" ph="/// Various static methods used throughout the Infinite Runner Engine and the Corgi Engine. ... " />
+            <marker date="1507124686000" expanded="true" signature="242:2703" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="248:350" ph="/// All possible states for a button. Can be used in a state machine. ... " />
+            <marker date="1507124686000" expanded="true" signature="426:907" ph="/// Takes an axis and returns a ButtonState depending on whether the axis is pressed or not (useful for xbox trig ... " />
+            <marker date="1507124686000" expanded="true" signature="1018:1520" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1135:1309" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1192:1246" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1255:1304" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1317:1493" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1364:1420" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1429:1488" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1524:1582" ph="/// IM button, short for  ... " />
+            <marker date="1507124686000" expanded="true" signature="1606:2700" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="2189:2457" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="2501:2536" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="2583:2621" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="2663:2696" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/68038E69-8340-449B-8C26-5DC9F5B644DF/39/25c3edd7/Input.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="66" column="47" lean-forward="false" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BF8183A4-5D58-47D8-85EE-DFFD83533A7B/cb/d9dca27a/TargetInvocationException.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/CorgiEngine/MMTools/MMControls/MMControlsTestInputManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <folding>
+            <marker date="1507124641000" expanded="true" signature="6:71" ph="..." />
+            <marker date="1507124641000" expanded="true" signature="107:219" ph="/// This persistent singleton handles the inputs and sends commands to the player ... " />
+            <marker date="1507124641000" expanded="true" signature="276:2968" ph="{...}" />
+            <marker date="1507124641000" expanded="true" signature="407:453" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1C906369-94AB-4A5D-8811-47E9993D6792/47/39a6f1ad/FrameworkController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5385">
+          <caret line="359" column="7" lean-forward="false" selection-start-line="359" selection-start-column="7" selection-end-line="359" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Managers/InputManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2640">
+          <caret line="180" column="49" lean-forward="false" selection-start-line="180" selection-start-column="49" selection-end-line="180" selection-end-column="49" />
+          <folding>
+            <marker date="1507124970000" expanded="false" signature="6:131" ph="..." />
+            <marker date="1507124970000" expanded="true" signature="173:607" ph="/// This persistent singleton handles the inputs and sends commands to the player. ... " />
+            <marker date="1507124970000" expanded="true" signature="719:15076" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="4729:4846" ph="/// On Start we look for what mode to use, and initialize our axis and buttons ... " />
+            <marker date="1507124970000" expanded="true" signature="4882:4964" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="4968:5119" ph="/// Turns mobile controls on or off depending on what's been defined in the inspector, and what target device we' ... " />
+            <marker date="1507124970000" expanded="true" signature="5168:5940" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5206:5936" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5316:5474" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5518:5624" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5669:5766" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5802:5931" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5944:6071" ph="/// Initializes the buttons. If you want to add more buttons, make sure to register them here. ... " />
+            <marker date="1507124970000" expanded="true" signature="6116:7221" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="7225:7291" ph="/// Initializes the axis strings. ... " />
+            <marker date="1507124970000" expanded="true" signature="7333:7588" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="7592:7672" ph="/// On LateUpdate, we process our button states ... " />
+            <marker date="1507124970000" expanded="true" signature="7710:7744" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="7751:7880" ph="/// At update, we check the various commands and update our values and states accordingly. ... " />
+            <marker date="1507124970000" expanded="true" signature="7917:8059" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="7941:8046" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8063:8193" ph="/// If we're not on mobile, watches for input changes, and updates our buttons states accordingly ... " />
+            <marker date="1507124970000" expanded="true" signature="8236:8575" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8290:8571" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8337:8386" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8432:8478" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8522:8566" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8579:8705" ph="/// Called at LateUpdate(), this method processes the button states of all registered buttons ... " />
+            <marker date="1507124970000" expanded="true" signature="8749:9236" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8926:9232" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9001:9084" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9153:9226" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9240:9354" ph="/// Called every frame, if not on mobile, gets primary movement values from input ... " />
+            <marker date="1507124970000" expanded="true" signature="9390:9721" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9412:9717" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9441:9569" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9578:9712" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9725:9841" ph="/// Called every frame, if not on mobile, gets secondary movement values from input ... " />
+            <marker date="1507124970000" expanded="true" signature="9886:10261" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9908:10257" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9937:10087" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10096:10252" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10265:10373" ph="/// Called every frame, if not on mobile, gets shoot axis values from input ... " />
+            <marker date="1507124970000" expanded="true" signature="10413:10531" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10435:10527" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10535:10691" ph="/// If you're using a touch joystick, bind your main joystick to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="10743:10853" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10764:10849" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10857:11018" ph="/// If you're using a touch joystick, bind your secondary joystick to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="11079:11193" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11100:11189" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11197:11337" ph="/// If you're using touch arrows, bind your left/right arrows to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="11404:11481" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11425:11477" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11485:11632" ph="/// If you're using touch arrows, bind your secondary down/up arrows to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="11695:11770" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11716:11766" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11774:11924" ph="/// If you're using touch arrows, bind your secondary left/right arrows to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="12000:12079" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="12021:12075" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="12083:12220" ph="/// If you're using touch arrows, bind your down/up arrows to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="12292:12369" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="12313:12365" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/68038E69-8340-449B-8C26-5DC9F5B644DF/39/25c3edd7/Input.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="66" column="47" lean-forward="false" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/CorgiEngine/MMTools/MMHelpers/MMInput.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="64" column="24" lean-forward="false" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
+          <folding>
+            <marker date="1507124686000" expanded="false" signature="6:44" ph="..." />
+            <marker date="1507124686000" expanded="true" signature="75:2707" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="80:202" ph="/// Various static methods used throughout the Infinite Runner Engine and the Corgi Engine. ... " />
+            <marker date="1507124686000" expanded="true" signature="242:2703" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="248:350" ph="/// All possible states for a button. Can be used in a state machine. ... " />
+            <marker date="1507124686000" expanded="true" signature="426:907" ph="/// Takes an axis and returns a ButtonState depending on whether the axis is pressed or not (useful for xbox trig ... " />
+            <marker date="1507124686000" expanded="true" signature="1018:1520" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1135:1309" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1192:1246" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1255:1304" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1317:1493" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1364:1420" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1429:1488" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1524:1582" ph="/// IM button, short for  ... " />
+            <marker date="1507124686000" expanded="true" signature="1606:2700" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="2189:2457" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="2501:2536" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="2583:2621" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="2663:2696" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Menu/Keybindings/IMButtonExtended.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Testing/TalentTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Common/Scripts/Currency/CurrencyIconLocation.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Common/Scripts/Currency/Chip.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Testing/UtilitiesTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NCrunchAdapterForUnity-master/NCrunchAdapterForUnity.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Managers/InputManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding>
+            <marker date="1507124970000" expanded="false" signature="6:131" ph="..." />
+            <marker date="1507124970000" expanded="true" signature="173:607" ph="/// This persistent singleton handles the inputs and sends commands to the player. ... " />
+            <marker date="1507124970000" expanded="true" signature="719:15076" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="4729:4846" ph="/// On Start we look for what mode to use, and initialize our axis and buttons ... " />
+            <marker date="1507124970000" expanded="true" signature="4882:4964" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="4968:5119" ph="/// Turns mobile controls on or off depending on what's been defined in the inspector, and what target device we' ... " />
+            <marker date="1507124970000" expanded="true" signature="5168:5940" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5206:5936" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5316:5474" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5518:5624" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5669:5766" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5802:5931" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5944:6071" ph="/// Initializes the buttons. If you want to add more buttons, make sure to register them here. ... " />
+            <marker date="1507124970000" expanded="true" signature="6116:7221" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="7225:7291" ph="/// Initializes the axis strings. ... " />
+            <marker date="1507124970000" expanded="true" signature="7333:7588" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="7592:7672" ph="/// On LateUpdate, we process our button states ... " />
+            <marker date="1507124970000" expanded="true" signature="7710:7744" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="7751:7880" ph="/// At update, we check the various commands and update our values and states accordingly. ... " />
+            <marker date="1507124970000" expanded="true" signature="7917:8059" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="7941:8046" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8063:8193" ph="/// If we're not on mobile, watches for input changes, and updates our buttons states accordingly ... " />
+            <marker date="1507124970000" expanded="true" signature="8236:8575" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8290:8571" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8337:8386" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8432:8478" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8522:8566" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8579:8705" ph="/// Called at LateUpdate(), this method processes the button states of all registered buttons ... " />
+            <marker date="1507124970000" expanded="true" signature="8749:9236" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8926:9232" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9001:9084" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9153:9226" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9240:9354" ph="/// Called every frame, if not on mobile, gets primary movement values from input ... " />
+            <marker date="1507124970000" expanded="true" signature="9390:9721" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9412:9717" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9441:9569" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9578:9712" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9725:9841" ph="/// Called every frame, if not on mobile, gets secondary movement values from input ... " />
+            <marker date="1507124970000" expanded="true" signature="9886:10261" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9908:10257" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9937:10087" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10096:10252" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10265:10373" ph="/// Called every frame, if not on mobile, gets shoot axis values from input ... " />
+            <marker date="1507124970000" expanded="true" signature="10413:10531" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10435:10527" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10535:10691" ph="/// If you're using a touch joystick, bind your main joystick to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="10743:10853" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10764:10849" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10857:11018" ph="/// If you're using a touch joystick, bind your secondary joystick to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="11079:11193" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11100:11189" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11197:11337" ph="/// If you're using touch arrows, bind your left/right arrows to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="11404:11481" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11425:11477" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11485:11632" ph="/// If you're using touch arrows, bind your secondary down/up arrows to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="11695:11770" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11716:11766" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11774:11924" ph="/// If you're using touch arrows, bind your secondary left/right arrows to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="12000:12079" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="12021:12075" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="12083:12220" ph="/// If you're using touch arrows, bind your down/up arrows to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="12292:12369" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="12313:12365" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BF8183A4-5D58-47D8-85EE-DFFD83533A7B/cb/d9dca27a/TargetInvocationException.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1C906369-94AB-4A5D-8811-47E9993D6792/47/39a6f1ad/FrameworkController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5385">
+          <caret line="359" column="7" lean-forward="false" selection-start-line="359" selection-start-column="7" selection-end-line="359" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Testing/TalentTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Common/Scripts/Currency/CurrencyIconLocation.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Common/Scripts/Currency/Chip.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BF8183A4-5D58-47D8-85EE-DFFD83533A7B/cb/d9dca27a/TargetInvocationException.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1C906369-94AB-4A5D-8811-47E9993D6792/47/39a6f1ad/FrameworkController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5385">
+          <caret line="359" column="7" lean-forward="false" selection-start-line="359" selection-start-column="7" selection-end-line="359" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Testing/UtilitiesTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Common/Scripts/Currency/CurrencyIconLocation.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Common/Scripts/Currency/Chip.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NCrunchAdapterForUnity-master/NCrunchAdapterForUnity.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Menu/Start Screen/Scripts/SimpleMenuObjectHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="55" lean-forward="false" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/CorgiEngine/MMTools/MMControls/MMTouchJoystick.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/CorgiEngine/MMTools/MMControls/MMTouchControls.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/68038E69-8340-449B-8C26-5DC9F5B644DF/39/25c3edd7/Input.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="66" column="47" lean-forward="false" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1C906369-94AB-4A5D-8811-47E9993D6792/47/39a6f1ad/FrameworkController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5385">
+          <caret line="359" column="7" lean-forward="false" selection-start-line="359" selection-start-column="7" selection-end-line="359" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Menu/Keybindings/IMButtonExtended.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/CorgiEngine/MMTools/MMControls/MMControlsTestInputManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <folding>
+            <marker date="1507124641000" expanded="true" signature="6:71" ph="..." />
+            <marker date="1507124641000" expanded="true" signature="107:219" ph="/// This persistent singleton handles the inputs and sends commands to the player ... " />
+            <marker date="1507124641000" expanded="true" signature="276:2968" ph="{...}" />
+            <marker date="1507124641000" expanded="true" signature="407:453" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Menu/Options/Scripts/InputBindings.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="73" column="49" lean-forward="false" selection-start-line="73" selection-start-column="49" selection-end-line="73" selection-end-column="49" />
+          <folding>
+            <marker date="1513826363385" expanded="false" signature="6:100" ph="..." />
+            <marker date="1513826363385" expanded="true" signature="144:3725" ph="{...}" />
+            <marker date="1513826363385" expanded="true" signature="689:2922" ph="{...}" />
+            <marker date="1513826363385" expanded="true" signature="2948:3338" ph="{...}" />
+            <marker date="1513826363385" expanded="true" signature="2986:3332" ph="{...}" />
+            <marker date="1513826363385" expanded="true" signature="3059:3322" ph="{...}" />
+            <marker date="1513826363385" expanded="true" signature="3365:3405" ph="{...}" />
+            <marker date="1513826363385" expanded="true" signature="3452:3535" ph="{...}" />
+            <marker date="1513826363385" expanded="true" signature="3563:3723" ph="{...}" />
+            <marker date="1513826363385" expanded="true" signature="3603:3689" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Common/Scripts/Resource Systems/Energy/EnergyEvent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1513509009649" expanded="true" signature="35:637" ph="{...}" />
+            <marker date="1513509009649" expanded="true" signature="42:109" ph="/// The Possible Energy Events ... " />
+            <marker date="1513509009649" expanded="true" signature="162:225" ph="/// Energy Event Structure ... " />
+            <marker date="1513509009649" expanded="true" signature="256:635" ph="{...}" />
+            <marker date="1513509009649" expanded="true" signature="490:629" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Managers/InputManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1875">
+          <caret line="129" column="77" lean-forward="false" selection-start-line="129" selection-start-column="73" selection-end-line="129" selection-end-column="77" />
+          <folding>
+            <marker date="1507124970000" expanded="false" signature="6:131" ph="..." />
+            <marker date="1507124970000" expanded="true" signature="173:607" ph="/// This persistent singleton handles the inputs and sends commands to the player. ... " />
+            <marker date="1507124970000" expanded="true" signature="719:15076" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="4729:4846" ph="/// On Start we look for what mode to use, and initialize our axis and buttons ... " />
+            <marker date="1507124970000" expanded="true" signature="4882:4964" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="4968:5119" ph="/// Turns mobile controls on or off depending on what's been defined in the inspector, and what target device we' ... " />
+            <marker date="1507124970000" expanded="true" signature="5168:5940" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5206:5936" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5316:5474" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5518:5624" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5669:5766" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5802:5931" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="5944:6071" ph="/// Initializes the buttons. If you want to add more buttons, make sure to register them here. ... " />
+            <marker date="1507124970000" expanded="true" signature="6116:7221" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="7225:7291" ph="/// Initializes the axis strings. ... " />
+            <marker date="1507124970000" expanded="true" signature="7333:7588" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="7592:7672" ph="/// On LateUpdate, we process our button states ... " />
+            <marker date="1507124970000" expanded="true" signature="7710:7744" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="7751:7880" ph="/// At update, we check the various commands and update our values and states accordingly. ... " />
+            <marker date="1507124970000" expanded="true" signature="7917:8059" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="7941:8046" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8063:8193" ph="/// If we're not on mobile, watches for input changes, and updates our buttons states accordingly ... " />
+            <marker date="1507124970000" expanded="true" signature="8236:8575" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8290:8571" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8337:8386" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8432:8478" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8522:8566" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8579:8705" ph="/// Called at LateUpdate(), this method processes the button states of all registered buttons ... " />
+            <marker date="1507124970000" expanded="true" signature="8749:9236" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="8926:9232" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9001:9084" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9153:9226" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9240:9354" ph="/// Called every frame, if not on mobile, gets primary movement values from input ... " />
+            <marker date="1507124970000" expanded="true" signature="9390:9721" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9412:9717" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9441:9569" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9578:9712" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9725:9841" ph="/// Called every frame, if not on mobile, gets secondary movement values from input ... " />
+            <marker date="1507124970000" expanded="true" signature="9886:10261" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9908:10257" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="9937:10087" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10096:10252" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10265:10373" ph="/// Called every frame, if not on mobile, gets shoot axis values from input ... " />
+            <marker date="1507124970000" expanded="true" signature="10413:10531" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10435:10527" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10535:10691" ph="/// If you're using a touch joystick, bind your main joystick to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="10743:10853" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10764:10849" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="10857:11018" ph="/// If you're using a touch joystick, bind your secondary joystick to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="11079:11193" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11100:11189" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11197:11337" ph="/// If you're using touch arrows, bind your left/right arrows to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="11404:11481" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11425:11477" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11485:11632" ph="/// If you're using touch arrows, bind your secondary down/up arrows to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="11695:11770" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11716:11766" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="11774:11924" ph="/// If you're using touch arrows, bind your secondary left/right arrows to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="12000:12079" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="12021:12075" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="12083:12220" ph="/// If you're using touch arrows, bind your down/up arrows to this method ... " />
+            <marker date="1507124970000" expanded="true" signature="12292:12369" ph="{...}" />
+            <marker date="1507124970000" expanded="true" signature="12313:12365" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Common/Scripts/Utilities/Utils.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Common/Scripts/Resource Systems/Energy/EnergyManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <marker date="1513557048644" expanded="false" signature="6:45" ph="..." />
+            <marker date="1513557048644" expanded="true" signature="82:1522" ph="{...}" />
+            <marker date="1513557048644" expanded="true" signature="132:1520" ph="{...}" />
+            <marker date="1513557048644" expanded="true" signature="390:1145" ph="{...}" />
+            <marker date="1513557048644" expanded="true" signature="416:978" ph="{...}" />
+            <marker date="1513557048644" expanded="true" signature="447:506" ph="/* Finding Object Called GameManager ... */" />
+            <marker date="1513557048644" expanded="true" signature="595:785" ph="{...}" />
+            <marker date="1513557048644" expanded="true" signature="859:963" ph="{...}" />
+            <marker date="1513557048644" expanded="true" signature="1042:1134" ph="{...}" />
+            <marker date="1513557048644" expanded="true" signature="1168:1512" ph="{...}" />
+            <marker date="1513557048644" expanded="true" signature="1360:1502" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BF8183A4-5D58-47D8-85EE-DFFD83533A7B/cb/d9dca27a/TargetInvocationException.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Testing/TalentTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+          <folding>
+            <marker date="1513826334652" expanded="false" signature="6:108" ph="..." />
+            <marker date="1513826334652" expanded="true" signature="153:390" ph="{...}" />
+            <marker date="1513826334652" expanded="true" signature="177:388" ph="{...}" />
+            <marker date="1513826334652" expanded="true" signature="241:383" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/IMButtonExtendedII.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/CorgiEngine/MMTools/MMHelpers/MMInput.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="68" column="57" lean-forward="false" selection-start-line="68" selection-start-column="57" selection-end-line="68" selection-end-column="57" />
+          <folding>
+            <marker date="1507124686000" expanded="false" signature="6:44" ph="..." />
+            <marker date="1507124686000" expanded="true" signature="75:2707" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="80:202" ph="/// Various static methods used throughout the Infinite Runner Engine and the Corgi Engine. ... " />
+            <marker date="1507124686000" expanded="true" signature="242:2703" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="248:350" ph="/// All possible states for a button. Can be used in a state machine. ... " />
+            <marker date="1507124686000" expanded="true" signature="426:907" ph="/// Takes an axis and returns a ButtonState depending on whether the axis is pressed or not (useful for xbox trig ... " />
+            <marker date="1507124686000" expanded="true" signature="1018:1520" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1135:1309" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1192:1246" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1255:1304" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1317:1493" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1364:1420" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1429:1488" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="1524:1582" ph="/// IM button, short for  ... " />
+            <marker date="1507124686000" expanded="true" signature="1606:2700" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="2189:2457" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="2501:2536" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="2583:2621" ph="{...}" />
+            <marker date="1507124686000" expanded="true" signature="2663:2696" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Testing/UtilitiesTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <marker date="1513828785041" expanded="false" signature="6:74" ph="..." />
+            <marker date="1513828785041" expanded="true" signature="116:4168" ph="{...}" />
+            <marker date="1513828785041" expanded="true" signature="165:1646" ph="{...}" />
+            <marker date="1513828785041" expanded="true" signature="245:536" ph="{...}" />
+            <marker date="1513828785041" expanded="true" signature="613:906" ph="{...}" />
+            <marker date="1513828785041" expanded="true" signature="992:1285" ph="{...}" />
+            <marker date="1513828785041" expanded="true" signature="1358:1643" ph="{...}" />
+            <marker date="1513828785041" expanded="true" signature="1694:4166" ph="{...}" />
+            <marker date="1513828785041" expanded="true" signature="1773:2054" ph="{...}" />
+            <marker date="1513828785041" expanded="true" signature="2130:2413" ph="{...}" />
+            <marker date="1513828785041" expanded="true" signature="2491:2776" ph="{...}" />
+            <marker date="1513828785041" expanded="true" signature="2839:3115" ph="{...}" />
+            <marker date="1513828785041" expanded="true" signature="3181:3459" ph="{...}" />
+            <marker date="1513828785041" expanded="true" signature="3544:3824" ph="{...}" />
+            <marker date="1513828785041" expanded="true" signature="3888:4163" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
