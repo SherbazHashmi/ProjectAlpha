@@ -2,6 +2,7 @@
 using MoreMountains.Tools;
 using UnityEngineInternal;
 using MoreMountains;
+using UnityEngine;
 
 namespace MoreMountains.CorgiEngine
 {
@@ -22,10 +23,11 @@ namespace MoreMountains.CorgiEngine
         string playerID = getPlayerID(ButtonID);
         ButtonID = playerID + "_" + buttonID;
             }
-        catch (System.NullReferenceException playerIDEx) {
-        
-        Debug.Log("Null buttonID passed");
-            }
+        catch (System.NullReferenceException playerIDEx)
+        {
+            Debug.Log("Played ID Returning Null");
+
+        }
          }
         
 
