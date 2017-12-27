@@ -7,11 +7,12 @@ namespace MoreMountains.CorgiEngine
 
     public class PelletGunDefaultWeak : ProjectileWeapon
     {
+        private string Description;
         public PelletGunDefaultWeak () {
             TriggerMode = TriggerModes.Auto;
             TimeBetweenUses = 0.1f;
             MagazineBased = false;
+        }
 
-        } 
     }
 }

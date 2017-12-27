@@ -9,8 +9,10 @@ namespace MoreMountains.CorgiEngine
 	/// This base class, meant to be extended (see ProjectileWeapon.cs for an example of that) handles rate of fire (rate of use actually), and ammo reloading
 	/// </summary>
 	[SelectionBase]
-	public class Weapon : MonoBehaviour 
+	public class Weapon : MonoBehaviour
 	{
+
+
 		/// the possible use modes for the trigger
 		public enum TriggerModes { SemiAuto, Auto }
 		/// the possible states the weapon can be in
@@ -119,6 +121,11 @@ namespace MoreMountains.CorgiEngine
 
 	    protected Vector3 _weaponOffset;
 		protected Vector3 _weaponAttachmentOffset;
+		
+		// Weapon Name Should Be Filled In! Used in talent collection.
+		public string weaponName { get; set; }
+		
+
 
 	    /// <summary>
 	    /// Initialize this weapon.

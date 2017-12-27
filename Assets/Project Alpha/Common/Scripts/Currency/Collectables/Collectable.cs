@@ -4,7 +4,7 @@
     {
         Skin,Horde
     }
-    public class Collectable
+    public class Collectable : PickableItem
     {
         private string name;
         private int collectableID;
