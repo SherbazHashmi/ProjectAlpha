@@ -4,9 +4,14 @@ namespace MoreMountains.CorgiEngine
     public class Utilities
     {
 
-        protected bool havePassedDecimalPoint = false; 
+        protected bool havePassedDecimalPoint = false;
 
         public bool isWholeNumber(double num)
+        {
+            return ((num % 1) == 0);
+        }
+
+        public bool isWholeNumberOld(double num)
         {
             string str = num.ToString();
             string afterDecimalPoint = getAfterDecimalPoint(str);
