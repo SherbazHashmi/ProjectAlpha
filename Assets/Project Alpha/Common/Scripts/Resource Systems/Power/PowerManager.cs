@@ -1,5 +1,8 @@
+using System;
+using System.Security.Cryptography;
 using UnityEngine;
 using MoreMountains.Tools;
+using UnityEngine.UI;
 
 namespace MoreMountains.CorgiEngine
 {
@@ -13,8 +16,24 @@ namespace MoreMountains.CorgiEngine
 
 		GameObject gameManagerObject;
         GameManager gameManager;
-        [SerializeField] int DepletionRate { get; set; }
+       	[SerializeField] public int DepletionRate { get; set; }
         Utilities utils;
+	    [SerializeField] private GameObject PowerBarObject;
+	    SpriteRenderer PowerBarSprite;
+	    Vector2 powerBarFullSize;
+	    [SerializeField] private float TestingOnlyStartingEnergy;
+	    [SerializeField] GameObject DebugEnergy;
+	    [SerializeField] GameObject PowerBarBackgroundObject;
+	    [SerializeField] Transform PowerBarBackground;
+	    [SerializeField] private float padding;
+	    [SerializeField] private GameObject zeroReference;
+	    private float elapsed = 0f;
+	    
+	    private Text energyText; 
+	  
+	   
+	  
+	    
 
          
 
@@ -28,18 +47,33 @@ namespace MoreMountains.CorgiEngine
             /// 
 			try
 			{
+				
 				/// Finding Object Called GameManager 
 				/// 
 				gameManagerObject = GameObject.Find("GameManager");
-
+				// Getting Sprite Renderer
+				
+				
+				PowerBarSprite = PowerBarObject.GetComponent<SpriteRenderer>();
 				try
 				{
+					
+					powerBarFullSize = PowerBarSprite.size;
+					PowerBarSprite.size = new Vector2(0,0);
 
 					/// Isoating actual Game Manager Object (Script)
 
 					gameManager = gameManagerObject.GetComponent<GameManager>();
 
-
+					energyText = DebugEnergy.GetComponent<Text>();
+					PowerBarBackground = PowerBarBackgroundObject.GetComponent<Transform>();
+									
+					// Testing Sprite Renderer
+					updateBar();
+					gameManager.SetEnergyLevel(TestingOnlyStartingEnergy);
+					
+					
+					
 				}
 				catch (System.NullReferenceException gameManagerObjectEx)
 				{
@@ -56,6 +90,11 @@ namespace MoreMountains.CorgiEngine
 
         void Update()
         {
+	        deplete();
+	        energyText.text = gameManager.getEnergyLevel() + "";
+	        
+	        updateBar();
+
             /// Setting Depletion Rate Based On Number Of Charges
 
             switch (gameManager.Charge) {
@@ -80,5 +119,30 @@ namespace MoreMountains.CorgiEngine
                 MMEventManager.TriggerEvent(new PowerEvent(PowerEventType.Remove, DepletionRate));
             }
         }
+
+
+	    float calculatePowerRatio()
+	    {
+		    return gameManager.EnergyLevel/100;
+	    }
+
+
+	    void deplete()
+	    {
+		    elapsed += Time.deltaTime;
+		    if (elapsed >= 1f)
+		    {
+			    elapsed = elapsed % 1f;
+			    Debug.Log("Depleting");
+			    gameManager.RemoveEnergy(1);
+		    }
+	    }
+	    
+	    void updateBar()
+	    {
+		    // TODO : Improve Visual Power Handling. 
+		    PowerBarSprite.transform.position = new Vector3((zeroReference.transform.position.x + (PowerBarSprite.bounds.size.x /2) - 0.05f),PowerBarBackground.position.y,PowerBarBackground.position.z);
+		    PowerBarSprite.size = new Vector2(powerBarFullSize.x * calculatePowerRatio(),powerBarFullSize.y);
+	    }
     }
 }

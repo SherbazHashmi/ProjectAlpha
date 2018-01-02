@@ -78,8 +78,8 @@ namespace MoreMountains.CorgiEngine
 			if (LevelManager.Instance.Checkpoints == null)
 			{
 				return;
-			}
-
+			}             
+ 
 			if (LevelManager.Instance.Checkpoints.Count == 0)
 			{
 				return;

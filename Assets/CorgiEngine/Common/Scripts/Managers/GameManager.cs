@@ -142,7 +142,7 @@ namespace MoreMountains.CorgiEngine
         /// players's current number of chips
         public int ChipPoints { get; private set; }
         /// player's current energy level
-        public int EnergyLevel { get; private set; }
+        public float EnergyLevel { get; private set; }
         /// the current power level
         public int PowerLevel {get; private set;}
         /// the current charge 
@@ -388,12 +388,12 @@ namespace MoreMountains.CorgiEngine
         /// </summary>
 
 
-        public virtual void AddEnergy (int amount) {
+        public virtual void AddEnergy (float amount) {
             EnergyLevel += amount;
             Debug.Log("Added "+amount+"Energy");
         } 
 
-        public virtual void RemoveEnergy (int amount) {
+        public virtual void RemoveEnergy (float amount) {
             EnergyLevel -= amount;
             Debug.Log("Added "+amount + "Energy");
         }
@@ -403,7 +403,7 @@ namespace MoreMountains.CorgiEngine
         /// Sets Amount of Energy
         /// </summary>
 
-        public virtual void SetEnergyLevel (int amount) {
+        public virtual void SetEnergyLevel (float amount) {
             EnergyLevel = amount;
         }
 
@@ -429,7 +429,7 @@ namespace MoreMountains.CorgiEngine
         /// Gets Energy 
         /// </summary>
 
-        public virtual int getEnergyLevel () {
+        public virtual float getEnergyLevel () {
             return EnergyLevel;
         }
 
