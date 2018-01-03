@@ -144,11 +144,12 @@ namespace MoreMountains.CorgiEngine
         /// player's current energy level
         public float EnergyLevel { get; private set; }
         /// the current power level
-        public int PowerLevel {get; private set;}
-        /// the current charge 
-        public int Charge { get; private set; }
+        public float PowerLevel {get; private set;}
+
+		/// the current charge 
+		public float Charge = 0;
         /// power threshold (the point at which a charge is generated)
-        [SerializeField] int PowerThreshold = 30;
+        [SerializeField] float PowerThreshold = 30;
         /// player's current energy regeneration rate
 		public float EnergyRegenerationSpeed = 1;
 		/// true if the game is currently paused
@@ -254,7 +255,7 @@ namespace MoreMountains.CorgiEngine
 		/// use this to add power
 		/// </summary>
 
-        public virtual void AddPower (int powerToAdd) {
+        public virtual void AddPower (float powerToAdd) {
             /// add power
             PowerLevel = PowerLevel + powerToAdd;
             /// update charges
@@ -266,7 +267,7 @@ namespace MoreMountains.CorgiEngine
         /// use this to remove power
         /// </summary>
 
-        public virtual void RemovePower (int powerToRemove) {
+        public virtual void RemovePower (float powerToRemove) {
             PowerLevel = PowerLevel - powerToRemove;
             updateCharge();
         }
@@ -276,7 +277,7 @@ namespace MoreMountains.CorgiEngine
         /// </summary>
         /// <param name="powerToSet">Power to Set </param>
 
-        public virtual void SetPower (int powerToSet) {
+        public virtual void SetPower (float powerToSet) {
             PowerLevel = powerToSet;
             updateCharge();
         }
@@ -288,6 +289,7 @@ namespace MoreMountains.CorgiEngine
 
 
         public virtual void updateCharge () {
+	        Debug.Log("Power level : "+PowerLevel+", Charge : "+Charge+", Updating Charge to "+ Mathf.Abs(PowerLevel/PowerThreshold));
 			Charge = Mathf.Abs(PowerLevel / PowerThreshold);
 		}
          

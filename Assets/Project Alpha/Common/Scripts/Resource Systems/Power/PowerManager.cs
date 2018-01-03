@@ -25,9 +25,9 @@ namespace MoreMountains.CorgiEngine
 	    [SerializeField] GameObject DebugEnergy;
 	    [SerializeField] GameObject PowerBarBackgroundObject;
 	    [SerializeField] Transform PowerBarBackground;
-	    [SerializeField] private float padding;
 	    [SerializeField] private GameObject zeroReference;
 	    private float elapsed = 0f;
+	    
 	    
 	    private Text energyText; 
 	  
@@ -70,7 +70,8 @@ namespace MoreMountains.CorgiEngine
 									
 					// Testing Sprite Renderer
 					updateBar();
-					gameManager.SetEnergyLevel(TestingOnlyStartingEnergy);
+					MMEventManager.TriggerEvent(new PowerEvent(PowerEventType.Add, TestingOnlyStartingEnergy));
+
 					
 					
 					
@@ -91,13 +92,14 @@ namespace MoreMountains.CorgiEngine
         void Update()
         {
 	        deplete();
-	        energyText.text = gameManager.getEnergyLevel() + "";
+	        gameManager.updateCharge();
+	        energyText.text = gameManager.Charge+ "C";
 	        
 	        updateBar();
 
             /// Setting Depletion Rate Based On Number Of Charges
 
-            switch (gameManager.Charge) {
+            switch (Mathf.FloorToInt(gameManager.Charge)) {
                 case 0 :
                     DepletionRate = 0;
                     break;
@@ -114,16 +116,12 @@ namespace MoreMountains.CorgiEngine
                     
             }
 
-            if (gameManager.Paused == false && gameManager.EnergyActive == false && utils.isWholeNumber(Time.timeSinceLevelLoad))
-            {
-                MMEventManager.TriggerEvent(new PowerEvent(PowerEventType.Remove, DepletionRate));
-            }
         }
 
 
 	    float calculatePowerRatio()
 	    {
-		    return gameManager.EnergyLevel/100;
+		    return gameManager.PowerLevel/100;
 	    }
 
 
@@ -134,7 +132,7 @@ namespace MoreMountains.CorgiEngine
 		    {
 			    elapsed = elapsed % 1f;
 			    Debug.Log("Depleting");
-			    gameManager.RemoveEnergy(1);
+			    MMEventManager.TriggerEvent(new PowerEvent(PowerEventType.Remove, DepletionRate));
 		    }
 	    }
 	    

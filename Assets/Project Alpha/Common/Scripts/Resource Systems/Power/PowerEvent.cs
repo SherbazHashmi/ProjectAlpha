@@ -12,9 +12,9 @@ namespace MoreMountains.CorgiEngine
     public struct PowerEvent 
     {
         public PowerEventType powerEventType;
-        public int amount;
+        public float amount;
 
-        public PowerEvent (PowerEventType powerEventType, int amount) {
+        public PowerEvent (PowerEventType powerEventType, float amount) {
             this.powerEventType = powerEventType;
             this.amount = amount;
         }
