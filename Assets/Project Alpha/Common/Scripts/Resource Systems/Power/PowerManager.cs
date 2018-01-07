@@ -17,31 +17,21 @@ namespace MoreMountains.CorgiEngine
 		GameObject gameManagerObject;
         GameManager gameManager;
        	[SerializeField] public int DepletionRate { get; set; }
-        Utilities utils;
-	    [SerializeField] private GameObject PowerBarObject;
-	    SpriteRenderer PowerBarSprite;
-	    Vector2 powerBarFullSize;
-	    [SerializeField] private float TestingOnlyStartingEnergy;
-	    [SerializeField] GameObject DebugEnergy;
-	    [SerializeField] GameObject PowerBarBackgroundObject;
-	    [SerializeField] Transform PowerBarBackground;
+	    [SerializeField] private GameObject BarObject;
+	    SpriteRenderer BarSprite;
+	    Vector2 BarFullSize;
+	    [SerializeField] private float StartingResource;
+	    [SerializeField] GameObject Debug;
+	    [SerializeField] GameObject BarBackgroundObject;
+	    Transform BarBackground;
 	    [SerializeField] private GameObject zeroReference;
 	    private float elapsed = 0f;
-	    
-	    
-	    private Text energyText; 
-	  
-	   
-	  
-	    
-
-         
+  
+	    private Text DebugText; 
 
 		void Start()
         {
-            /// Instantiating a New Utilities Module For Dealing With Seconds.
-            utils = new Utilities();
-
+            
             /// Setting Depletion Rate
             /// (PowerPoints per Second)
             /// 
@@ -54,23 +44,23 @@ namespace MoreMountains.CorgiEngine
 				// Getting Sprite Renderer
 				
 				
-				PowerBarSprite = PowerBarObject.GetComponent<SpriteRenderer>();
+				BarSprite = BarObject.GetComponent<SpriteRenderer>();
 				try
 				{
 					
-					powerBarFullSize = PowerBarSprite.size;
-					PowerBarSprite.size = new Vector2(0,0);
+					BarFullSize = BarSprite.size;
+					BarSprite.size = new Vector2(0,0);
 
 					/// Isoating actual Game Manager Object (Script)
 
 					gameManager = gameManagerObject.GetComponent<GameManager>();
 
-					energyText = DebugEnergy.GetComponent<Text>();
-					PowerBarBackground = PowerBarBackgroundObject.GetComponent<Transform>();
+					DebugText = Debug.GetComponent<Text>();
+					BarBackground = BarBackgroundObject.GetComponent<Transform>();
 									
 					// Testing Sprite Renderer
 					updateBar();
-					MMEventManager.TriggerEvent(new PowerEvent(PowerEventType.Add, TestingOnlyStartingEnergy));
+					MMEventManager.TriggerEvent(new PowerEvent(PowerEventType.Add, StartingResource));
 
 					
 					
@@ -78,13 +68,13 @@ namespace MoreMountains.CorgiEngine
 				}
 				catch (System.NullReferenceException gameManagerObjectEx)
 				{
-					Debug.Log("gameManager Object Returning Null");
+					UnityEngine.Debug.Log("gameManager Object Returning Null");
 				}
 
 			}
 			catch (System.NullReferenceException gameManagerEx)
 			{
-				Debug.Log("gameManager Object Returning Null");
+				UnityEngine.Debug.Log("gameManager Object Returning Null");
 			}
 
 		}
@@ -93,7 +83,7 @@ namespace MoreMountains.CorgiEngine
         {
 	        deplete();
 	        gameManager.updateCharge();
-	        energyText.text = gameManager.Charge+ "C";
+	        DebugText.text = gameManager.Charge+ "C";
 	        
 	        updateBar();
 
@@ -131,7 +121,7 @@ namespace MoreMountains.CorgiEngine
 		    if (elapsed >= 1f)
 		    {
 			    elapsed = elapsed % 1f;
-			    Debug.Log("Depleting");
+			    // UnityEngine.Debug.Log("Depleting");
 			    MMEventManager.TriggerEvent(new PowerEvent(PowerEventType.Remove, DepletionRate));
 		    }
 	    }
@@ -139,8 +129,8 @@ namespace MoreMountains.CorgiEngine
 	    void updateBar()
 	    {
 		    // TODO : Improve Visual Power Handling. 
-		    PowerBarSprite.transform.position = new Vector3((zeroReference.transform.position.x + (PowerBarSprite.bounds.size.x /2) - 0.05f),PowerBarBackground.position.y,PowerBarBackground.position.z);
-		    PowerBarSprite.size = new Vector2(powerBarFullSize.x * calculatePowerRatio(),powerBarFullSize.y);
+		    BarSprite.transform.position = new Vector3((zeroReference.transform.position.x + (BarSprite.bounds.size.x /2) - 0.05f),BarBackground.position.y,BarBackground.position.z);
+		    BarSprite.size = new Vector2(BarFullSize.x * calculatePowerRatio(),BarFullSize.y);
 	    }
     }
 }

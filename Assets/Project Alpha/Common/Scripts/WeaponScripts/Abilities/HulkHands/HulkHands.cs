@@ -4,6 +4,8 @@ using System.Collections;
 namespace MoreMountains.CorgiEngine {
 
     public class HulkHands : MeleeCombatAbility {
+        
+        
 
         public HulkHands () {
             this.name = "Hulk Hands";
@@ -12,6 +14,7 @@ namespace MoreMountains.CorgiEngine {
             this.requiredTalentPoints = 5;
             this.attackType = TypeOfAttack.Strong;
             this.weaponType = TypeOfWeapon.Unarmed;
+            
         }
 
 

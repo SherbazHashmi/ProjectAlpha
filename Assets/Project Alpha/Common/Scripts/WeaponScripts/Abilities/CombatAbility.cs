@@ -79,8 +79,7 @@ namespace MoreMountains.CorgiEngine {
 		public int requiredTalentPoints;
 		public TypeOfAttack attackType { get; set; }
 		public TypeOfWeapon weaponType { get; set; }
-
-
+	    public bool isActive = false;
 
 
 		public string toString()

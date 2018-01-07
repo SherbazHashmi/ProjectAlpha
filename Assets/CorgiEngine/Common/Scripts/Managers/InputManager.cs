@@ -324,6 +324,8 @@ namespace MoreMountains.CorgiEngine
 				_secondaryMovement.x = horizontalInput;
 			}
 		}
+		
+
 
 		/// <summary>
 		/// If you're using touch arrows, bind your down/up arrows to this method

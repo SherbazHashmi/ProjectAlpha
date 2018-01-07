@@ -4,7 +4,7 @@ namespace MoreMountains.CorgiEngine
     /// The Possible Energy Events
     /// </summary>
 
-    public enum EnergyEventType {Add, Remove}
+    public enum EnergyEventType {Add, Remove, Set, SetMultiplier}
 
     /// <summary>
     /// Energy Event Structure

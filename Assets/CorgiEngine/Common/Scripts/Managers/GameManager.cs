@@ -289,7 +289,6 @@ namespace MoreMountains.CorgiEngine
 
 
         public virtual void updateCharge () {
-	        Debug.Log("Power level : "+PowerLevel+", Charge : "+Charge+", Updating Charge to "+ Mathf.Abs(PowerLevel/PowerThreshold));
 			Charge = Mathf.Abs(PowerLevel / PowerThreshold);
 		}
          
@@ -392,12 +391,12 @@ namespace MoreMountains.CorgiEngine
 
         public virtual void AddEnergy (float amount) {
             EnergyLevel += amount;
-            Debug.Log("Added "+amount+"Energy");
+            //Debug.Log("Added "+amount+"Energy");
         } 
 
         public virtual void RemoveEnergy (float amount) {
             EnergyLevel -= amount;
-            Debug.Log("Added "+amount + "Energy");
+            //Debug.Log("Added "+amount + "Energy");
         }
 
 
@@ -531,6 +530,13 @@ namespace MoreMountains.CorgiEngine
                 case (EnergyEventType.Remove) :
                     RemoveEnergy(energyEvent.amount);
                     break;
+	                
+	            case (EnergyEventType.Set) :
+		            SetEnergyLevel(energyEvent.amount);
+		            break;
+		    	case (EnergyEventType.SetMultiplier):
+		    		SetEnergyRegen(energyEvent.multiplier);
+				    break;
             }
 
         }
