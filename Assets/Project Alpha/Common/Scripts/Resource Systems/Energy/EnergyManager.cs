@@ -26,6 +26,7 @@ namespace MoreMountains.CorgiEngine
         private InputManager _inputManager;
         GameObject _characterObject;
         protected Character _character;
+        protected bool isRunning; 
         protected MMStateMachine<CharacterStates.MovementStates> _movement;
 
         
@@ -56,12 +57,12 @@ namespace MoreMountains.CorgiEngine
                     
                     BarBackground = BarBackgroundObject.GetComponent<Transform>();
 
-            
-
                     BarFullSize = BarSprite.size;
 
-                    
-                    
+                    isRunning = _inputManager.RunButton.State.CurrentState != MMInput.ButtonStates.Off;
+
+
+
                 }
                 catch (System.NullReferenceException gameManagerObjectEx)
                 {
@@ -86,11 +87,10 @@ namespace MoreMountains.CorgiEngine
         
         void increase()
         {
-            elapsed += Time.deltaTime;
-            if (elapsed >= 1f)
+            if (elapsed >= 1f && !isRunning)
             {
                 elapsed = elapsed % 1f;
-                //UnityEngine.Debug.Log("Increasing Energy");
+                // UnityEngine.Debug.Log("Increasing Energy");
                 MMEventManager.TriggerEvent(new EnergyEvent(EnergyEventType.Add, 1, multiplier));
             }
         }
@@ -98,14 +98,25 @@ namespace MoreMountains.CorgiEngine
         
         void sprinting()
         {
-            elapsed += Time.deltaTime;
-            if ((_inputManager.RunButton.State.CurrentState != MMInput.ButtonStates.Off) && elapsed >= 1f)
-            {                
+            if (elapsed >= 1f && isRunning)
+            {
+                if (gameManager.EnergyLevel <= 10)
+                {
+                    MMEventManager.TriggerEvent(new EnergyEvent(EnergyEventType.Set, 0, 0));
                     elapsed = elapsed % 1f;
-                    //UnityEngine.Debug.Log("Increasing Energy");
-                    MMEventManager.TriggerEvent(new EnergyEvent(EnergyEventType.Remove, 10, multiplier));   
+
+                }
+                else
+                {
+                    MMEventManager.TriggerEvent(new EnergyEvent(EnergyEventType.Remove, 10, 1));   
+                    elapsed = elapsed % 1f;
+
+                }
+                    // UnityEngine.Debug.Log("Increasing Energy");
             }
         }
+
+       
 
         void Update()
         {
@@ -113,17 +124,24 @@ namespace MoreMountains.CorgiEngine
 
             if (gameManager.EnergyActive== false && gameManager.EnergyActive == false && isRegenActive == true && gameManager.EnergyLevel <= 100)
             {
-                
-                DebugText.text = "" + (_inputManager.RunButton.State.CurrentState);
-                Debug.Log("Power level : "+gameManager.PowerLevel+", Charge : "+gameManager.Charge+", Updating Charge to "+ Mathf.Abs(gameManager.PowerLevel/3) + " Energy Level : "+gameManager.EnergyLevel + " Current run button state : " + _inputManager.RunButton.State.CurrentState+ ", Desired State : " + MMInput.ButtonStates.ButtonPressed +  " Are Equal : " + (MMInput.ButtonStates.ButtonPressed == _inputManager.RunButton.State.CurrentState));
+                //elapsed += Time.deltaTime;
+                Debug.Log("Power level : "+gameManager.PowerLevel+", Charge : "+gameManager.Charge+", Updating Charge to "+ Mathf.Abs(gameManager.PowerLevel/3) + " Energy Level : "+gameManager.EnergyLevel + " Current run button state : " + isRunning + ", Desired State : " + MMInput.ButtonStates.ButtonPressed +  " Are Equal : " + (MMInput.ButtonStates.ButtonPressed == _inputManager.RunButton.State.CurrentState));
                 increase();
                 sprinting();
                 updateBar();
                 
             }
         }
-        
-        
+
+
+        private void LateUpdate()
+        {
+            elapsed += Time.deltaTime;
+            isRunning = _inputManager.RunButton.State.CurrentState != MMInput.ButtonStates.Off;
+            DebugText.text = "" + (isRunning);
+
+        }
+
         void updateBar()
         {
             // TODO : Improve Visual Power Handling. 

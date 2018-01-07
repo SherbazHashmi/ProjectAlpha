@@ -75,6 +75,7 @@ namespace MoreMountains.CorgiEngine
 		protected string _axisSecondaryVertical;
 		protected string _axisShoot;
 
+		
 	    /// <summary>
 	    /// On Start we look for what mode to use, and initialize our axis and buttons
 	    /// </summary>
@@ -155,6 +156,8 @@ namespace MoreMountains.CorgiEngine
 		protected virtual void LateUpdate()
 		{
 			ProcessButtonStates();
+			//Debug.Log("isRunning : "+_isRunning);
+
 		}
 
 	    /// <summary>
@@ -168,8 +171,10 @@ namespace MoreMountains.CorgiEngine
 				SetSecondaryMovement ();
 				SetShootAxis ();
 				GetInputButtons ();
-			}									
+			}
+
 		}
+
 
 		/// <summary>
 		/// If we're not on mobile, watches for input changes, and updates our buttons states accordingly
@@ -203,11 +208,14 @@ namespace MoreMountains.CorgiEngine
 			{
 				if (button.State.CurrentState == MMInput.ButtonStates.ButtonDown)
 				{
-					button.State.ChangeState(MMInput.ButtonStates.ButtonPressed);				
+					button.State.ChangeState(MMInput.ButtonStates.ButtonPressed);
+					
+					
 				}	
 				if (button.State.CurrentState == MMInput.ButtonStates.ButtonUp)
 				{
-					button.State.ChangeState(MMInput.ButtonStates.Off);				
+					button.State.ChangeState(MMInput.ButtonStates.Off);	
+					
 				}	
 			}
 		}

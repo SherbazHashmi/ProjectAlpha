@@ -23,6 +23,7 @@ namespace MoreMountains.CorgiEngine
 		public bool AbilityInitialized { get { return _abilityInitialized; } }
 
 		protected Character _character;
+		protected GameManager _gameManager;
 		protected Health _health;
 		protected CharacterHorizontalMovement _characterBasicMovement;
 		protected CorgiController _controller;
@@ -56,6 +57,7 @@ namespace MoreMountains.CorgiEngine
 		/// </summary>
 		protected virtual void Initialization()
 		{
+			_gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 			_character = GetComponent<Character>();
 			_controller = GetComponent<CorgiController>();
 			_characterBasicMovement = GetComponent<CharacterHorizontalMovement>();
