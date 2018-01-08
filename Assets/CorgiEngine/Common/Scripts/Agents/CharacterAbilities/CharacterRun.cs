@@ -63,7 +63,16 @@ namespace MoreMountains.CorgiEngine
 		/// Causes the character to start running.
 		/// </summary>
 		public virtual void RunStart()
-		{		
+		{
+			if (_gameManager.EnergyLevel >= 1)
+			{
+				AbilityPermitted = true;
+			}
+			else
+			{
+				AbilityPermitted = false;
+			}
+
 			if ( !AbilityPermitted // if the ability is not permitted
 				|| (!_controller.State.IsGrounded) // or if we're not grounded
 				|| (_condition.CurrentState != CharacterStates.CharacterConditions.Normal) // or if we're not in normal conditions
