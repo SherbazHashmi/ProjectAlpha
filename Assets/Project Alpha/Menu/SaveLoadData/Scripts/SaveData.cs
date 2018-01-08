@@ -18,8 +18,9 @@ namespace MoreMountains.CorgiEngine
         /// Stating Global Variables 
         /// </summary>
        
-        // General Data (Image, Game Text, Play Time)
+        // General Data (Image, Image Directory, Game Text, Play Time)
         private Image _levelImage;
+        private string _imageDirectory;
         private string _saveGameText;
         private int _currentPlayTime;
         
@@ -53,7 +54,55 @@ namespace MoreMountains.CorgiEngine
 
             _chips = chips;
             _cogs = cogs;
-
+            
+            // Setting Image Directory Using SetImageDirectory.
+            
+            SetImageDirectory();
         }
+
+
+        /// <summary>
+        /// Save Data Load Constructor
+        /// </summary>
+        
+        
+        // TODO : Create Load Constructor To Be Used When Loading A Save File!
+        
+        public SaveData(int indexSaveFile)
+        {
+           // Create An Array Of Saves from Current Save Files (Maybe Filter By Save Extension) 
+            
+           // Select The Index Of Save File Required From Array
+            
+           // Set Instance Fields to File Fields From Array
+  
+        }
+        
+        
+        
+        // TODO : Create A Save Function! This will serialise the data into a file!! 
+        
+        public void Save()
+        {
+            
+        }
+        
+        /// <summary>
+        /// Used In Initialisation of Image Directory, it will set the correct directory (string)
+        /// for the corresponding image based on which scene it is loading.
+        /// Images should already be present and matching viewer. 
+        /// </summary>
+        
+        private void SetImageDirectory()
+        {
+            // Root (Where All The Level Images Are Saved)
+            const string root = "/data/lvlimgs/";
+            // File Name (based on scene)
+            var filename = _scene.name;
+            // Sets Image Directory
+            _imageDirectory = root + filename;
+        }
+
+
     }
 }
