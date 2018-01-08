@@ -14,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.28580815">
+    <splitter split-orientation="horizontal" split-proportion="0.20105125">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="TalentCollection.cs" pinned="false" current-in-tab="false">
@@ -67,8 +67,8 @@
           <file leaf-file-name="CharacterRun.cs" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Agents/CharacterAbilities/CharacterRun.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+                <state relative-caret-position="748">
+                  <caret line="54" column="13" lean-forward="false" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
                   <folding>
                     <marker date="1515345050590" expanded="false" signature="6:71" ph="..." />
                     <marker date="1515345050590" expanded="true" signature="108:4406" ph="{...}" />
@@ -480,10 +480,11 @@
           <file leaf-file-name="GameManager.cs" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Managers/GameManager.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="945">
-                  <caret line="67" column="18" lean-forward="false" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
+                <state relative-caret-position="-1329">
+                  <caret line="488" column="29" lean-forward="false" selection-start-line="488" selection-start-column="20" selection-end-line="488" selection-end-column="29" />
                   <folding>
                     <marker date="1515302298338" expanded="false" signature="6:142" ph="..." />
+                    <marker date="1515302298338" expanded="true" signature="179:16751" ph="{...}" />
                     <marker date="1515302298338" expanded="true" signature="184:266" ph="/// A list of the possible Corgi Engine base events ... " />
                     <marker date="1515302298338" expanded="true" signature="301:378" ph="{...}" />
                     <marker date="1515302298338" expanded="true" signature="381:477" ph="/// A type of events used to signal level start and end (for now) ... " />
@@ -595,39 +596,40 @@
           <file leaf-file-name="EnergyManager.cs" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Common/Scripts/Resource Systems/Energy/EnergyManager.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2895">
-                  <caret line="193" column="0" lean-forward="true" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+                <state relative-caret-position="246">
+                  <caret line="169" column="45" lean-forward="false" selection-start-line="169" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
                   <folding>
-                    <marker date="1515374670959" expanded="true" signature="6:81" ph="..." />
-                    <marker date="1515374670959" expanded="true" signature="118:5796" ph="{...}" />
-                    <marker date="1515374670959" expanded="true" signature="168:5794" ph="{...}" />
-                    <marker date="1515374670959" expanded="true" signature="184:258" ph="/// Stating Global Variables  ... " />
-                    <marker date="1515374670959" expanded="true" signature="1145:1228" ph="/// Initialises all global variables.  ... " />
-                    <marker date="1515374670959" expanded="true" signature="1259:2553" ph="{...}" />
-                    <marker date="1515374670959" expanded="true" signature="1326:1502" ph="{...}" />
-                    <marker date="1515374670959" expanded="true" signature="1534:1615" ph="{...}" />
-                    <marker date="1515374670959" expanded="true" signature="1700:1882" ph="{...}" />
-                    <marker date="1515374670959" expanded="true" signature="1914:1995" ph="{...}" />
-                    <marker date="1515374670959" expanded="true" signature="2063:2262" ph="{...}" />
-                    <marker date="1515374670959" expanded="true" signature="2294:2375" ph="{...}" />
-                    <marker date="1515374670959" expanded="true" signature="2575:2787" ph="{...}" />
-                    <marker date="1515374670959" expanded="true" signature="2601:2664" ph="{...}" />
-                    <marker date="1515374670959" expanded="true" signature="2696:2777" ph="{...}" />
-                    <marker date="1515374670959" expanded="true" signature="2823:2974" ph="/// Calculates Energy Ratio In Order To Produce Correct Number for Bar.   ... " />
-                    <marker date="1515374670959" expanded="true" signature="3020:3089" ph="{...}" />
-                    <marker date="1515374670959" expanded="true" signature="3099:3253" ph="/// Handles Passively Increasing Energy By an Amount Every Second. Rate handled by PassiveEnergyIncreaseRate  ... " />
-                    <marker date="1515374670959" expanded="true" signature="3292:3547" ph="{...}" />
-                    <marker date="1515374670959" expanded="true" signature="3347:3537" ph="{...}" />
-                    <marker date="1515374670959" expanded="true" signature="3565:3651" ph="/// Handles Energy Changes when Sprinting ... " />
-                    <marker date="1515374670959" expanded="true" signature="3685:4206" ph="{...}" />
-                    <marker date="1515374670959" expanded="true" signature="3739:4196" ph="{...}" />
-                    <marker date="1515374670959" expanded="true" signature="3806:3980" ph="{...}" />
-                    <marker date="1515374670959" expanded="true" signature="4001:4182" ph="{...}" />
-                    <marker date="1515374670959" expanded="true" signature="4238:5055" ph="{...}" />
-                    <marker date="1515374670959" expanded="true" signature="4449:5045" ph="{...}" />
-                    <marker date="1515374670959" expanded="true" signature="5091:5294" ph="{...}" />
-                    <marker date="1515374670959" expanded="true" signature="5304:5381" ph="/// Handles Visual Bar Changing. ... " />
-                    <marker date="1515374670959" expanded="true" signature="5415:5768" ph="{...}" />
+                    <marker date="1515377552752" expanded="true" signature="6:81" ph="..." />
+                    <marker date="1515377552752" expanded="true" signature="118:6065" ph="{...}" />
+                    <marker date="1515377552752" expanded="true" signature="233:6063" ph="{...}" />
+                    <marker date="1515377552752" expanded="true" signature="249:323" ph="/// Stating Global Variables  ... " />
+                    <marker date="1515377552752" expanded="true" signature="1210:1293" ph="/// Initialises all global variables.  ... " />
+                    <marker date="1515377552752" expanded="true" signature="1324:2820" ph="{...}" />
+                    <marker date="1515377552752" expanded="true" signature="1391:1567" ph="{...}" />
+                    <marker date="1515377552752" expanded="true" signature="1599:1680" ph="{...}" />
+                    <marker date="1515377552752" expanded="true" signature="1765:1947" ph="{...}" />
+                    <marker date="1515377552752" expanded="true" signature="1979:2060" ph="{...}" />
+                    <marker date="1515377552752" expanded="true" signature="2128:2379" ph="{...}" />
+                    <marker date="1515377552752" expanded="true" signature="2411:2492" ph="{...}" />
+                    <marker date="1515377552752" expanded="true" signature="2842:3054" ph="{...}" />
+                    <marker date="1515377552752" expanded="true" signature="2868:2931" ph="{...}" />
+                    <marker date="1515377552752" expanded="true" signature="2963:3044" ph="{...}" />
+                    <marker date="1515377552752" expanded="true" signature="3090:3241" ph="/// Calculates Energy Ratio In Order To Produce Correct Number for Bar.   ... " />
+                    <marker date="1515377552752" expanded="true" signature="3287:3356" ph="{...}" />
+                    <marker date="1515377552752" expanded="true" signature="3366:3520" ph="/// Handles Passively Increasing Energy By an Amount Every Second. Rate handled by PassiveEnergyIncreaseRate  ... " />
+                    <marker date="1515377552752" expanded="true" signature="3559:3814" ph="{...}" />
+                    <marker date="1515377552752" expanded="true" signature="3614:3804" ph="{...}" />
+                    <marker date="1515377552752" expanded="true" signature="3832:3918" ph="/// Handles Energy Changes when Sprinting ... " />
+                    <marker date="1515377552752" expanded="true" signature="3952:4473" ph="{...}" />
+                    <marker date="1515377552752" expanded="true" signature="4006:4463" ph="{...}" />
+                    <marker date="1515377552752" expanded="true" signature="4073:4247" ph="{...}" />
+                    <marker date="1515377552752" expanded="true" signature="4268:4449" ph="{...}" />
+                    <marker date="1515377552752" expanded="true" signature="4505:5324" ph="{...}" />
+                    <marker date="1515377552752" expanded="true" signature="4716:5314" ph="{...}" />
+                    <marker date="1515377552752" expanded="true" signature="4747:5197" ph="/* elapsed += Time.deltaTime; ... */" />
+                    <marker date="1515377552752" expanded="true" signature="5360:5563" ph="{...}" />
+                    <marker date="1515377552752" expanded="true" signature="5573:5650" ph="/// Handles Visual Bar Changing. ... " />
+                    <marker date="1515377552752" expanded="true" signature="5684:6037" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -835,6 +837,8 @@
       <find>Character</find>
       <find>state</find>
       <find>get</find>
+      <find>Debug.</find>
+      <find>Debug.Log</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -881,7 +885,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Project Alpha/Common/Scripts/WeaponScripts/Abilities/CombatAbility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project Alpha/Common/Scripts/WeaponScripts/Abilities/HulkHands/HulkHands.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project Alpha/Common/Scripts/WeaponScripts/Abilities/Pellet Gun/PelletGunDefaultWeak.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Project Alpha/Menu/Options/Scripts/InputBindings.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -1007,7 +1010,7 @@
       <workItem from="1515291096733" duration="8436000" />
       <workItem from="1515322298161" duration="1635000" />
       <workItem from="1515330331025" duration="4524000" />
-      <workItem from="1515373443683" duration="1231000" />
+      <workItem from="1515373443683" duration="3086000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed IMButtonExtended and added collectable class.">
       <created>1513995481000</created>
@@ -1020,7 +1023,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58835000" />
+    <option name="totallyTimeSpent" value="60690000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1096,7 +1099,22 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Agents/CharacterAbilities/CharacterRun.cs</url>
+          <line>48</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Agents/CharacterAbilities/CharacterRun.cs">
+            <startOffsets>
+              <startOffset value="1620" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="1621" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1307,119 +1325,6 @@
             <marker date="1515292296089" expanded="true" signature="182:245" ph="/// Energy Event Structure ... " />
             <marker date="1515292296089" expanded="true" signature="276:655" ph="{...}" />
             <marker date="1515292296089" expanded="true" signature="510:649" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Managers/GameManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="67" column="18" lean-forward="false" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
-          <folding>
-            <marker date="1515302298338" expanded="false" signature="6:142" ph="..." />
-            <marker date="1515302298338" expanded="true" signature="184:266" ph="/// A list of the possible Corgi Engine base events ... " />
-            <marker date="1515302298338" expanded="true" signature="301:378" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="381:477" ph="/// A type of events used to signal level start and end (for now) ... " />
-            <marker date="1515302298338" expanded="true" signature="509:838" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="557:742" ph="/// Initializes a new instance of the &lt;see cref=&quot;MoreMountains.CorgiEngine.CorgiEngineEvent&quot;/&gt; struct. ... " />
-            <marker date="1515302298338" expanded="true" signature="801:835" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="842:936" ph="/// A list of the methods available to change the current score ... " />
-            <marker date="1515302298338" expanded="true" signature="963:982" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="985:1079" ph="/// A type of event used to signal changes to the current score ... " />
-            <marker date="1515302298338" expanded="true" signature="1117:1556" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="1181:1421" ph="/// Initializes a new instance of the &lt;see cref=&quot;MoreMountains.CorgiEngine.CorgiEnginePointsEvent&quot;/&gt; struct. ... " />
-            <marker date="1515302298338" expanded="true" signature="1493:1553" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="1562:1663" ph="/// A list of the methods availble to change the number of chips ... " />
-            <marker date="1515302298338" expanded="true" signature="1694:1741" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="1783:2231" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="1873:2056" ph="/// Initialises a new instance of the chips struct.  ... " />
-            <marker date="1515302298338" expanded="true" signature="2138:2225" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="2235:2329" ph="/// A list of the methods available to change the current score ... " />
-            <marker date="1515302298338" expanded="true" signature="2359:2387" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="2429:2728" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="2629:2725" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="2755:2786" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="2790:2896" ph="/// The game manager is a persistent singleton that handles points and time ... " />
-            <marker date="1515302298338" expanded="true" signature="3396:16749" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="4670:4779" ph="/// On Start(), sets the target framerate to whatever's been specified ... " />
-            <marker date="1515302298338" expanded="true" signature="4815:4921" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="4930:5008" ph="/// this method resets the whole game manager ... " />
-            <marker date="1515302298338" expanded="true" signature="5038:5226" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="5234:5383" ph="/// Adds the points in parameters to the current game points. ... " />
-            <marker date="1515302298338" expanded="true" signature="5432:5507" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="5518:5760" ph="///  ... " />
-            <marker date="1515302298338" expanded="true" signature="5823:5988" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="5994:6143" ph="/// use this to set the current points to the one you pass as a parameter ... " />
-            <marker date="1515302298338" expanded="true" signature="6187:6256" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="6260:6426" ph="/// use this to set the remove points to the one you pass as a parameter ... " />
-            <marker date="1515302298338" expanded="true" signature="6485:6657" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="6522:6652" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="6669:6815" ph="/// use this to set chip points ... " />
-            <marker date="1515302298338" expanded="true" signature="6881:6972" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="6977:7035" ph="/// use this to add power ... " />
-            <marker date="1515302298338" expanded="true" signature="7093:7239" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="7250:7322" ph="/// use this to remove power ... " />
-            <marker date="1515302298338" expanded="true" signature="7386:7478" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="7488:7616" ph="/// use this to set power ... " />
-            <marker date="1515302298338" expanded="true" signature="7674:7750" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="7761:7883" ph="/// use this to update charges, usually in all events where power is modified. ... " />
-            <marker date="1515302298338" expanded="true" signature="7930:7987" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="8004:8141" ph="/// sets the timescale to the one in parameters ... " />
-            <marker date="1515302298338" expanded="true" signature="8196:8279" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="8285:8373" ph="/// Resets the time scale to the last saved time scale. ... " />
-            <marker date="1515302298338" expanded="true" signature="8412:8581" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="8450:8534" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="8542:8577" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="8651:8836" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="8777:8832" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="8842:8940" ph="/// Pauses the game or unpauses it depending on the current state ... " />
-            <marker date="1515302298338" expanded="true" signature="9019:9643" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="9090:9112" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="9180:9544" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="9325:9452" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="9499:9539" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="9552:9588" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="9650:9710" ph="/// Unpauses the game ... " />
-            <marker date="1515302298338" expanded="true" signature="9791:10151" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="9948:10083" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="10106:10144" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="10162:10256" ph="/// Adds an amount of Energy To Total Game Energy ... " />
-            <marker date="1515302298338" expanded="true" signature="10312:10409" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="10468:10567" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="10578:10648" ph="/// Sets Amount of Energy ... " />
-            <marker date="1515302298338" expanded="true" signature="10708:10753" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="10759:10827" ph="/// Sets Rate of Energy Regeneration ... " />
-            <marker date="1515302298338" expanded="true" signature="10885:10946" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="10956:11036" ph="/// Gets Rate of Energy Regeneration ... " />
-            <marker date="1515302298338" expanded="true" signature="11092:11147" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="11157:11218" ph="/// Gets Energy  ... " />
-            <marker date="1515302298338" expanded="true" signature="11267:11310" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="11317:11482" ph="/// Catches MMGameEvents and acts on them, playing the corresponding sounds ... " />
-            <marker date="1515302298338" expanded="true" signature="11537:11741" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="11573:11737" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="11745:11922" ph="/// Catches CorgiEngineEvents and acts on them, playing the corresponding sounds ... " />
-            <marker date="1515302298338" expanded="true" signature="11984:12175" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="12022:12171" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="12179:12367" ph="/// Catches CorgiEnginePointsEvents and acts on them, playing the corresponding sounds ... " />
-            <marker date="1515302298338" expanded="true" signature="12434:12672" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="12474:12668" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="12676:12861" ph="/// Catches CorgiEngineChipsEvents and acts on them, playing the corresponding sounds ... " />
-            <marker date="1515302298338" expanded="true" signature="12927:13328" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="12966:13324" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="13339:13509" ph="/// Catches CorgiEngineEnergyEvents and acts on them  ... " />
-            <marker date="1515302298338" expanded="true" signature="13574:14142" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="13624:14131" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="14147:14278" ph="/// Catches PowerEvent and acts on them  ... " />
-            <marker date="1515302298338" expanded="true" signature="14334:14709" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="14376:14704" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="14714:14912" ph="/// Catches CorgiEngineTimeScaleEvents and acts on them, playing the corresponding sounds ... " />
-            <marker date="1515302298338" expanded="true" signature="14986:15346" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="15033:15342" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="15445:15737" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="15741:15817" ph="/// OnEnable, we start listening to events. ... " />
-            <marker date="1515302298338" expanded="true" signature="15853:16253" ph="{...}" />
-            <marker date="1515302298338" expanded="true" signature="16257:16333" ph="/// OnDisable, we stop listening to events. ... " />
-            <marker date="1515302298338" expanded="true" signature="16370:16746" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1864,10 +1769,124 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Managers/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1329">
+          <caret line="488" column="29" lean-forward="false" selection-start-line="488" selection-start-column="20" selection-end-line="488" selection-end-column="29" />
+          <folding>
+            <marker date="1515302298338" expanded="false" signature="6:142" ph="..." />
+            <marker date="1515302298338" expanded="true" signature="179:16751" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="184:266" ph="/// A list of the possible Corgi Engine base events ... " />
+            <marker date="1515302298338" expanded="true" signature="301:378" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="381:477" ph="/// A type of events used to signal level start and end (for now) ... " />
+            <marker date="1515302298338" expanded="true" signature="509:838" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="557:742" ph="/// Initializes a new instance of the &lt;see cref=&quot;MoreMountains.CorgiEngine.CorgiEngineEvent&quot;/&gt; struct. ... " />
+            <marker date="1515302298338" expanded="true" signature="801:835" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="842:936" ph="/// A list of the methods available to change the current score ... " />
+            <marker date="1515302298338" expanded="true" signature="963:982" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="985:1079" ph="/// A type of event used to signal changes to the current score ... " />
+            <marker date="1515302298338" expanded="true" signature="1117:1556" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="1181:1421" ph="/// Initializes a new instance of the &lt;see cref=&quot;MoreMountains.CorgiEngine.CorgiEnginePointsEvent&quot;/&gt; struct. ... " />
+            <marker date="1515302298338" expanded="true" signature="1493:1553" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="1562:1663" ph="/// A list of the methods availble to change the number of chips ... " />
+            <marker date="1515302298338" expanded="true" signature="1694:1741" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="1783:2231" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="1873:2056" ph="/// Initialises a new instance of the chips struct.  ... " />
+            <marker date="1515302298338" expanded="true" signature="2138:2225" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="2235:2329" ph="/// A list of the methods available to change the current score ... " />
+            <marker date="1515302298338" expanded="true" signature="2359:2387" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="2429:2728" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="2629:2725" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="2755:2786" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="2790:2896" ph="/// The game manager is a persistent singleton that handles points and time ... " />
+            <marker date="1515302298338" expanded="true" signature="3396:16749" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="4670:4779" ph="/// On Start(), sets the target framerate to whatever's been specified ... " />
+            <marker date="1515302298338" expanded="true" signature="4815:4921" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="4930:5008" ph="/// this method resets the whole game manager ... " />
+            <marker date="1515302298338" expanded="true" signature="5038:5226" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="5234:5383" ph="/// Adds the points in parameters to the current game points. ... " />
+            <marker date="1515302298338" expanded="true" signature="5432:5507" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="5518:5760" ph="///  ... " />
+            <marker date="1515302298338" expanded="true" signature="5823:5988" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="5994:6143" ph="/// use this to set the current points to the one you pass as a parameter ... " />
+            <marker date="1515302298338" expanded="true" signature="6187:6256" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="6260:6426" ph="/// use this to set the remove points to the one you pass as a parameter ... " />
+            <marker date="1515302298338" expanded="true" signature="6485:6657" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="6522:6652" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="6669:6815" ph="/// use this to set chip points ... " />
+            <marker date="1515302298338" expanded="true" signature="6881:6972" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="6977:7035" ph="/// use this to add power ... " />
+            <marker date="1515302298338" expanded="true" signature="7093:7239" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="7250:7322" ph="/// use this to remove power ... " />
+            <marker date="1515302298338" expanded="true" signature="7386:7478" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="7488:7616" ph="/// use this to set power ... " />
+            <marker date="1515302298338" expanded="true" signature="7674:7750" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="7761:7883" ph="/// use this to update charges, usually in all events where power is modified. ... " />
+            <marker date="1515302298338" expanded="true" signature="7930:7987" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="8004:8141" ph="/// sets the timescale to the one in parameters ... " />
+            <marker date="1515302298338" expanded="true" signature="8196:8279" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="8285:8373" ph="/// Resets the time scale to the last saved time scale. ... " />
+            <marker date="1515302298338" expanded="true" signature="8412:8581" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="8450:8534" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="8542:8577" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="8651:8836" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="8777:8832" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="8842:8940" ph="/// Pauses the game or unpauses it depending on the current state ... " />
+            <marker date="1515302298338" expanded="true" signature="9019:9643" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="9090:9112" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="9180:9544" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="9325:9452" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="9499:9539" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="9552:9588" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="9650:9710" ph="/// Unpauses the game ... " />
+            <marker date="1515302298338" expanded="true" signature="9791:10151" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="9948:10083" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="10106:10144" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="10162:10256" ph="/// Adds an amount of Energy To Total Game Energy ... " />
+            <marker date="1515302298338" expanded="true" signature="10312:10409" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="10468:10567" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="10578:10648" ph="/// Sets Amount of Energy ... " />
+            <marker date="1515302298338" expanded="true" signature="10708:10753" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="10759:10827" ph="/// Sets Rate of Energy Regeneration ... " />
+            <marker date="1515302298338" expanded="true" signature="10885:10946" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="10956:11036" ph="/// Gets Rate of Energy Regeneration ... " />
+            <marker date="1515302298338" expanded="true" signature="11092:11147" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="11157:11218" ph="/// Gets Energy  ... " />
+            <marker date="1515302298338" expanded="true" signature="11267:11310" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="11317:11482" ph="/// Catches MMGameEvents and acts on them, playing the corresponding sounds ... " />
+            <marker date="1515302298338" expanded="true" signature="11537:11741" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="11573:11737" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="11745:11922" ph="/// Catches CorgiEngineEvents and acts on them, playing the corresponding sounds ... " />
+            <marker date="1515302298338" expanded="true" signature="11984:12175" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="12022:12171" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="12179:12367" ph="/// Catches CorgiEnginePointsEvents and acts on them, playing the corresponding sounds ... " />
+            <marker date="1515302298338" expanded="true" signature="12434:12672" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="12474:12668" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="12676:12861" ph="/// Catches CorgiEngineChipsEvents and acts on them, playing the corresponding sounds ... " />
+            <marker date="1515302298338" expanded="true" signature="12927:13328" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="12966:13324" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="13339:13509" ph="/// Catches CorgiEngineEnergyEvents and acts on them  ... " />
+            <marker date="1515302298338" expanded="true" signature="13574:14142" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="13624:14131" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="14147:14278" ph="/// Catches PowerEvent and acts on them  ... " />
+            <marker date="1515302298338" expanded="true" signature="14334:14709" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="14376:14704" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="14714:14912" ph="/// Catches CorgiEngineTimeScaleEvents and acts on them, playing the corresponding sounds ... " />
+            <marker date="1515302298338" expanded="true" signature="14986:15346" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="15033:15342" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="15445:15737" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="15741:15817" ph="/// OnEnable, we start listening to events. ... " />
+            <marker date="1515302298338" expanded="true" signature="15853:16253" ph="{...}" />
+            <marker date="1515302298338" expanded="true" signature="16257:16333" ph="/// OnDisable, we stop listening to events. ... " />
+            <marker date="1515302298338" expanded="true" signature="16370:16746" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/CorgiEngine/Common/Scripts/Agents/CharacterAbilities/CharacterRun.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+        <state relative-caret-position="748">
+          <caret line="54" column="13" lean-forward="false" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
           <folding>
             <marker date="1515345050590" expanded="false" signature="6:71" ph="..." />
             <marker date="1515345050590" expanded="true" signature="108:4406" ph="{...}" />
@@ -1906,39 +1925,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Project Alpha/Common/Scripts/Resource Systems/Energy/EnergyManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2895">
-          <caret line="193" column="0" lean-forward="true" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+        <state relative-caret-position="246">
+          <caret line="169" column="45" lean-forward="false" selection-start-line="169" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
           <folding>
-            <marker date="1515374670959" expanded="true" signature="6:81" ph="..." />
-            <marker date="1515374670959" expanded="true" signature="118:5796" ph="{...}" />
-            <marker date="1515374670959" expanded="true" signature="168:5794" ph="{...}" />
-            <marker date="1515374670959" expanded="true" signature="184:258" ph="/// Stating Global Variables  ... " />
-            <marker date="1515374670959" expanded="true" signature="1145:1228" ph="/// Initialises all global variables.  ... " />
-            <marker date="1515374670959" expanded="true" signature="1259:2553" ph="{...}" />
-            <marker date="1515374670959" expanded="true" signature="1326:1502" ph="{...}" />
-            <marker date="1515374670959" expanded="true" signature="1534:1615" ph="{...}" />
-            <marker date="1515374670959" expanded="true" signature="1700:1882" ph="{...}" />
-            <marker date="1515374670959" expanded="true" signature="1914:1995" ph="{...}" />
-            <marker date="1515374670959" expanded="true" signature="2063:2262" ph="{...}" />
-            <marker date="1515374670959" expanded="true" signature="2294:2375" ph="{...}" />
-            <marker date="1515374670959" expanded="true" signature="2575:2787" ph="{...}" />
-            <marker date="1515374670959" expanded="true" signature="2601:2664" ph="{...}" />
-            <marker date="1515374670959" expanded="true" signature="2696:2777" ph="{...}" />
-            <marker date="1515374670959" expanded="true" signature="2823:2974" ph="/// Calculates Energy Ratio In Order To Produce Correct Number for Bar.   ... " />
-            <marker date="1515374670959" expanded="true" signature="3020:3089" ph="{...}" />
-            <marker date="1515374670959" expanded="true" signature="3099:3253" ph="/// Handles Passively Increasing Energy By an Amount Every Second. Rate handled by PassiveEnergyIncreaseRate  ... " />
-            <marker date="1515374670959" expanded="true" signature="3292:3547" ph="{...}" />
-            <marker date="1515374670959" expanded="true" signature="3347:3537" ph="{...}" />
-            <marker date="1515374670959" expanded="true" signature="3565:3651" ph="/// Handles Energy Changes when Sprinting ... " />
-            <marker date="1515374670959" expanded="true" signature="3685:4206" ph="{...}" />
-            <marker date="1515374670959" expanded="true" signature="3739:4196" ph="{...}" />
-            <marker date="1515374670959" expanded="true" signature="3806:3980" ph="{...}" />
-            <marker date="1515374670959" expanded="true" signature="4001:4182" ph="{...}" />
-            <marker date="1515374670959" expanded="true" signature="4238:5055" ph="{...}" />
-            <marker date="1515374670959" expanded="true" signature="4449:5045" ph="{...}" />
-            <marker date="1515374670959" expanded="true" signature="5091:5294" ph="{...}" />
-            <marker date="1515374670959" expanded="true" signature="5304:5381" ph="/// Handles Visual Bar Changing. ... " />
-            <marker date="1515374670959" expanded="true" signature="5415:5768" ph="{...}" />
+            <marker date="1515377552752" expanded="true" signature="6:81" ph="..." />
+            <marker date="1515377552752" expanded="true" signature="118:6065" ph="{...}" />
+            <marker date="1515377552752" expanded="true" signature="233:6063" ph="{...}" />
+            <marker date="1515377552752" expanded="true" signature="249:323" ph="/// Stating Global Variables  ... " />
+            <marker date="1515377552752" expanded="true" signature="1210:1293" ph="/// Initialises all global variables.  ... " />
+            <marker date="1515377552752" expanded="true" signature="1324:2820" ph="{...}" />
+            <marker date="1515377552752" expanded="true" signature="1391:1567" ph="{...}" />
+            <marker date="1515377552752" expanded="true" signature="1599:1680" ph="{...}" />
+            <marker date="1515377552752" expanded="true" signature="1765:1947" ph="{...}" />
+            <marker date="1515377552752" expanded="true" signature="1979:2060" ph="{...}" />
+            <marker date="1515377552752" expanded="true" signature="2128:2379" ph="{...}" />
+            <marker date="1515377552752" expanded="true" signature="2411:2492" ph="{...}" />
+            <marker date="1515377552752" expanded="true" signature="2842:3054" ph="{...}" />
+            <marker date="1515377552752" expanded="true" signature="2868:2931" ph="{...}" />
+            <marker date="1515377552752" expanded="true" signature="2963:3044" ph="{...}" />
+            <marker date="1515377552752" expanded="true" signature="3090:3241" ph="/// Calculates Energy Ratio In Order To Produce Correct Number for Bar.   ... " />
+            <marker date="1515377552752" expanded="true" signature="3287:3356" ph="{...}" />
+            <marker date="1515377552752" expanded="true" signature="3366:3520" ph="/// Handles Passively Increasing Energy By an Amount Every Second. Rate handled by PassiveEnergyIncreaseRate  ... " />
+            <marker date="1515377552752" expanded="true" signature="3559:3814" ph="{...}" />
+            <marker date="1515377552752" expanded="true" signature="3614:3804" ph="{...}" />
+            <marker date="1515377552752" expanded="true" signature="3832:3918" ph="/// Handles Energy Changes when Sprinting ... " />
+            <marker date="1515377552752" expanded="true" signature="3952:4473" ph="{...}" />
+            <marker date="1515377552752" expanded="true" signature="4006:4463" ph="{...}" />
+            <marker date="1515377552752" expanded="true" signature="4073:4247" ph="{...}" />
+            <marker date="1515377552752" expanded="true" signature="4268:4449" ph="{...}" />
+            <marker date="1515377552752" expanded="true" signature="4505:5324" ph="{...}" />
+            <marker date="1515377552752" expanded="true" signature="4716:5314" ph="{...}" />
+            <marker date="1515377552752" expanded="true" signature="4747:5197" ph="/* elapsed += Time.deltaTime; ... */" />
+            <marker date="1515377552752" expanded="true" signature="5360:5563" ph="{...}" />
+            <marker date="1515377552752" expanded="true" signature="5573:5650" ph="/// Handles Visual Bar Changing. ... " />
+            <marker date="1515377552752" expanded="true" signature="5684:6037" ph="{...}" />
           </folding>
         </state>
       </provider>

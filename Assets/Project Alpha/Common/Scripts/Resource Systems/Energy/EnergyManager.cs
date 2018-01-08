@@ -6,6 +6,8 @@ using UnityEngine.UI;
 namespace MoreMountains.CorgiEngine
 {
 
+    [AddComponentMenu("Project Alpha/Managers/EnergyManager")] 
+
     public class EnergyManager : MonoBehaviour
     {
 
@@ -73,9 +75,11 @@ namespace MoreMountains.CorgiEngine
 
             try
             {
-                BarSprite = BarObject.GetComponent<SpriteRenderer>();
-                    
-                BarBackground = BarBackgroundObject.GetComponent<Transform>();
+                BarSprite = BarObject.GetComponent<SpriteRenderer>(); 
+                     
+                BarBackground = BarBackgroundObject.GetComponent<Transform>(); 
+ 
+                BarFullSize = BarSprite.size; 
 
             }
             catch (Exception e)
@@ -86,6 +90,10 @@ namespace MoreMountains.CorgiEngine
             
             // Initilises isRunning Variable
             isRunning = _inputManager.RunButton.State.CurrentState != MMInput.ButtonStates.Off;
+            
+            // Initialises Energy Level
+            MMEventManager.TriggerEvent(new EnergyEvent(EnergyEventType.Set, 100, multiplier));
+
 
             
         }
@@ -162,7 +170,7 @@ namespace MoreMountains.CorgiEngine
             if (_gameManager.EnergyActive== false && _gameManager.EnergyActive == false && isRegenActive == true && _gameManager.EnergyLevel <= 100)
             {
                 //elapsed += Time.deltaTime;
-                Debug.Log("Power level : "+_gameManager.PowerLevel+", Charge : "+_gameManager.Charge+", Updating Charge to "+ Mathf.Abs(_gameManager.PowerLevel/3) + " Energy Level : "+_gameManager.EnergyLevel + " Current run button state : " + isRunning + ", Desired State : " + MMInput.ButtonStates.ButtonPressed +  " Are Equal : " + (MMInput.ButtonStates.ButtonPressed == _inputManager.RunButton.State.CurrentState));
+                //Debug.Log("Power level : "+_gameManager.PowerLevel+", Charge : "+_gameManager.Charge+", Updating Charge to "+ Mathf.Abs(_gameManager.PowerLevel/3) + " Energy Level : "+_gameManager.EnergyLevel + " Current run button state : " + isRunning + ", Desired State : " + MMInput.ButtonStates.ButtonPressed +  " Are Equal : " + (MMInput.ButtonStates.ButtonPressed == _inputManager.RunButton.State.CurrentState));
                 increase();
                 sprinting();
                 updateBar();

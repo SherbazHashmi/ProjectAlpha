@@ -649,18 +649,20 @@
             <e p="Main Menu" t="Include">
               <e p="Scripts" t="Include">
                 <e p="MenuBehaviour.cs" t="Include" />
+                <e p="QuantumStartData.cs" t="Include" />
                 <e p="SoundSettings.cs" t="Include" />
               </e>
             </e>
             <e p="Options" t="Include">
               <e p="Scripts" t="Include">
-                <e p="InputBindings.cs" t="Include" />
                 <e p="OptionsBehaviour.cs" t="Include" />
               </e>
             </e>
             <e p="SaveLoadData" t="Include">
               <e p="Scripts" t="Include">
                 <e p="LoadHandler.cs" t="Include" />
+                <e p="SaveHandler.cs" t="Include" />
+                <e p="SaveLoadData.cs" t="Include" />
               </e>
             </e>
             <e p="Start Screen" t="Include">
