@@ -64,7 +64,7 @@ namespace MoreMountains.CorgiEngine
 		/// </summary>
 		public virtual void RunStart()
 		{
-			if (_gameManager.EnergyLevel >= 1)
+			if (_gameManager.EnergyLevel >= 5)
 			{
 				AbilityPermitted = true;
 			}
@@ -105,7 +105,7 @@ namespace MoreMountains.CorgiEngine
 		public virtual void RunStop()
 		{
 			// if the run button is released, we revert back to the walking speed.
-			if (_characterBasicMovement != null)
+			if (_characterBasicMovement != null )
 			{
 				_characterBasicMovement.ResetHorizontalSpeed ();
 			}

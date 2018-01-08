@@ -36,6 +36,8 @@ namespace MoreMountains.CorgiEngine
         Vector2 BarFullSize;
         GameObject _inputManagerObject;
         private InputManager _inputManager;
+        private QuantumRun _characterRun;
+        protected CharacterHorizontalMovement _characterBasicMovement;
         GameObject _characterObject;
         protected bool isRunning; 
 
@@ -71,6 +73,20 @@ namespace MoreMountains.CorgiEngine
                 throw;
             }
             
+            // Initialises Character  
+            
+            try
+            {
+                _characterObject = GameObject.Find("Character 1");
+                _characterRun = _characterObject.GetComponent<QuantumRun>();
+                _characterBasicMovement = _characterObject.GetComponent<CharacterHorizontalMovement>();
+            }
+            catch (Exception e)
+            {
+                Debug.Log(e);
+                throw;
+            }
+            
             // Initialises Bar Sprite
 
             try
@@ -89,12 +105,12 @@ namespace MoreMountains.CorgiEngine
             }
             
             // Initilises isRunning Variable
-            isRunning = _inputManager.RunButton.State.CurrentState != MMInput.ButtonStates.Off;
+            //isRunning = _inputManager.RunButton.State.CurrentState != MMInput.ButtonStates.Off;
             
             // Initialises Energy Level
             MMEventManager.TriggerEvent(new EnergyEvent(EnergyEventType.Set, 100, multiplier));
-
-
+            Debug.Log("Energy After Start Set :" + _gameManager.EnergyLevel );  
+          
             
         }
 
@@ -134,7 +150,7 @@ namespace MoreMountains.CorgiEngine
             if (elapsed >= 1f && !isRunning)
             {
                 elapsed = elapsed % 1f;
-                MMEventManager.TriggerEvent(new EnergyEvent(EnergyEventType.Add, PassiveEnergyIncreaseRate, multiplier));
+                MMEventManager.TriggerEvent(new EnergyEvent(EnergyEventType.Add, 5, multiplier));
             }
         }
         
@@ -160,8 +176,19 @@ namespace MoreMountains.CorgiEngine
                 }
             }
         }
+        
+        /// <summary>
+        /// Stops Run If Needed Based on Energy Levels
+        /// </summary>
 
-       
+        void stopRun()
+        {
+            if (_gameManager.EnergyLevel < 5)
+            {
+                _characterBasicMovement.MovementSpeed = 6;
+            }
+        }
+
 
         void Update()
         {
@@ -171,9 +198,10 @@ namespace MoreMountains.CorgiEngine
             {
                 //elapsed += Time.deltaTime;
                 //Debug.Log("Power level : "+_gameManager.PowerLevel+", Charge : "+_gameManager.Charge+", Updating Charge to "+ Mathf.Abs(_gameManager.PowerLevel/3) + " Energy Level : "+_gameManager.EnergyLevel + " Current run button state : " + isRunning + ", Desired State : " + MMInput.ButtonStates.ButtonPressed +  " Are Equal : " + (MMInput.ButtonStates.ButtonPressed == _inputManager.RunButton.State.CurrentState));
-                increase();
-                sprinting();
-                updateBar();
+                isRunning = _characterBasicMovement.MovementSpeed.Equals(16.0f);
+                
+                Debug.Log("Energy On Update :" + _gameManager.EnergyLevel + "Speed on update "+_characterBasicMovement.MovementSpeed );  
+
                 
             }
         }
@@ -181,24 +209,33 @@ namespace MoreMountains.CorgiEngine
 
         private void LateUpdate()
         {
+            isRunning = _characterBasicMovement.MovementSpeed.Equals(16.0f);
+            increase();
+            sprinting();
+            updateBar();
+            stopRun();
             elapsed += Time.deltaTime;
-            isRunning = _inputManager.RunButton.State.CurrentState != MMInput.ButtonStates.Off;
-            DebugText.text = "" + (isRunning);
+            DebugText.text = "" + isRunning + " " + _characterBasicMovement.MovementSpeed; //_characterBasicMovement.MovementSpeed;
 
         }
 
         /// <summary>
         /// Handles Visual Bar Changing.
         /// </summary>
-        
+
         void updateBar()
         {
-            // TODO : Improve Visual Power Handling. 
-            BarSprite.transform.position = new Vector3((zeroReference.transform.position.x + (BarSprite.bounds.size.x /2) - 0.05f),BarBackground.position.y,BarBackground.position.z);
-            BarSprite.size = new Vector2(BarFullSize.x * calculateEnergyRatio(),BarFullSize.y);
+            if (_gameManager.EnergyLevel <= 100)
+            {
+                // TODO : Improve Visual Power Handling. 
+                BarSprite.transform.position =
+                    new Vector3((zeroReference.transform.position.x + (BarSprite.bounds.size.x / 2) - 0.05f),
+                        BarBackground.position.y, BarBackground.position.z);
+                BarSprite.size = new Vector2(BarFullSize.x * calculateEnergyRatio(), BarFullSize.y);
+            }
         }
-        
-        
+
+
 
 
     }
