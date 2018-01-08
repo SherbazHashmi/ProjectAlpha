@@ -8,6 +8,7 @@ public class LoadHandler : MonoBehaviour
 {
     public void BackButtonPressed()
     {
-        SceneManager.LoadScene("MainMenuScene");                                                //Load scene indicated with ""
+        SceneManager.LoadScene("MainMenuScene");
+        //Load scene indicated with ""
     }
 }

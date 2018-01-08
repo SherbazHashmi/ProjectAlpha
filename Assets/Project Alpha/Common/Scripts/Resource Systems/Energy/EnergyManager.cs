@@ -16,7 +16,7 @@ namespace MoreMountains.CorgiEngine
         /// </summary>
         
         [Header("Energy")]
-        [SerializeField] bool isRegenActive = true;
+        [SerializeField] bool IsRegenActive = true;
         [SerializeField] protected int PassiveEnergyIncreaseRate;
         [SerializeField] protected  int multiplier = 1;
         
@@ -36,7 +36,7 @@ namespace MoreMountains.CorgiEngine
         Vector2 BarFullSize;
         GameObject _inputManagerObject;
         private InputManager _inputManager;
-        private QuantumRun _characterRun;
+        private CharacterRun _characterRun;
         protected CharacterHorizontalMovement _characterBasicMovement;
         GameObject _characterObject;
         protected bool isRunning; 
@@ -78,7 +78,7 @@ namespace MoreMountains.CorgiEngine
             try
             {
                 _characterObject = GameObject.Find("Character 1");
-                _characterRun = _characterObject.GetComponent<QuantumRun>();
+                _characterRun = _characterObject.GetComponent<CharacterRun>();
                 _characterBasicMovement = _characterObject.GetComponent<CharacterHorizontalMovement>();
             }
             catch (Exception e)
@@ -109,7 +109,7 @@ namespace MoreMountains.CorgiEngine
             
             // Initialises Energy Level
             MMEventManager.TriggerEvent(new EnergyEvent(EnergyEventType.Set, 100, multiplier));
-            Debug.Log("Energy After Start Set :" + _gameManager.EnergyLevel );  
+            // Debug.Log("Energy After Start Set :" + _gameManager.EnergyLevel );  
           
             
         }
@@ -150,7 +150,7 @@ namespace MoreMountains.CorgiEngine
             if (elapsed >= 1f && !isRunning)
             {
                 elapsed = elapsed % 1f;
-                MMEventManager.TriggerEvent(new EnergyEvent(EnergyEventType.Add, 5, multiplier));
+                MMEventManager.TriggerEvent(new EnergyEvent(EnergyEventType.Add, PassiveEnergyIncreaseRate, multiplier));
             }
         }
         
@@ -192,15 +192,15 @@ namespace MoreMountains.CorgiEngine
 
         void Update()
         {
-            /// Resets Passed Decimal Point Number
+            // Resets Passed Decimal Point Number
 
-            if (_gameManager.EnergyActive== false && _gameManager.EnergyActive == false && isRegenActive == true && _gameManager.EnergyLevel <= 100)
+            if (_gameManager.EnergyActive== false && _gameManager.EnergyActive == false && IsRegenActive && _gameManager.EnergyLevel <= 100)
             {
                 //elapsed += Time.deltaTime;
                 //Debug.Log("Power level : "+_gameManager.PowerLevel+", Charge : "+_gameManager.Charge+", Updating Charge to "+ Mathf.Abs(_gameManager.PowerLevel/3) + " Energy Level : "+_gameManager.EnergyLevel + " Current run button state : " + isRunning + ", Desired State : " + MMInput.ButtonStates.ButtonPressed +  " Are Equal : " + (MMInput.ButtonStates.ButtonPressed == _inputManager.RunButton.State.CurrentState));
                 isRunning = _characterBasicMovement.MovementSpeed.Equals(16.0f);
                 
-                Debug.Log("Energy On Update :" + _gameManager.EnergyLevel + "Speed on update "+_characterBasicMovement.MovementSpeed );  
+                //Debug.Log("Energy On Update :" + _gameManager.EnergyLevel + "Speed on update "+_characterBasicMovement.MovementSpeed );  
 
                 
             }
@@ -209,13 +209,13 @@ namespace MoreMountains.CorgiEngine
 
         private void LateUpdate()
         {
-            isRunning = _characterBasicMovement.MovementSpeed.Equals(16.0f);
+            isRunning = _characterBasicMovement.MovementSpeed.Equals(_characterRun.RunSpeed);
             increase();
             sprinting();
             updateBar();
             stopRun();
             elapsed += Time.deltaTime;
-            DebugText.text = "" + isRunning + " " + _characterBasicMovement.MovementSpeed; //_characterBasicMovement.MovementSpeed;
+            //DebugText.text = "" + isRunning + " Character Run  isNull : "+ _characterRun.RunSpeed; //_characterBasicMovement.MovementSpeed;
 
         }
 
@@ -234,8 +234,6 @@ namespace MoreMountains.CorgiEngine
                 BarSprite.size = new Vector2(BarFullSize.x * calculateEnergyRatio(), BarFullSize.y);
             }
         }
-
-
 
 
     }
