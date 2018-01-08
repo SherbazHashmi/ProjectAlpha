@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using MoreMountains.Tools;
 using UnityEngine.UI;
@@ -8,99 +9,136 @@ namespace MoreMountains.CorgiEngine
     public class EnergyManager : MonoBehaviour
     {
 
+        /// <summary>
+        /// Stating Global Variables 
+        /// </summary>
+        
+        [Header("Energy")]
         [SerializeField] bool isRegenActive = true;
-        GameObject gameManagerObject;
-        GameManager gameManager;
-        Utilities utils = new Utilities();
-        int energyAmountToAdd = 1;
-        int multiplier = 1;
+        [SerializeField] protected int PassiveEnergyIncreaseRate;
+        [SerializeField] protected  int multiplier = 1;
+        
+        [Header("Bar")]
         [SerializeField] private GameObject BarObject;
         [SerializeField] GameObject BarBackgroundObject;
+        [SerializeField] private GameObject zeroReference;
+        
+        [Header("Debug")]
+        [SerializeField] Text DebugText;
+
+        private GameObject _gameManagerObject;
+        private GameManager  _gameManager;
         Transform BarBackground;
         private SpriteRenderer BarSprite;
-        [SerializeField] private GameObject zeroReference; 
         private float elapsed = 0f;
         Vector2 BarFullSize;
-        [SerializeField] Text DebugText;
         GameObject _inputManagerObject;
         private InputManager _inputManager;
         GameObject _characterObject;
-        protected Character _character;
         protected bool isRunning; 
-        protected MMStateMachine<CharacterStates.MovementStates> _movement;
 
-        
+        /// <summary>
+        /// Initialises all global variables. 
+        /// </summary>
+
+        void Initialisation()
+        {
+            // Initialises Game Manager 
+            try
+            {
+                _gameManagerObject = GameObject.Find("GameManager");
+                _gameManager = _gameManagerObject.GetComponent<GameManager>();
+            }
+            catch (Exception e)
+            {
+                Debug.Log(e);
+                throw;
+            }
+            
+            // Initialises Input Manager  
+            
+            try
+            {
+                _inputManagerObject = GameObject.Find("InputManager");
+                _inputManager = _inputManagerObject.GetComponent<InputManager>();
+
+            }
+            catch (Exception e)
+            {
+                Debug.Log(e);
+                throw;
+            }
+            
+            // Initialises Bar Sprite
+
+            try
+            {
+                BarSprite = BarObject.GetComponent<SpriteRenderer>();
+                    
+                BarBackground = BarBackgroundObject.GetComponent<Transform>();
+
+            }
+            catch (Exception e)
+            {
+                Debug.Log(e);
+                throw;
+            }
+            
+            // Initilises isRunning Variable
+            isRunning = _inputManager.RunButton.State.CurrentState != MMInput.ButtonStates.Off;
+
+            
+        }
 
         void Start()
         {
             try
             {
-                /// Finding Object Called GameManager 
-                /// 
-                gameManagerObject = GameObject.Find("GameManager");
-                _inputManagerObject = GameObject.Find("InputManager");
-                
-                try
-                {
-                    _inputManager = _inputManagerObject.GetComponent<InputManager>();
-   
-                    /// Isoating actual Game Manager Object (Script)
-
-                    gameManager = gameManagerObject.GetComponent<GameManager>();
-                    // Setting Energy
-                    
-                    MMEventManager.TriggerEvent(new EnergyEvent(EnergyEventType.Set, 100, multiplier));
-                    
-                    /// Bar Sprite 
-                    
-                    BarSprite = BarObject.GetComponent<SpriteRenderer>();
-                    
-                    BarBackground = BarBackgroundObject.GetComponent<Transform>();
-
-                    BarFullSize = BarSprite.size;
-
-                    isRunning = _inputManager.RunButton.State.CurrentState != MMInput.ButtonStates.Off;
-
-
-
-                }
-                catch (System.NullReferenceException gameManagerObjectEx)
-                {
-                    Debug.Log("gameManager Object Returning Null");
-                }
+                Initialisation();
 
             }
-            catch (System.NullReferenceException gameManagerEx)
+            catch (Exception e)
             {
-                Debug.Log("gameManager Object Returning Null");
+                Debug.Log(e);
+                throw;
             }
-            
-           
-
         }
+        
+        
+        
+        /// <summary>
+        /// Calculates Energy Ratio In Order To Produce Correct Number for Bar.  
+        /// </summary>
+        /// <returns>.</returns>
         
         float calculateEnergyRatio()
         {
-            return gameManager.EnergyLevel/100;
+            return _gameManager.EnergyLevel/100;
         }
 
-        
+        /// <summary>
+        /// Handles Passively Increasing Energy By an Amount Every Second. Rate handled by PassiveEnergyIncreaseRate 
+        /// </summary>
+      
+       
         void increase()
         {
             if (elapsed >= 1f && !isRunning)
             {
                 elapsed = elapsed % 1f;
-                // UnityEngine.Debug.Log("Increasing Energy");
-                MMEventManager.TriggerEvent(new EnergyEvent(EnergyEventType.Add, 1, multiplier));
+                MMEventManager.TriggerEvent(new EnergyEvent(EnergyEventType.Add, PassiveEnergyIncreaseRate, multiplier));
             }
         }
         
+        /// <summary>
+        /// Handles Energy Changes when Sprinting
+        /// </summary>
         
         void sprinting()
         {
             if (elapsed >= 1f && isRunning)
-            {
-                if (gameManager.EnergyLevel <= 10)
+            { 
+                if (_gameManager.EnergyLevel <= 10)
                 {
                     MMEventManager.TriggerEvent(new EnergyEvent(EnergyEventType.Set, 0, 0));
                     elapsed = elapsed % 1f;
@@ -112,7 +150,6 @@ namespace MoreMountains.CorgiEngine
                     elapsed = elapsed % 1f;
 
                 }
-                    // UnityEngine.Debug.Log("Increasing Energy");
             }
         }
 
@@ -122,10 +159,10 @@ namespace MoreMountains.CorgiEngine
         {
             /// Resets Passed Decimal Point Number
 
-            if (gameManager.EnergyActive== false && gameManager.EnergyActive == false && isRegenActive == true && gameManager.EnergyLevel <= 100)
+            if (_gameManager.EnergyActive== false && _gameManager.EnergyActive == false && isRegenActive == true && _gameManager.EnergyLevel <= 100)
             {
                 //elapsed += Time.deltaTime;
-                Debug.Log("Power level : "+gameManager.PowerLevel+", Charge : "+gameManager.Charge+", Updating Charge to "+ Mathf.Abs(gameManager.PowerLevel/3) + " Energy Level : "+gameManager.EnergyLevel + " Current run button state : " + isRunning + ", Desired State : " + MMInput.ButtonStates.ButtonPressed +  " Are Equal : " + (MMInput.ButtonStates.ButtonPressed == _inputManager.RunButton.State.CurrentState));
+                Debug.Log("Power level : "+_gameManager.PowerLevel+", Charge : "+_gameManager.Charge+", Updating Charge to "+ Mathf.Abs(_gameManager.PowerLevel/3) + " Energy Level : "+_gameManager.EnergyLevel + " Current run button state : " + isRunning + ", Desired State : " + MMInput.ButtonStates.ButtonPressed +  " Are Equal : " + (MMInput.ButtonStates.ButtonPressed == _inputManager.RunButton.State.CurrentState));
                 increase();
                 sprinting();
                 updateBar();
@@ -142,6 +179,10 @@ namespace MoreMountains.CorgiEngine
 
         }
 
+        /// <summary>
+        /// Handles Visual Bar Changing.
+        /// </summary>
+        
         void updateBar()
         {
             // TODO : Improve Visual Power Handling. 
