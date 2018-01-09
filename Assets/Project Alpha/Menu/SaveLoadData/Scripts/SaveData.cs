@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -10,7 +12,9 @@ namespace MoreMountains.CorgiEngine
     /// Utilised in Checkpoint & Load Scripts.
     /// </summary>
     /// 
+    /// TODO: For Images, Store Images in Memory! This way you won't have to pull images over and over again.
     
+    [Serializable]
     public class SaveData
     {
         
@@ -19,14 +23,16 @@ namespace MoreMountains.CorgiEngine
         /// </summary>
        
         // General Data (Image, Image Directory, Game Text, Play Time)
-        private Image _levelImage;
+        // Image is encoded as a png file;
+        private byte[] _levelImage;
         private string _imageDirectory;
         private string _saveGameText;
         private int _currentPlayTime;
         
-        // Currency Data (Chips, Cogs)
+        // Currency Data (Chips, Cogs, Array of High Cog Scores for Previous Levels)
         private float _chips;
         private float _cogs;
+        private float[] _totalCogs;
         
         // Scene and Checkpoint Data.
         private Scene _scene;
@@ -40,9 +46,8 @@ namespace MoreMountains.CorgiEngine
         /// Constructor used whenever a new SaveData instance is created. 
         /// </summary>
         
-        public SaveData(Image levelImage, string saveGameText, int currentPlayTime, Scene scene, string lastCheckPointName, DateTime dateCreated, DateTime dateSaved, float chips, float cogs)
+        public SaveData(string saveGameText, int currentPlayTime, Scene scene, string lastCheckPointName, DateTime dateCreated, DateTime dateSaved, float chips, float cogs)
         {
-            _levelImage = levelImage;
             _saveGameText = saveGameText;
             _currentPlayTime = currentPlayTime;
 
@@ -58,6 +63,10 @@ namespace MoreMountains.CorgiEngine
             // Setting Image Directory Using SetImageDirectory.
             
             SetImageDirectory();
+            
+            // Setting Image 
+            
+            SetImage();
         }
 
 
@@ -70,8 +79,8 @@ namespace MoreMountains.CorgiEngine
         
         public SaveData(int indexSaveFile)
         {
-           // Create An Array Of Saves from Current Save Files (Maybe Filter By Save Extension) 
-            
+           // Create An Array (Create Dynamic) Of Saves from Current Save Files (Maybe Filter By Save Extension) 
+           
            // Select The Index Of Save File Required From Array
             
            // Set Instance Fields to File Fields From Array
@@ -98,9 +107,30 @@ namespace MoreMountains.CorgiEngine
             // Root (Where All The Level Images Are Saved)
             const string root = "/data/lvlimgs/";
             // File Name (based on scene)
-            var filename = _scene.name;
+            var fileName = _scene.name;
             // Sets Image Directory
-            _imageDirectory = root + filename;
+            _imageDirectory = root + fileName;
+        }
+
+        private void SetImage()
+        {
+
+            if (File.Exists(_imageDirectory))
+            {
+                _levelImage = File.ReadAllBytes(_imageDirectory);
+                
+            }
+            else
+            {
+                Debug.LogError("No file exists at the following location : "+_imageDirectory);
+            }
+          
+        }
+
+
+        private void ModifyTotalCogs(int index)
+        {
+            _totalCogs[index] = _cogs;
         }
 
 
