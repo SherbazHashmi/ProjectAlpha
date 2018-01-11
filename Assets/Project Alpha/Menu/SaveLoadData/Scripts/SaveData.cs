@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Debug = UnityEngine.Debug;
 
 namespace MoreMountains.CorgiEngine
 {
@@ -62,7 +65,9 @@ namespace MoreMountains.CorgiEngine
             
             // Setting Image Directory Using SetImageDirectory.
             
-            SetImageDirectory();
+            _imageDirectory = SetPathDirectory(DirectoryUseCase.Image);
+            
+            //
             
             // Setting Image 
             
@@ -77,39 +82,94 @@ namespace MoreMountains.CorgiEngine
         
         // TODO : Create Load Constructor To Be Used When Loading A Save File!
         
-        public SaveData(int indexSaveFile)
+        public SaveData LoadSaveData(int indexSaveFile)
         {
            // Create An Array (Create Dynamic) Of Saves from Current Save Files (Maybe Filter By Save Extension) 
            
            // Select The Index Of Save File Required From Array
             
            // Set Instance Fields to File Fields From Array
-  
+
+            return null;
+
         }
         
-        
-        
-        // TODO : Create A Save Function! This will serialise the data into a file!! 
+
         
         public void Save()
         {
+            // Initiliasing Binary Formatter.             
+            BinaryFormatter formatter = new BinaryFormatter();
             
+            // Setting Up File Directory            
+            string fileDir = SetPathDirectory(DirectoryUseCase.SaveFile);
+            
+            // Updating Date Created and Saved Variables
+            _dateSaved = DateTime.Now;
+
+            if (!File.Exists(fileDir))
+            {
+                _dateCreated = _dateSaved;
+            }
+
+            // Handle Save File Based on Whether the File Exists or Not.
+            FileStream saveFile = (File.Exists(fileDir)) ? File.Open(fileDir, FileMode.Open) : File.Create(fileDir);
+            
+            // Serialising the File (Writing the Data)
+            formatter.Serialize(saveFile, this);
+            
+            // Closing The File
+            saveFile.Close();
         }
         
         /// <summary>
-        /// Used In Initialisation of Image Directory, it will set the correct directory (string)
-        /// for the corresponding image based on which scene it is loading.
+        /// Used In Initialisation of Directories, it will set the correct directory (string)
+        /// for the corresponding object.
         /// Images should already be present and matching viewer. 
         /// </summary>
         
-        private void SetImageDirectory()
+        private string SetPathDirectory(DirectoryUseCase duc)
         {
+            
+            string subdirectory;
+            string fileName;
+            
+            // Setting Subdirectory and File Name Based On Directory USe Case. 
+            
+            switch (duc)
+            {
+                case DirectoryUseCase.SaveFile :
+                    subdirectory = "SaveData";
+                    fileName = _saveGameText;
+                    break;
+                case DirectoryUseCase.Image :
+                    subdirectory = "LevelImg";
+                    fileName = _scene.name;
+                    break;
+                default:
+                    Debug.Log("Incorrect Subdirectory Passed :"+duc);
+                    subdirectory = null;
+                    fileName = null;
+                    break;
+            }
+            
             // Root (Where All The Level Images Are Saved)
-            const string root = "/data/lvlimgs/";
+            string root = Application.persistentDataPath;
+            
             // File Name (based on scene)
-            var fileName = _scene.name;
+            fileName += ".dat";
+            
             // Sets Image Directory
-            _imageDirectory = root + fileName;
+            return root + "/" + subdirectory + "/" + fileName + "/";
+        }
+
+        /// <summary>
+        /// Directory Use Case are the types of use cases for using directories
+        /// Interacts With SetPathDirectory Function
+        /// </summary>
+        private enum DirectoryUseCase 
+        {
+            SaveFile, Image
         }
 
         private void SetImage()
@@ -122,16 +182,37 @@ namespace MoreMountains.CorgiEngine
             }
             else
             {
-                Debug.LogError("No file exists at the following location : "+_imageDirectory);
+                Debug.LogError("The file '" + _imageDirectory +"' does not exist.");
             }
           
         }
 
+        
+        /// <summary>
+        /// Changes High Cog Score For Whichever Level You Wish To Update For. Index denotes the level to ammend.
+        /// </summary>
+        /// <param name="index"></param>
 
         private void ModifyTotalCogs(int index)
         {
             _totalCogs[index] = _cogs;
         }
+        
+        // TODO : Use Hash Tables For Hash Table Implementation, Faster Searching.
+
+        /// <summary>
+        /// Updates Last Checkpoint Value To The Parsed Checkpoint.
+        /// </summary>
+        /// <param name="checkPoint"></param>
+        
+        public void UpdateLastCheckPoint(CheckPoint checkPoint)
+        {
+            _lastCheckPointName = checkPoint.name;
+        }
+        
+        
+         
+        
 
 
     }
