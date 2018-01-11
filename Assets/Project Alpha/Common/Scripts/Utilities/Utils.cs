@@ -18,7 +18,7 @@ namespace MoreMountains.CorgiEngine
 			return (afterDecimalPoint.Equals("0") || afterDecimalPoint.Equals(""));
         }
 
-        public string getAfterDecimalPoint(string str)
+        public string  getAfterDecimalPoint(string str)
         {
             if (str.Length > 0)
             {

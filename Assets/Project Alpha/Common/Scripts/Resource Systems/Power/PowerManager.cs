@@ -128,7 +128,6 @@ namespace MoreMountains.CorgiEngine
 	    
 	    void updateBar()
 	    {
-		    // TODO : Improve Visual Power Handling. 
 		    BarSprite.transform.position = new Vector3((zeroReference.transform.position.x + (BarSprite.bounds.size.x /2) - 0.05f),BarBackground.position.y,BarBackground.position.z);
 		    BarSprite.size = new Vector2(BarFullSize.x * calculatePowerRatio(),BarFullSize.y);
 	    }

@@ -227,7 +227,6 @@ namespace MoreMountains.CorgiEngine
         {
             if (_gameManager.EnergyLevel <= 100)
             {
-                // TODO : Improve Visual Power Handling. 
                 BarSprite.transform.position =
                     new Vector3((zeroReference.transform.position.x + (BarSprite.bounds.size.x / 2) - 0.05f),
                         BarBackground.position.y, BarBackground.position.z);

@@ -268,7 +268,7 @@ namespace MoreMountains.CorgiEngine
 			{
 				CurrentCheckPoint.SpawnPlayer(Players[0]);
 			}
-			#else
+			else
 			if (CurrentCheckPoint != null)
 			{			
 			CurrentCheckPoint.SpawnPlayer(Players[0]);

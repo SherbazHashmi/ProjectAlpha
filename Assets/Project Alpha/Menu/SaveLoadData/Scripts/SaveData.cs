@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Diagnostics;
+using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 using Debug = UnityEngine.Debug;
 
 namespace MoreMountains.CorgiEngine
@@ -14,9 +13,7 @@ namespace MoreMountains.CorgiEngine
     /// Implements Save Fields and Behaviours. 
     /// Utilised in Checkpoint & Load Scripts.
     /// </summary>
-    /// 
-    /// TODO: For Images, Store Images in Memory! This way you won't have to pull images over and over again.
-    
+
     [Serializable]
     public class SaveData
     {
@@ -30,6 +27,7 @@ namespace MoreMountains.CorgiEngine
         private byte[] _levelImage;
         private string _imageDirectory;
         private string _saveGameText;
+        // Current Play Time is is Minutes!
         private int _currentPlayTime;
         
         // Currency Data (Chips, Cogs, Array of High Cog Scores for Previous Levels)
@@ -44,6 +42,10 @@ namespace MoreMountains.CorgiEngine
         // Dates (Created & Saved) 
         private DateTime _dateCreated;
         private DateTime _dateSaved;
+        
+        // Talent Collection 
+
+        private TalentCollection _talentCollection;
 
         /// <summary>
         /// Constructor used whenever a new SaveData instance is created. 
@@ -62,43 +64,160 @@ namespace MoreMountains.CorgiEngine
 
             _chips = chips;
             _cogs = cogs;
+            _totalCogs = new float[7];
             
             // Setting Image Directory Using SetImageDirectory.
             
             _imageDirectory = SetPathDirectory(DirectoryUseCase.Image);
             
-            //
-            
             // Setting Image 
             
             SetImage();
+            
+            // Initialising Talent Collection
+            
+            _talentCollection.initTalents();
+            
+
+        }
+
+        /// <summary>
+        /// Save Data Constructor To Load From A File
+        /// </summary>
+        public SaveData(string saveText)
+        {
+            LoadSaveData(saveText);
         }
 
 
         /// <summary>
-        /// Save Data Load Constructor
+        /// Loads save data from file, if it returns null, there was not a save file match in folder.
+        /// </summary>
+        /// <param name="saveText"></param> 
+        
+                
+        private void LoadSaveData(string saveText)
+        {
+           // Create An List Of Saves from Current Save Files (Maybe Filter By Save Extension) 
+
+            BinaryFormatter formatter = new BinaryFormatter();
+            
+            List<SaveData> saves = new List<SaveData>();
+
+            string saveDirectory = Application.persistentDataPath + "/SaveData/";
+            
+            
+            
+            foreach (var fileName in Directory.GetFiles(saveDirectory))
+            {
+                try
+                {
+                    // NOTE : If Loading Doesn't Work, Fix The Deserialisation Force Typcast. 
+                    
+                    FileStream saveFileStream = File.Open(saveDirectory + "/" + fileName + "/", FileMode.Open, FileAccess.Read, FileShare.Read);
+                    
+                    var save = (SaveData) formatter.Deserialize(saveFileStream);
+
+                    if (save._saveGameText == saveText)
+                    {
+                        _chips = save._chips;
+                        _cogs = save._cogs;
+                        _currentPlayTime = save._currentPlayTime;
+                        _dateCreated = save._dateCreated;
+                        _dateSaved = save._dateSaved;
+                        _imageDirectory = save._imageDirectory;
+                        _lastCheckPointName = save._lastCheckPointName;
+                        _levelImage = save._levelImage;
+                        _saveGameText = save._saveGameText;
+                        _scene = save._scene;
+                        _talentCollection = save._talentCollection;
+                        _totalCogs = save._totalCogs;
+                    }
+                   
+                    saveFileStream.Close();
+
+                }
+                
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    throw;
+                }
+            }
+
+            Debug.LogError("Save File Doesn't Exist For The Following Save Text : "+saveText+". Actual save file names : "+saves+".");
+
+        }
+
+        /// <summary>
+        /// Produces All Save Files Names And Populates Them Into An Array
+        /// </summary>
+        /// <returns>Array of Save Files</returns>
+
+        public string[] ShowSaveFiles()
+        {
+            List<string> savesList = new List<string>();
+
+            string saveDirectory = Application.persistentDataPath + "/SaveData/";
+
+            return Directory.GetFiles(saveDirectory);
+        }
+        
+        /// <summary>
+        /// Deletes Save File given a saveText parameter.
+        /// </summary>
+        /// <param name="saveText"></param>
+
+
+        public void DeleteSave(string saveText)
+        {
+            string saveDirectory = Application.persistentDataPath + "/SaveData/" + saveText + ".dat/";
+
+            if (File.Exists(saveDirectory))
+            {
+                File.Delete(saveDirectory);
+            }
+            else
+            {
+                Debug.LogError("Save File : "+saveDirectory+", does not exist!");
+            }
+        }
+
+
+        /// <summary>
+        /// Populate Save Object With Fields From a Game Manager.
         /// </summary>
         
         
-        // TODO : Create Load Constructor To Be Used When Loading A Save File!
+        /// TODO : Populate The Save Object From Game. 
         
-        public SaveData LoadSaveData(int indexSaveFile)
+        public void PopulateSaveObject(GameManager gameManager, LevelManager levelManager )
         {
-           // Create An Array (Create Dynamic) Of Saves from Current Save Files (Maybe Filter By Save Extension) 
-           
-           // Select The Index Of Save File Required From Array
-            
-           // Set Instance Fields to File Fields From Array
+            // Pulling Currency Data 
 
-            return null;
+            _chips = gameManager.ChipPoints;
+            _cogs = gameManager.Points;
+
+            // Pulling Checkpoint Data
+            _lastCheckPointName = levelManager.Checkpoints[levelManager.Checkpoints.Count - 1].name;
+            
+            
+            // Date Saved Modification
+            
+            _dateSaved = DateTime.Now;
+            _currentPlayTime = _currentPlayTime + levelManager.RunningTime.Minutes;
 
         }
         
-
         
-        public void Save()
+        /// <summary>
+        /// Saves The Current Save Object To Memory
+        /// </summary>        
+        
+        private void Save()
         {
-            // Initiliasing Binary Formatter.             
+            // Initiliasing Binary Formatter.    
+            
             BinaryFormatter formatter = new BinaryFormatter();
             
             // Setting Up File Directory            
@@ -125,8 +244,9 @@ namespace MoreMountains.CorgiEngine
         /// <summary>
         /// Used In Initialisation of Directories, it will set the correct directory (string)
         /// for the corresponding object.
-        /// Images should already be present and matching viewer. 
+        /// Images should already be present and matching viewer. Takes a directory use case parameter.
         /// </summary>
+        /// <param name="duc"></param>
         
         private string SetPathDirectory(DirectoryUseCase duc)
         {
@@ -191,15 +311,13 @@ namespace MoreMountains.CorgiEngine
         /// <summary>
         /// Changes High Cog Score For Whichever Level You Wish To Update For. Index denotes the level to ammend.
         /// </summary>
-        /// <param name="index"></param>
+        /// <param name="levelIndex"></param>
 
-        private void ModifyTotalCogs(int index)
+        private void UpdateHighScore(string sceneName)
         {
-            _totalCogs[index] = _cogs;
+            _totalCogs[sceneIndex(sceneName)] = _cogs;
         }
         
-        // TODO : Use Hash Tables For Hash Table Implementation, Faster Searching.
-
         /// <summary>
         /// Updates Last Checkpoint Value To The Parsed Checkpoint.
         /// </summary>
@@ -209,11 +327,25 @@ namespace MoreMountains.CorgiEngine
         {
             _lastCheckPointName = checkPoint.name;
         }
-        
-        
-         
-        
 
+        
+        /// <summary>
+        /// Based on Scene Name, It Will Produce the Index (Used in HighScoreFunction)
+        /// </summary>
+        /// <param name="sceneName"></param>
+        /// <returns>Index Of Scene (Level) </returns>
 
+        private int sceneIndex(string sceneName)
+        {
+            switch (sceneName)
+            {
+                    case "scene1" :
+                        return 1;
+                    case "scene2" :
+                        return 2;
+            }
+            return 0;
+        }
+              
     }
 }
