@@ -37,6 +37,12 @@ public class TalentSystemNavigation : MonoBehaviour
 	void Update()
 	{
 		TalentActiveCheck ();
+
+		if (Input.GetKey(KeyCode.Escape)) 
+		{
+			talent_weaponPopup.SetActive (false);
+			talentSelectionPopup.SetActive (false);
+		}
 	}
 
 	/*We still need to create a class to manage talent points,
