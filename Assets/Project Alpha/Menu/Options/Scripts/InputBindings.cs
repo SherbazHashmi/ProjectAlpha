@@ -8,20 +8,20 @@ public class InputBindings : MonoBehaviour
     public GameObject keyPressedPopup;
 
     [Header("Movement")]
-    [SerializeField] private Text up;
-    [SerializeField] private Text left;
-    [SerializeField] private Text right;
-    [SerializeField] private Text down;
-    [SerializeField] private Text jump;
+	public Text up;
+	public Text left;
+	public Text right;
+	public Text down;
+	public Text jump;
 
     [Header("Actions")]
-    [SerializeField] private Text fire;
-    [SerializeField] private Text meleeAttack;
-    [SerializeField] private Text meleeSkill;
-    [SerializeField] private Text ulimateAttack;
-    [SerializeField] private Text armourBoost;
-    [SerializeField] private Text quantumCancel;
-    [SerializeField] private Text switchWeapon;
+	public Text fire;
+	public Text meleeAttack;
+	public Text meleeSkill;
+	public Text ulimateAttack;
+	public Text armourBoost;
+	public Text quantumCancel;
+	public Text switchWeapon;
 
     private Dictionary<string, KeyCode> keys = new Dictionary<string, KeyCode>();
     private GameObject currentKey;
