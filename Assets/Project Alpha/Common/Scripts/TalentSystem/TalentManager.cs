@@ -12,7 +12,7 @@ namespace MoreMountains.CorgiEngine
         {
             // Initialise talent collection (Add All Abilities/Weapons)
             
-           talents.initTalents();
+           talents.InitTalentCollection();
             
         }
 

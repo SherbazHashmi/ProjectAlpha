@@ -11,7 +11,8 @@ using System.Collections.Generic;
 		[Test, Category("TalentTest")]
 			public void testAddOne () {
 			TalentCollection talentInterface = new TalentCollection ();
-            Dictionary<Weapon, bool> talents = talentInterface.getTalents();
+			talentInterface.InitTalentCollection();
+			Dictionary<Weapon, bool> talents = talentInterface.GetTalents();
 		}
 		
 }

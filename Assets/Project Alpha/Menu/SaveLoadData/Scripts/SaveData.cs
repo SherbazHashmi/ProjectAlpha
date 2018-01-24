@@ -76,7 +76,7 @@ namespace MoreMountains.CorgiEngine
             
             // Initialising Talent Collection
             
-            _talentCollection.initTalents();
+            _talentCollection.InitTalentCollection();
             
 
         }
@@ -183,14 +183,17 @@ namespace MoreMountains.CorgiEngine
             }
         }
 
+        public void CreateSaveDirectory()
+        {
+            Directory.CreateDirectory(Application.persistentDataPath + "/SaveData/");
+        }
+
 
         /// <summary>
         /// Populate Save Object With Fields From a Game Manager.
         /// </summary>
         
-        
-        /// TODO : Populate The Save Object From Game. 
-        
+                
         public void PopulateSaveObject(GameManager gameManager, LevelManager levelManager )
         {
             // Pulling Currency Data 
@@ -206,6 +209,10 @@ namespace MoreMountains.CorgiEngine
             
             _dateSaved = DateTime.Now;
             _currentPlayTime = _currentPlayTime + levelManager.RunningTime.Minutes;
+            
+            // Talent Collection
+            // TODO : Once Talent Handling Is Complete Remember To Update This With Whichever Manager Is Appropriate.
+            _talentCollection = null;
 
         }
         
@@ -248,7 +255,7 @@ namespace MoreMountains.CorgiEngine
         /// </summary>
         /// <param name="duc"></param>
         
-        private string SetPathDirectory(DirectoryUseCase duc)
+        public string SetPathDirectory(DirectoryUseCase duc)
         {
             
             string subdirectory;
@@ -287,7 +294,7 @@ namespace MoreMountains.CorgiEngine
         /// Directory Use Case are the types of use cases for using directories
         /// Interacts With SetPathDirectory Function
         /// </summary>
-        private enum DirectoryUseCase 
+        public enum DirectoryUseCase 
         {
             SaveFile, Image
         }
@@ -340,11 +347,11 @@ namespace MoreMountains.CorgiEngine
             switch (sceneName)
             {
                     case "scene1" :
-                        return 1;
+                        return 0;
                     case "scene2" :
-                        return 2;
+                        return 1;
             }
-            return 0;
+            return -1;
         }
               
     }

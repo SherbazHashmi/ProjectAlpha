@@ -12,7 +12,35 @@ namespace MoreMountains.CorgiEngine
 	public class Weapon : MonoBehaviour
 	{
 
+		/// <summary>
+		/// Type of Attack This Talent Replaces (As Outlined in Documentation)
+		/// Ref : https://docs.google.com/document/d/14MyKsqf8reATkkiQ2IGxU-T1GgR7HDV_C2v7vzJpwIs
+		/// </summary>
 
+		public enum TypeOfAttack {
+			Weak,
+			Strong,
+			Ultimate,
+			Movement
+		}
+
+
+		/// <summary>
+		///  Type of Weapon That This Talent Applies To
+		/// </summary>
+
+
+		public enum TypeOfWeapon {
+			SawDropper,
+			RocketLauncher,
+			Shotgun,
+			PelletGun,
+			Unarmed
+		}
+		
+		
+		
+	
 		/// the possible use modes for the trigger
 		public enum TriggerModes { SemiAuto, Auto }
 		/// the possible states the weapon can be in
@@ -25,6 +53,11 @@ namespace MoreMountains.CorgiEngine
 		public float DelayBeforeUse = 0f;
 		// the time (in seconds) between two shots		
 		public float TimeBetweenUses = 1f;
+		// type of weapon
+		public TypeOfWeapon WeaponType { get; set; }
+
+		// type of attack
+		public TypeOfAttack AttackType { get; set; }
 
 		[Header("Magazine")]
 		/// whether or not the weapon is magazine based. If it's not, it'll just take its ammo inside a global pool
