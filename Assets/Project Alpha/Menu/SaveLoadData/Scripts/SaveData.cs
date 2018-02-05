@@ -96,7 +96,7 @@ namespace MoreMountains.CorgiEngine
         /// <param name="saveText"></param> 
         
                 
-        private void LoadSaveData(string saveText)
+        private SaveData LoadSaveData(string saveText)
         {
            // Create An List Of Saves from Current Save Files (Maybe Filter By Save Extension) 
 
@@ -135,6 +135,7 @@ namespace MoreMountains.CorgiEngine
                     }
                    
                     saveFileStream.Close();
+                    return save;
 
                 }
                 
@@ -146,7 +147,7 @@ namespace MoreMountains.CorgiEngine
             }
 
             Debug.LogError("Save File Doesn't Exist For The Following Save Text : "+saveText+". Actual save file names : "+saves+".");
-
+            return null;
         }
 
         /// <summary>
@@ -311,7 +312,7 @@ namespace MoreMountains.CorgiEngine
         /// <summary>
         /// Changes High Cog Score For Whichever Level You Wish To Update For. Index denotes the level to ammend.
         /// </summary>
-        /// <param name="levelIndex"></param>
+        /// <param name="levelIndex"></param>  
 
         private void UpdateHighScore(string sceneName)
         {

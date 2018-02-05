@@ -160,6 +160,8 @@ namespace MoreMountains.CorgiEngine
 		public bool StoredLevelMapPosition{ get; set; }
 		/// the current player
 		public Vector2 LevelMapPosition { get; set; }
+		// save data
+		public SaveData SaveData { get; set; }
 
 	    // storage
 		protected Stack<float> _savedTimeScale;
