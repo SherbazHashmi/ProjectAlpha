@@ -1,3 +1,5 @@
+using System;
+
 namespace MoreMountains.CorgiEngine
 {
 
@@ -43,5 +45,84 @@ namespace MoreMountains.CorgiEngine
                 return "";
             }
         }
+        
+        public class TimeCalculations
+        {
+            enum TUnit
+            {
+                Seconds, Minutes, Hours, Days
+            }
+            
+            
+            /// <summary>
+            /// RemainderT takes a time value and unit of time value and produces the whole number for the next unit
+            /// down accompanied by the new value below the upper limit for the current unit. Ideally should be done
+            /// as a tuple, but not yet supported in Unity so using a two cell array. 
+            /// </summary>
+            /// <param name="time"></param>
+            /// <param name="timeUnit"></param>
+            /// <returns></returns>
+            
+            static float[]  RemainderT (float time, TUnit timeUnit)
+            {
+                float wp;
+                float p;
+
+
+                switch (timeUnit)
+                {
+                    case TUnit.Days :
+                        return new float[] {0, time};
+                    case TUnit.Hours :
+                        p = 1 % (time / 24);
+                        break;
+                    default:
+                        p = 1 % (time / 60);
+                        break;
+                }
+                
+                wp = time - p;
+
+                p = p * 60;
+
+                if (timeUnit == TUnit.Hours)
+                    p = (p / 60) * 24;
+                
+                return new float[] {wp,p};
+   
+            }
+
+            static float[]  secondsToTimeArr (float seconds)
+            {
+                float minutes;
+                float hours;
+                float days;
+
+                float[] calculation = RemainderT(seconds, TUnit.Seconds);
+                seconds = calculation[1];
+                
+                calculation = RemainderT(calculation[0], TUnit.Minutes);
+                minutes = calculation[1];
+                
+                calculation = RemainderT(calculation[0], TUnit.Hours);
+                hours = calculation[1];
+                
+                calculation = RemainderT(calculation[0], TUnit.Days);
+                days = calculation[1];
+
+                return new float[] {seconds, minutes, hours, days};
+            }
+
+
+            public static string secondsToString(float seconds)
+            {
+                float[] timeArr = secondsToTimeArr(seconds);
+                return timeArr[0]+" seconds "+timeArr[1] + " minutes " + timeArr[2] +" hours " + timeArr[3] + "days" ;
+            }
+        }
+        
+        
+        
+        
     }
 }

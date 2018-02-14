@@ -2,6 +2,7 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using Project_Alpha.Common.Scripts.Setup;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -20,6 +21,7 @@ public class MenuBehaviour : MonoBehaviour
     public void StartGamePressed()
     {
         startGamePopup.SetActive(true);                                     //activates popup
+        Setup fileDirectorySetup = new Setup();
     }
 
     public void CancelPressed()

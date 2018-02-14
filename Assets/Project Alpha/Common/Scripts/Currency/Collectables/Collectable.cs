@@ -6,16 +6,16 @@
     }
     public class Collectable : PickableItem
     {
-        private string name;
-        private int collectableID;
-        private TypeOfCollectable type;
+        private string Name;
+        private int CollectableID;
+        private TypeOfCollectable Type;
 
 
-        Collectable(string name, int collectableId, TypeOfCollectable type)
+        Collectable(string name, int collectableID, TypeOfCollectable type)
         {
-            this.name = name;
-            this.collectableID = collectableId;
-            this.type = type;
+            Name = name;
+            CollectableID = collectableID;
+            Type = type;
         }
     }
 }

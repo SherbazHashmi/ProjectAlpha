@@ -76,7 +76,7 @@ namespace MoreMountains.CorgiEngine
             
             // Initialising Talent Collection
             
-            _talentCollection.InitTalentCollection();
+            _talentCollection.initTalents();
             
 
         }
@@ -96,7 +96,7 @@ namespace MoreMountains.CorgiEngine
         /// <param name="saveText"></param> 
         
                 
-        private void LoadSaveData(string saveText)
+        private SaveData LoadSaveData(string saveText)
         {
            // Create An List Of Saves from Current Save Files (Maybe Filter By Save Extension) 
 
@@ -135,6 +135,7 @@ namespace MoreMountains.CorgiEngine
                     }
                    
                     saveFileStream.Close();
+                    return save;
 
                 }
                 
@@ -146,7 +147,7 @@ namespace MoreMountains.CorgiEngine
             }
 
             Debug.LogError("Save File Doesn't Exist For The Following Save Text : "+saveText+". Actual save file names : "+saves+".");
-
+            return null;
         }
 
         /// <summary>
@@ -183,17 +184,14 @@ namespace MoreMountains.CorgiEngine
             }
         }
 
-        public void CreateSaveDirectory()
-        {
-            Directory.CreateDirectory(Application.persistentDataPath + "/SaveData/");
-        }
-
 
         /// <summary>
         /// Populate Save Object With Fields From a Game Manager.
         /// </summary>
         
-                
+        
+        /// TODO : Populate The Save Object From Game. 
+        
         public void PopulateSaveObject(GameManager gameManager, LevelManager levelManager )
         {
             // Pulling Currency Data 
@@ -209,10 +207,6 @@ namespace MoreMountains.CorgiEngine
             
             _dateSaved = DateTime.Now;
             _currentPlayTime = _currentPlayTime + levelManager.RunningTime.Minutes;
-            
-            // Talent Collection
-            // TODO : Once Talent Handling Is Complete Remember To Update This With Whichever Manager Is Appropriate.
-            _talentCollection = null;
 
         }
         
@@ -255,7 +249,7 @@ namespace MoreMountains.CorgiEngine
         /// </summary>
         /// <param name="duc"></param>
         
-        public string SetPathDirectory(DirectoryUseCase duc)
+        private string SetPathDirectory(DirectoryUseCase duc)
         {
             
             string subdirectory;
@@ -294,7 +288,7 @@ namespace MoreMountains.CorgiEngine
         /// Directory Use Case are the types of use cases for using directories
         /// Interacts With SetPathDirectory Function
         /// </summary>
-        public enum DirectoryUseCase 
+        private enum DirectoryUseCase 
         {
             SaveFile, Image
         }
@@ -318,7 +312,7 @@ namespace MoreMountains.CorgiEngine
         /// <summary>
         /// Changes High Cog Score For Whichever Level You Wish To Update For. Index denotes the level to ammend.
         /// </summary>
-        /// <param name="levelIndex"></param>
+        /// <param name="levelIndex"></param>  
 
         private void UpdateHighScore(string sceneName)
         {
@@ -346,12 +340,12 @@ namespace MoreMountains.CorgiEngine
         {
             switch (sceneName)
             {
-                    case "scene1" :
-                        return 0;
-                    case "scene2" :
+                    case "level1" :
                         return 1;
+                    case "level2" :
+                        return 2;
             }
-            return -1;
+            return 0;
         }
               
     }
