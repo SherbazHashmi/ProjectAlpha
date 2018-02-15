@@ -2,7 +2,6 @@
 {
     public class PelletGunDefaultUltimate : RangedCombatAbility
     {
-        public string Description;
         
         public PelletGunDefaultUltimate () 
         {

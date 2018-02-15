@@ -17,7 +17,7 @@ namespace MoreMountains.CorgiEngine {
 
     public class RangedCombatAbility : ProjectileWeapon
     {
-
+		
         public string Name;
         public string UpgradePath;
         public bool IsTalentAbility;

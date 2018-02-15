@@ -59,6 +59,11 @@ namespace MoreMountains.CorgiEngine
 		// branch
 
 		public string Branch { get; set; }
+		
+		// description
+		
+		public string Description;
+
 
 		[Header("Magazine")]
 		/// whether or not the weapon is magazine based. If it's not, it'll just take its ammo inside a global pool
