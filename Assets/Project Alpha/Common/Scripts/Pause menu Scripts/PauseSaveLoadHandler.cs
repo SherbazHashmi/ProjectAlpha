@@ -28,7 +28,8 @@ public class PauseSaveLoadHandler : MonoBehaviour
 	/// </summary>
 	void EscapedPressedCheck ()
 	{
-		if (Input.GetKey (KeyCode.Escape)) {
+		if (Input.GetKey (KeyCode.Escape))
+        {
 			savePanel.SetActive (false);
 			loadPanel.SetActive (false);
 		}

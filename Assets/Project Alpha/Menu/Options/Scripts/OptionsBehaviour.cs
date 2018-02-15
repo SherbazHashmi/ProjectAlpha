@@ -8,17 +8,22 @@ using UnityEngine.SceneManagement;
 public class OptionsBehaviour : MonoBehaviour
 {
     [Header ("Panel and Slider Sets")]                                                          //Sets header in unity heirarchy
-    [SerializeField] private GameObject audioPanel;                                             //Sets audioPanel
+    [SerializeField] private GameObject settingsPanel;                                          //Sets audioPanel
     [SerializeField] private GameObject keyboardConfigPanel;                                    //Sets keymapping Panel
 	[SerializeField] private GameObject optionsPanel;
 
-	/// <summary>
-	/// Makes sure that the popups are closed at start
-	/// </summary>
-	void Start ()
+    [Header("Panel and Slider Sets")]                                                          //Sets header in unity heirarchy
+    [SerializeField] private GameObject keyboardControls;
+    [SerializeField] private GameObject consoleControls;
+
+    /// <summary>
+    /// Makes sure that the popups are closed at start
+    /// </summary>
+    void Start ()
     {
-        audioPanel.SetActive(true);                                                             //Sets GameObject Active
+        settingsPanel.SetActive(true);                                                          //Sets GameObject Active
         keyboardConfigPanel.SetActive(false);                                                   //Sets GameObject Inactive
+        keyboardControls.SetActive(false);
     }
 
 	void Update()
@@ -31,11 +36,14 @@ public class OptionsBehaviour : MonoBehaviour
 	/// </summary>
 	void CheckEscapePressed ()
 	{
-		if (Input.GetKey (KeyCode.Escape)) {
-			audioPanel.SetActive (false);
-			keyboardConfigPanel.SetActive (false);
+		if (Input.GetKey (KeyCode.Escape))
+        {
+            settingsPanel.SetActive (false);
+            keyboardControls.SetActive (false);
 			optionsPanel.SetActive (false);
-		}
+            keyboardControls.SetActive(false);
+            consoleControls.SetActive(false);
+        }
 	}
 
 	/// <summary>
@@ -43,31 +51,56 @@ public class OptionsBehaviour : MonoBehaviour
 	/// </summary>
 	public void OptionsPressed()
 	{
-		optionsPanel.SetActive (true);
-		audioPanel.SetActive (true);
-	}
+        optionsPanel.SetActive(true);
+        settingsPanel.SetActive(true);
+        keyboardControls.SetActive(false);
+        keyboardControls.SetActive(false);
+        consoleControls.SetActive(false);
+    }
 
 	/// <summary>
 	/// Opens Settings part of options and disables keybindings
 	/// </summary>
-    public void AudioPressed()
+    public void SettingsPressed()
     {
-        audioPanel.SetActive(true);                                                             //Sets GameObject Active
-        keyboardConfigPanel.SetActive(false);                                                   //Sets GameObject Inactive
+        settingsPanel.SetActive(true);
+        keyboardConfigPanel.SetActive(false);
+        keyboardControls.SetActive(false);
+        consoleControls.SetActive(false);
     }
 
-	/// <summary>
-	/// Opens keybindings part of options and disables Settings
-	/// </summary>
-    public void KeyMappingPressed()
+    /// <summary>
+    /// Opens controls panel
+    /// </summary>
+    public void ControllPressed()
     {
-        audioPanel.SetActive(false);                                                            //Sets GameObject Inactive
-        keyboardConfigPanel.SetActive(true);                                                    //Sets GameObject Active
+        settingsPanel.SetActive(false);
+        keyboardConfigPanel.SetActive(true);
+        keyboardControls.SetActive(true);
+        consoleControls.SetActive(false);
     }
 
-	/// <summary>
-	/// Returns to main menu Scene if in main menu options, does not affect pause menu
-	/// </summary>
+    /// <summary>
+    /// Opens keyboard panel
+    /// </summary>
+    public void KeyboardConfigPressed()
+    {
+        keyboardControls.SetActive(true);
+        consoleControls.SetActive(false);
+    }
+
+    /// <summary>
+    /// Opens Console remote panel
+    /// </summary>
+    public void GamePadConfigPressed()
+    {
+        keyboardControls.SetActive(false);
+        consoleControls.SetActive(true);
+    }
+
+    /// <summary>
+    /// Returns to main menu Scene if in main menu options, does not affect pause menu
+    /// </summary>
     public void BackButtonPressed()
     {
         SceneManager.LoadScene("MainMenuScene");                                                //Load scene indicated with ""
