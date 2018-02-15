@@ -16,7 +16,7 @@ namespace MoreMountains.CorgiEngine
 
 		GameObject gameManagerObject;
         GameManager gameManager;
-       	[SerializeField] public int DepletionRate { get; set; }
+        public int DepletionRate { get; set; }
 	    [SerializeField] private GameObject BarObject;
 	    SpriteRenderer BarSprite;
 	    Vector2 BarFullSize;

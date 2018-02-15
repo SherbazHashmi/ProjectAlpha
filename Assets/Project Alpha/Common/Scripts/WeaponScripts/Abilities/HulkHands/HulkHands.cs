@@ -9,11 +9,11 @@ namespace MoreMountains.CorgiEngine {
 
         public HulkHands () {
             this.name = "Hulk Hands";
-            this.isTalentAbility = true;
-            this.upgradePath = "Unarmed";
-            this.requiredTalentPoints = 5;
-            this.attackType = TypeOfAttack.Strong;
-            this.weaponType = TypeOfWeapon.Unarmed;
+            this.IsTalentAbility = true;
+            this.UpgradePath = "Unarmed";
+            this.RequiredTalentPoints = 5;
+            this.AttackType = TypeOfAttack.Strong;
+            this.WeaponType = TypeOfWeapon.Unarmed;
             
         }
 

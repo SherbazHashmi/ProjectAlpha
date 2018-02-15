@@ -1,24 +1,51 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace MoreMountains.CorgiEngine
 {
     public class TalentManager : MonoBehaviour
-    {
-        // Talent Collection Class. 
 
-        private TalentCollection talents;
+    {
+        private GameManager _gameManager;
+        private TalentCollection _talentCollection;
         
-        private void Start()
+        /// <summary>
+        /// Initialises the Game Manager and Talent Collection
+        /// </summary>
+        /// 
+        private void Initialise()
         {
-            // Initialise talent collection (Add All Abilities/Weapons)
-            
-           talents.InitTalentCollection();
-            
+            try
+            {
+                GameObject gameManagerObject = GameObject.Find("GameManager");
+                _gameManager = gameManagerObject.GetComponent<GameManager>();
+                _talentCollection = _gameManager.talents;
+            }
+            catch (Exception e)
+            {
+                Debug.Log(e);
+                throw;
+            }
+            if (_gameManager.SaveData == null)
+                _talentCollection.initTalents();
+            else
+            {
+                _talentCollection = _gameManager.SaveData.TalentCollection;
+            }
         }
 
-        private void Update()
+        /// <summary>
+        /// Saves Talents To SaveData Object in Game Manger 
+        /// </summary>
+        public void SaveTalents()
         {
-            throw new System.NotImplementedException();
+            _gameManager.SaveData.TalentCollection =  _talentCollection;
+        }
+        
+        private void Awake()
+        {
+            Initialise();
+            
         }
     }
 }

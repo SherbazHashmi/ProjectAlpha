@@ -5,6 +5,7 @@ namespace Project_Alpha.Common.Scripts.WeaponScripts.Abilities.Pellet_Gun
 
     public class PelletGunDefaultWeak : RangedCombatAbility
     {
+<<<<<<< HEAD:Assets/Project Alpha/Common/Scripts/WeaponScripts/Abilities/Pellet Gun/PelletGunDefaultWeak.cs
         public string Description;
         public PelletGunDefaultWeak()
         {
@@ -17,7 +18,18 @@ namespace Project_Alpha.Common.Scripts.WeaponScripts.Abilities.Pellet_Gun
             ((Weapon) this).WeaponType = TypeOfWeapon.PelletGun;
             Description = "Short range basic weapon attack.";
             IsActive = false; 
+=======
+        
+        private string Description;
+        public PelletGunDefaultWeak () {
+            TriggerMode = TriggerModes.Auto;
+            TimeBetweenUses = 0.1f;
+            MagazineBased = false;
+            AttackType = TypeOfAttack.Weak;
+            WeaponType = TypeOfWeapon.PelletGun;
+            Branch = "Default";
+>>>>>>> master:Assets/Project Alpha/Common/Scripts/WeaponScripts/Abilities/Pellet Gun/PelletGunDefault.cs
         }
-
+ 
     }
 }

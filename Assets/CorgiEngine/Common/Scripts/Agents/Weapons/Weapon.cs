@@ -37,9 +37,6 @@ namespace MoreMountains.CorgiEngine
 			PelletGun,
 			Unarmed
 		}
-		
-		
-		
 	
 		/// the possible use modes for the trigger
 		public enum TriggerModes { SemiAuto, Auto }
@@ -58,6 +55,10 @@ namespace MoreMountains.CorgiEngine
 
 		// type of attack
 		public TypeOfAttack AttackType { get; set; }
+		
+		// branch
+
+		public string Branch { get; set; }
 
 		[Header("Magazine")]
 		/// whether or not the weapon is magazine based. If it's not, it'll just take its ammo inside a global pool
