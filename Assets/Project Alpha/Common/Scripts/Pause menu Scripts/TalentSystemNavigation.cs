@@ -17,9 +17,18 @@ public class TalentSystemNavigation : MonoBehaviour
 	[SerializeField] private Text TalentPointSpentText;
 	[SerializeField] private Text TalentPointsToSpendText;
 
+    [Header("Talent Popup Variables")]
+    [SerializeField] private GameObject confirmPopup;
+    [SerializeField] private Text talentDescription;
 
 	private int talentPointsSpentCount { get; set; }
 	private int talenPointsToSpendCount { get; set; }
+
+    public Text TalentDescritpion
+    {
+        get { return talentDescription; }
+        set { talentDescription = value;}
+    }
 
 	private bool isActive;
 
@@ -131,7 +140,34 @@ public class TalentSystemNavigation : MonoBehaviour
 		//Write Instantiate code below, inside if statements
 	}
 
-	public void TalentBackButtonPressed()
+    /// <summary>
+    /// Activates Talent Description popup
+    /// Sets text to required info
+    /// </summary>
+    public void TalentSelection()
+    {
+        confirmPopup.SetActive(true);
+        talentDescription.text = "CALL TEXT HERE!!!";
+    }
+
+    /// <summary>
+    /// Deactivates Confirm Popup
+    /// Add confirmation code here
+    /// </summary>
+    public void ConfirmTalent()
+    {
+        confirmPopup.SetActive(false);
+    }
+
+    /// <summary>
+    /// Deactivates Confirm Popup
+    /// </summary>
+    public void ConfirmCancel()
+    {
+        confirmPopup.SetActive(false);
+    }
+
+    public void TalentBackButtonPressed()
 	{
 		talent_weaponPopup.SetActive(true);
 		talentSelectionPopup.SetActive(false);
