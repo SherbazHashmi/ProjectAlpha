@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Development\Unity\Project Alpha\ProjectAlpha" t="IncludeRecursive">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -578,14 +578,26 @@
         </e>
         <e p="Project Alpha" t="Include">
           <e p="Common" t="Include">
+            <e p="Prefabs" t="Include">
+              <e p="QuantomAnimRework" t="Include">
+                <e p="QuantumSlideAnimation.cs" t="Include" />
+              </e>
+            </e>
             <e p="Scripts" t="Include">
               <e p="Currency" t="Include">
                 <e p="Chip.cs" t="Include" />
+                <e p="Collectables" t="Include">
+                  <e p="Collectable.cs" t="Include" />
+                </e>
                 <e p="CurrencyIconLocation.cs" t="Include" />
                 <e p="UIObjectScalable.cs" t="Include" />
               </e>
               <e p="NPC" t="Include">
                 <e p="NPCHealthPower.cs" t="Include" />
+              </e>
+              <e p="Pause menu Scripts" t="Include">
+                <e p="PauseSaveLoadHandler.cs" t="Include" />
+                <e p="TalentSystemNavigation.cs" t="Include" />
               </e>
               <e p="Quantum" t="Include">
                 <e p="QuantumCharacter.cs" t="Include" />
@@ -606,6 +618,9 @@
                   <e p="PowerManager.cs" t="Include" />
                 </e>
               </e>
+              <e p="Setup" t="Include">
+                <e p="Setup.cs" t="Include" />
+              </e>
               <e p="TalentSystem" t="Include">
                 <e p="TalentCollection.cs" t="Include" />
               </e>
@@ -613,12 +628,14 @@
                 <e p="Utils.cs" t="Include" />
               </e>
               <e p="WeaponScripts" t="Include">
-                <e p="CombatAbility.cs" t="Include" />
-                <e p="HulkHands" t="Include">
-                  <e p="HulkHands.cs" t="Include" />
-                </e>
-                <e p="Pellet Gun" t="Include">
-                  <e p="PelletGunDefaultWeak.cs" t="Include" />
+                <e p="Abilities" t="Include">
+                  <e p="CombatAbility.cs" t="Include" />
+                  <e p="HulkHands" t="Include">
+                    <e p="HulkHands.cs" t="Include" />
+                  </e>
+                  <e p="Pellet Gun" t="Include">
+                    <e p="PelletGunDefault.cs" t="Include" />
+                  </e>
                 </e>
                 <e p="WeaponWheelScript.cs" t="Include" />
               </e>
@@ -641,6 +658,7 @@
             <e p="Main Menu" t="Include">
               <e p="Scripts" t="Include">
                 <e p="MenuBehaviour.cs" t="Include" />
+                <e p="QuantumStartData.cs" t="Include" />
                 <e p="SoundSettings.cs" t="Include" />
               </e>
             </e>
@@ -652,7 +670,7 @@
             </e>
             <e p="SaveLoadData" t="Include">
               <e p="Scripts" t="Include">
-                <e p="LoadHandler.cs" t="Include" />
+                <e p="SaveData.cs" t="Include" />
               </e>
             </e>
             <e p="Start Screen" t="Include">
@@ -664,8 +682,9 @@
               </e>
             </e>
           </e>
-          <e p="Testing" t="Include">
-            <e p="TalentTests.cs" t="Include" />
+        </e>
+        <e p="Tests" t="Include">
+          <e p="Editor" t="Include">
             <e p="UtilitiesTests.cs" t="Include" />
           </e>
         </e>
@@ -678,6 +697,6 @@
         <e p="bin" t="ExcludeRecursive" />
       </e>
     </e>
-    <e p="C:\Users\Sherbaz\.Rider2017.2\system\resharper-host\local\Transient\ReSharperHost\v10\SolutionCaches\_ProjectAlpha.-1170767836.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2017.3/resharper-host/local/Transient/ReSharperHost/v11/SolutionCaches/_ProjectAlpha.1574550793.00" t="ExcludeRecursive" />
   </component>
 </project>

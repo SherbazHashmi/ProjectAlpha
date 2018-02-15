@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using System.Collections;
 using MoreMountains.CorgiEngine;
@@ -17,28 +18,37 @@ namespace MoreMountains.CorgiEngine {
     public class RangedCombatAbility : ProjectileWeapon
     {
 
-        string name;
-        string upgradePath;
-        bool isTalentAbility;
-        int requiredTalentPoints;
-        public TypeOfAttack attackType { get; set; }
-        public TypeOfWeapon weaponType { get; set; }
+        public string Name;
+        public string UpgradePath;
+        public bool IsTalentAbility;
+        public int RequiredTalentPoints;
+        public TypeOfAttack AttackType { get; set; }
+        public TypeOfWeapon WeaponType { get; set; }
+	    public bool IsUnlocked;
+	    public bool IsActive { get; set; }
 
 
+	    public RangedCombatAbility()
+	    {
+		    
+	    }
+	    
+	    
         public RangedCombatAbility (string name, string upgradePath, bool isTalentAbility, int requiredTalentPoints, TypeOfAttack attackType, TypeOfWeapon weaponType) {
-            this.name = name;
-            this.isTalentAbility = isTalentAbility;
-            this.upgradePath = upgradePath;
-            this.requiredTalentPoints = requiredTalentPoints;
-            this.attackType = attackType;
-            this.weaponType = weaponType;
+            this.Name = name;
+            this.IsTalentAbility = isTalentAbility;
+            this.UpgradePath = upgradePath;
+            this.RequiredTalentPoints = requiredTalentPoints;
+            this.AttackType = attackType;
+            this.WeaponType = weaponType;
+	        this.IsActive = false;
 
         }
 
 
 
         public string toString () {
-            return "name : " + name + ", upgrade path : " + upgradePath + ", isActive : " +  ", type of weapon : " + weaponType + ", type of attack to replace : " + attackType + ".";
+            return "name : " + Name + ", upgrade path : " + UpgradePath + ", isActive : " +  ", type of weapon : " + WeaponType + ", type of attack to replace : " + AttackType + ".";
         }
 
       
@@ -47,19 +57,39 @@ namespace MoreMountains.CorgiEngine {
 
     public class MeleeCombatAbility : MeleeWeapon 
     {
-		public string name;
-		public string upgradePath;
-		public bool isTalentAbility;
-		public int requiredTalentPoints;
-		public TypeOfAttack attackType { get; set; }
-		public TypeOfWeapon weaponType { get; set; }
-	    public bool isActive = false;
-
+		public string Name;
+		public string UpgradePath;
+		public bool IsTalentAbility;
+		public int RequiredTalentPoints;
+		public TypeOfAttack AttackType { get; set; }
+		public TypeOfWeapon WeaponType { get; set; }
+	    public bool IsActive;
 
 		public string toString()
 		{
-			return "name : " + name + ", upgrade path : " + upgradePath + ", isActive : " + ", type of weapon : " + weaponType + ", type of attack to replace : " + attackType + ".";
+			return "name : " + name + ", upgrade path : " + UpgradePath + ", isActive : " + ", type of weapon : " + WeaponType + ", type of attack to replace : " + AttackType + ".";
 		}
+
+	    
+	    // Used to instantiate when generating within a subclass. 
+	    
+	    public MeleeCombatAbility()
+	    {
+		    
+	    }
+
+	    public MeleeCombatAbility(string name, string upgradePath, bool isTalentAbility, int requiredTalentPoints, TypeOfAttack attackType, TypeOfWeapon weaponType, bool isActive)
+	    {
+		    Name = name;
+		    UpgradePath = upgradePath;
+		    IsTalentAbility = isTalentAbility;
+		    RequiredTalentPoints = requiredTalentPoints;
+		    AttackType = attackType;
+		    WeaponType = weaponType;
+		    IsActive = isActive;
+	    }
+	    
+	    
     }
 
 }
