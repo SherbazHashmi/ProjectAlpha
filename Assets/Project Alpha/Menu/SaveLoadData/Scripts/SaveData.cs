@@ -45,7 +45,7 @@ namespace MoreMountains.CorgiEngine
         
         // Talent Collection 
 
-        private TalentCollection _talentCollection;
+        public TalentCollection TalentCollection { get; set; }
 
         /// <summary>
         /// Constructor used whenever a new SaveData instance is created. 
@@ -73,10 +73,6 @@ namespace MoreMountains.CorgiEngine
             // Setting Image 
             
             SetImage();
-            
-            // Initialising Talent Collection
-            
-            _talentCollection.initTalents();
             
 
         }
@@ -130,7 +126,7 @@ namespace MoreMountains.CorgiEngine
                         _levelImage = save._levelImage;
                         _saveGameText = save._saveGameText;
                         _scene = save._scene;
-                        _talentCollection = save._talentCollection;
+                        TalentCollection = save.TalentCollection;
                         _totalCogs = save._totalCogs;
                     }
                    
@@ -347,6 +343,7 @@ namespace MoreMountains.CorgiEngine
             }
             return 0;
         }
+        
               
     }
 }

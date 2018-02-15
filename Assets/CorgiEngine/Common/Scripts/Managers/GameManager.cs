@@ -164,6 +164,7 @@ namespace MoreMountains.CorgiEngine
 		public SaveData SaveData { get; set; }
 		// type of weapon equipped
 		public Weapon.TypeOfWeapon TypeOfWeaponEquipped { get; set; }
+		public TalentCollection talents;
 		
 
 	    // storage

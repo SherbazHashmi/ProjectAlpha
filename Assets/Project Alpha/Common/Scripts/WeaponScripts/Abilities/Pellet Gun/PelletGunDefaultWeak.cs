@@ -1,17 +1,22 @@
-using UnityEngine;
-using System.Collections;
-using MoreMountains.CorgiEngine;
+﻿using MoreMountains.CorgiEngine;
 
-namespace MoreMountains.CorgiEngine
+namespace Project_Alpha.Common.Scripts.WeaponScripts.Abilities.Pellet_Gun
 {
 
-    public class PelletGunDefaultWeak : ProjectileWeapon
+    public class PelletGunDefaultWeak : RangedCombatAbility
     {
-        private string Description;
-        public PelletGunDefaultWeak () {
-            TriggerMode = TriggerModes.Auto;
-            TimeBetweenUses = 0.1f;
-            MagazineBased = false;
+        public string Description;
+        public PelletGunDefaultWeak()
+        {
+            Name = "Weak Attack";
+            UpgradePath = "Default";
+            IsTalentAbility = false;
+            RequiredTalentPoints = 0;
+            IsUnlocked = true;
+            ((Weapon) this).AttackType = TypeOfAttack.Weak;
+            ((Weapon) this).WeaponType = TypeOfWeapon.PelletGun;
+            Description = "Short range basic weapon attack.";
+            IsActive = false; 
         }
 
     }

@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using System.Collections.Generic;
+using MoreMountains.CorgiEngine.Pellet_Gun;
 
 
 namespace MoreMountains.CorgiEngine
@@ -47,19 +48,20 @@ namespace MoreMountains.CorgiEngine
             // Instantiating Weapon Branch
             
             Dictionary<Weapon, bool> pelletGunDefault = new Dictionary<Weapon, bool>();
-            
+                 
             // Adding Weapon Scripts to Branch to Later Be Activated or Deactivated. 
             
             // NOTE : For Testing Purposes, The Pellet Gun Default Weak Weapon Will Be Added To The Pellet Gun Collection Five Times.
             pelletGunDefault.Add(new PelletGunDefaultWeak(), false);
-            pelletGunDefault.Add(new PelletGunDefaultWeak(), false);
-            pelletGunDefault.Add(new PelletGunDefaultWeak(), false);
+            pelletGunDefault.Add(new PelletGunDefaultStrong(), false);
+            pelletGunDefault.Add(new PelletGunDefaultUltimate(), false);
             pelletGunDefault.Add(new PelletGunDefaultWeak(), false);
             pelletGunDefault.Add(new PelletGunDefaultWeak(), false);
             
             // Adding Branch To Weapon Type 
             
             pelletGuns.Add("Default", pelletGunDefault);
+            
             
             // Adding Weapon Type To Talents 
             
