@@ -10,7 +10,10 @@ namespace MoreMountains.CorgiEngine
     {
         /// Initial Implementation of Storing Talents.
 
-        private Dictionary <Weapon.TypeOfWeapon, Dictionary <String,Dictionary<Weapon, bool>>> talents { get; set; }
+        public Dictionary <Weapon.TypeOfWeapon, Dictionary <String,Dictionary<Weapon, bool>>> Talents { get; set; }
+
+        public GameObject WeaponsObject { get; set; }
+        private bool _isInit = false;
         
         ///<summary>
         /// Gets Talents Based on TypeOfWeapon given, for instance, if PelletGun is the type of weapon
@@ -19,95 +22,26 @@ namespace MoreMountains.CorgiEngine
         
         public Dictionary<Weapon, bool> getTalents(Weapon.TypeOfWeapon weaponType, String branch)
         {
-            if (branch == null || talents[weaponType] == null || talents[weaponType][branch] == null) return null;
+            if (branch == null || Talents[weaponType] == null || Talents[weaponType][branch] == null) return null;
             
             Dictionary<String, Dictionary<Weapon, bool>> weaponsTypeFiltered;
-            talents.TryGetValue(weaponType, out weaponsTypeFiltered);
+            Talents.TryGetValue(weaponType, out weaponsTypeFiltered);
 
             if (weaponsTypeFiltered == null) return null;
             
             Dictionary<Weapon, bool> weaponsBranchFiltered;
             weaponsTypeFiltered.TryGetValue(branch, out weaponsBranchFiltered);
-            
             return weaponsBranchFiltered;
         }
-      
-        /// <summary>
-        /// Initialises Talents
-        /// Should Be Done Within Loading Scene
-        /// </summary>
-        
-        public void initTalents () {
-            
-            // Adding Types To Talents
-            
-            // Instantiating Type of Weapon 
-            
-            Dictionary<String, Dictionary<Weapon, bool>> pelletGuns = new Dictionary<string, Dictionary<Weapon, bool>>();
-            
-            // Instantiating Weapon Branch
-            
-            Dictionary<Weapon, bool> pelletGunDefault = new Dictionary<Weapon, bool>();
-                 
-            // Adding Weapon Scripts to Branch to Later Be Activated or Deactivated. 
-            
-            // NOTE : For Testing Purposes, The Pellet Gun Default Weak Weapon Will Be Added To The Pellet Gun Collection Five Times.
-            pelletGunDefault.Add(new PelletGunDefaultWeak(), false);
-            pelletGunDefault.Add(new PelletGunDefaultStrong(), false);
-            pelletGunDefault.Add(new PelletGunDefaultUltimate(), false);
-            pelletGunDefault.Add(new PelletGunDefaultWeak(), false);
-            pelletGunDefault.Add(new PelletGunDefaultWeak(), false);
-            
-            // Adding Branch To Weapon Type 
-            
-            pelletGuns.Add("Default", pelletGunDefault);
-            
-            
-            // Adding Weapon Type To Talents 
-            
-            talents.Add(Weapon.TypeOfWeapon.PelletGun, pelletGuns);
-            
-            
-            // Rocket Launcher
-            
-            Dictionary<String, Dictionary<Weapon, bool>> rocketLaunchers = new Dictionary<string, Dictionary<Weapon, bool>>();
-            Dictionary<Weapon, bool> rocketLauncherDefault = new Dictionary<Weapon, bool>();
-            
-            // TODO : Add Rocket Launcher Abilities When Created
-            
-            
-            talents.Add(Weapon.TypeOfWeapon.RocketLauncher, rocketLaunchers);
-            
-            // Saw Dropper
-            
-            Dictionary<String, Dictionary<Weapon, bool>> sawDroppers = new Dictionary<string, Dictionary<Weapon, bool>>();
-            Dictionary<Weapon, bool> SawDroppperDefault = new Dictionary<Weapon, bool>();
-            
-            // TODO : Add Saw Dropper Abilities When Created
-            
-            talents.Add(Weapon.TypeOfWeapon.SawDropper, sawDroppers);
 
-            // Shotgun
-            Dictionary<String, Dictionary<Weapon, bool>> shotGuns = new Dictionary<string, Dictionary<Weapon, bool>>();
-            Dictionary<Weapon, bool> shotGunDefault = new Dictionary<Weapon, bool>();
-            
-            // TODO : Add Shot Gun Abilities When Created
-            
-            talents.Add(Weapon.TypeOfWeapon.Shotgun, shotGuns);
-            
-            
-            // Unarmed
-            
-            Dictionary<String, Dictionary<Weapon, bool>> unarmedAttacks = new Dictionary<string, Dictionary<Weapon, bool>>();
-            Dictionary<Weapon, bool> unaramedDefault = new Dictionary<Weapon, bool>();
-            
-            // TODO : Add Unarmed Abilities When Created
-            
-            talents.Add(Weapon.TypeOfWeapon.Unarmed,unarmedAttacks);
-   	
-		}
-        
-        
+      
+
+        public string GetTalentsContainer()
+        {
+            return "Talents :"+ Talents+"is initialised : "+_isInit;
+        }
+      
+    
         /// <summary>
         /// Activates Talents, returns true if talent activation was successful, false if it is not. 
         /// </summary>        
@@ -116,7 +50,7 @@ namespace MoreMountains.CorgiEngine
 
         public bool activateTalent (Weapon talentToActivate) {
             bool isActiveInDictionary;
-            Dictionary<Weapon, bool> branch = talents[talentToActivate.WeaponType][talentToActivate.Branch];
+            Dictionary<Weapon, bool> branch = Talents[talentToActivate.WeaponType][talentToActivate.Branch];
             branch.TryGetValue(talentToActivate, out isActiveInDictionary);
             if (isActiveInDictionary == false) {
                 Weapon desiredCombatAbility = talentToActivate;
@@ -150,7 +84,7 @@ namespace MoreMountains.CorgiEngine
 
         public bool deactivateTalent (Weapon talentToDeactivate){
 			bool isActiveInDictionary;
-            Dictionary<Weapon, bool> branch = talents[talentToDeactivate.WeaponType][talentToDeactivate.Branch];
+            Dictionary<Weapon, bool> branch = Talents[talentToDeactivate.WeaponType][talentToDeactivate.Branch];
             branch.TryGetValue(talentToDeactivate, out isActiveInDictionary);
             
             branch.TryGetValue(talentToDeactivate, out isActiveInDictionary);

@@ -11,9 +11,6 @@
             IsTalentAbility = false;
             RequiredTalentPoints = 0;
             IsUnlocked = true;
-            ((Weapon) this).AttackType = TypeOfAttack.Strong;
-            ((Weapon) this).WeaponType = TypeOfWeapon.PelletGun;
-            Description = "Short range strong weapon attack.";
             IsActive = false; 
         }
     }

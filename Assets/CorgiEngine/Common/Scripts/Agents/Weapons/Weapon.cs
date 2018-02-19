@@ -51,18 +51,14 @@ namespace MoreMountains.CorgiEngine
 		// the time (in seconds) between two shots		
 		public float TimeBetweenUses = 1f;
 		// type of weapon
-		public TypeOfWeapon WeaponType { get; set; }
+		public TypeOfWeapon WeaponType;
 
 		// type of attack
-		public TypeOfAttack AttackType { get; set; }
+		public TypeOfAttack AttackType;
 		
 		// branch
 
 		public string Branch { get; set; }
-		
-		// description
-		
-		public string Description;
 
 
 		[Header("Magazine")]

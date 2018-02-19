@@ -62,7 +62,7 @@ public class TalentSystemNavigation : MonoBehaviour
 	/// <summary>
 	/// Checks if the talent screens are open, so that talent counts can be updated
 	/// </summary>
-	void TalentActiveCheck()
+	public void TalentActiveCheck()
 	{
 		if (isActive) 
 		{

@@ -13,8 +13,6 @@ namespace MoreMountains.CorgiEngine
             TriggerMode = TriggerModes.Auto;
             TimeBetweenUses = 0.1f;
             MagazineBased = false;
-            AttackType = TypeOfAttack.Weak;
-            WeaponType = TypeOfWeapon.PelletGun;
             Branch = "Default";
         }
  

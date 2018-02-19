@@ -4,7 +4,7 @@ using MoreMountains.CorgiEngine;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Project_Alpha.Menu.PauseScreen
+namespace MoreMountains.CorgiEngine
 {
     public class Buttons : MonoBehaviour
     {
@@ -88,7 +88,7 @@ namespace Project_Alpha.Menu.PauseScreen
 
         private void PopulateTalentWindow (Weapon.TypeOfWeapon weapon)
         {
-            TalentCollection talents = _gameManager.talents;
+            TalentCollection talents = _gameManager.Talents;
             Dictionary<Weapon, bool> weapons = talents.getTalents(weapon, "Default");
             
             // Populate Weapons Into Different Images (Possibly By Adding The Images Into An Array)

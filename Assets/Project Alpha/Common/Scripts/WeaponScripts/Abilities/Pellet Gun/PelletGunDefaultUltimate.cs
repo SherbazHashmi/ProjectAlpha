@@ -10,9 +10,6 @@
             IsTalentAbility = false;
             RequiredTalentPoints = 0;
             IsUnlocked = true;
-            ((Weapon) this).AttackType = TypeOfAttack.Ultimate;
-            ((Weapon) this).WeaponType = TypeOfWeapon.PelletGun;
-            Description = "Shoot a burst of bullets around you.";
             IsActive = false; 
         }
     }
