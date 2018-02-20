@@ -1,9 +1,7 @@
 ﻿namespace MoreMountains.CorgiEngine.Pellet_Gun
 {
     public class PelletGunDefaultStrong : RangedCombatAbility
-    {
-        public string Description;
-        
+    {        
         public PelletGunDefaultStrong () 
         {
             Name = "Strong Attack";

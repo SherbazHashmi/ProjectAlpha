@@ -73,20 +73,15 @@ namespace MoreMountains.CorgiEngine
             
             // Getting References to Weapons
 
-            PelletGunDefaultWeak pelletGunDefaultWeak;
+            Pellet_Gun.PelletGunDefaultWeak pelletGunDefaultWeak;
             PelletGunDefaultStrong pelletGunDefaultStrong;
             PelletGunDefaultUltimate pelletGunDefaultUltimate;
             
             try
             {
-                pelletGunDefaultWeak = GetComponentInParent<PelletGunDefaultWeak>();
+                pelletGunDefaultWeak = GetComponentInParent<Pellet_Gun.PelletGunDefaultWeak>();
                 pelletGunDefaultStrong = GetComponentInParent<PelletGunDefaultStrong>();
                 pelletGunDefaultUltimate = GetComponentInParent<PelletGunDefaultUltimate>();
-               // Debug.Log("Pellet Gun Weak Has " + pelletGunDefaultWeak);
-                Debug.Log("Pellet Gun Strong Has " + pelletGunDefaultStrong);
-                Debug.Log("Pellet Gun Ultimate Has " + pelletGunDefaultUltimate);
-
-
             }
             catch (Exception e)
             {
@@ -95,7 +90,7 @@ namespace MoreMountains.CorgiEngine
             }
             // Adding Weapon Scripts to Branch to Later Be Activated or Deactivated. 
 
-            // Debug.Log("Pellet Gun Default Has " + pelletGunDefault.Count + " elements.");
+            Debug.Log("Pellet Gun Default Has " + pelletGunDefault.Count + " elements.");
            
             
 
