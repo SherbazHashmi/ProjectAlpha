@@ -1,6 +1,4 @@
-﻿using MoreMountains.CorgiEngine;
-
-namespace Project_Alpha.Common.Scripts.WeaponScripts.Abilities.Pellet_Gun
+﻿namespace MoreMountains.CorgiEngine.Pellet_Gun
 {
 
     public class PelletGunDefaultWeak : RangedCombatAbility
