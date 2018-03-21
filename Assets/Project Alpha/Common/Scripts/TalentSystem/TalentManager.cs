@@ -11,8 +11,8 @@ namespace MoreMountains.CorgiEngine
     {
         private GameManager _gameManager;
         private TalentCollection _talentCollection;
-        [SerializeField] private GameObject _textObject;
-        private Text _text;
+        public Weapon CurrentWeapon { get; set; }
+        public List<Weapon> ActivatedWeapons { get; set; }
         
         /// <summary>
         /// Initialises the Game Manager and Talent Collection
@@ -24,7 +24,6 @@ namespace MoreMountains.CorgiEngine
             {
                 GameObject gameManagerObject = GameObject.Find("GameManager");
                 _gameManager = gameManagerObject.GetComponent<GameManager>();
-                _text = _textObject.GetComponent<Text>();
             }
             catch (Exception e)
             {

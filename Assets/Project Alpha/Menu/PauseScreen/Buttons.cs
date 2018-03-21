@@ -89,7 +89,7 @@ namespace MoreMountains.CorgiEngine
         private void PopulateTalentWindow (Weapon.TypeOfWeapon weapon)
         {
             TalentCollection talents = _gameManager.Talents;
-            Dictionary<Weapon, bool> weapons = talents.getTalents(weapon, "Default");
+            Dictionary<Weapon, bool> weapons = talents.GetTalents(weapon, "Default");
             
             // Populate Weapons Into Different Images (Possibly By Adding The Images Into An Array)
         }

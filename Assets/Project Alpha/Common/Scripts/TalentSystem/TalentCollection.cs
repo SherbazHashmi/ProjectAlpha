@@ -20,7 +20,7 @@ namespace MoreMountains.CorgiEngine
         /// input, it will return dictionary of all pellet gun talents. 
         /// </summary>
         
-        public Dictionary<Weapon, bool> getTalents(Weapon.TypeOfWeapon weaponType, String branch)
+        public Dictionary<Weapon, bool> GetTalents(Weapon.TypeOfWeapon weaponType, String branch)
         {
             if (branch == null || Talents[weaponType] == null || Talents[weaponType][branch] == null) return null;
             
@@ -67,7 +67,6 @@ namespace MoreMountains.CorgiEngine
                 
                 if(characterHandleWeapon.CurrentWeapon.WeaponType == desiredCombatAbility.WeaponType && characterHandleWeapon.CurrentWeapon.AttackType == desiredCombatAbility.AttackType)
                     characterHandleWeapon.ChangeWeapon(desiredCombatAbility);
-                
                 return true;
 
             }
