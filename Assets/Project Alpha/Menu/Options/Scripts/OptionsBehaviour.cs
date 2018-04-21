@@ -43,6 +43,7 @@ public class OptionsBehaviour : MonoBehaviour
 			optionsPanel.SetActive (false);
             keyboardControls.SetActive(false);
             consoleControls.SetActive(false);
+
         }
 	}
 
