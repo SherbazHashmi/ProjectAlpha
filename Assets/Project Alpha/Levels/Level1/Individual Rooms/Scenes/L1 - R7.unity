@@ -1343,6 +1343,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4502662247070086, guid: 04e27d1eedb351c4580540685b3a51a0,
     type: 2}
   m_PrefabInternal: {fileID: 1955197680}
+--- !u!1 &1955197682 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1223346384682696, guid: 04e27d1eedb351c4580540685b3a51a0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1955197680}
 --- !u!4 &1955197683 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4407622978968084, guid: 04e27d1eedb351c4580540685b3a51a0,
@@ -1372,6 +1377,17 @@ MonoBehaviour:
   doorToOpen: {fileID: 1955197685}
   doorMovePosition: {fileID: 536151324}
   speed: 10
+--- !u!114 &1955197687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1955197682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7963a498e8d6bf446965e0b0172cbaba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2145241437
 Prefab:
   m_ObjectHideFlags: 0
