@@ -47,3 +47,8 @@ sysinfo.txt
 Assets/CorgiEngine/MMTools/MMHelpers/MMInput\.cs
 
 Assets/CorgiEngine/PostProcessing/Editor/Utils/CurveEditor\.cs
+
+Assets/FMODStudioCache.asset
+Assets/StreamingAssets/*.bank
+fmod.log
+fmod_editor.log

@@ -1,0 +1,29 @@
+{e79b9a61-f0cb-406b-8f06-3a963f5ba07b} event:/Combat & Movement/Player/Combat - Energy Gauntlet
+{2ac2a501-cdce-42bf-84a6-1d83ad2149b7} event:/Combat & Movement/Player/Combat - Mjolnir
+{3d9698bb-8bc8-465c-b780-2ca80e507875} event:/Combat & Movement/Player/Combat - Neon Bar
+{78174c42-dd66-4363-8a1c-13095f46d2cd} event:/Combat & Movement/Player/Player - Charged Dash
+{8b8e1cfa-b89c-4ce8-9983-4f52f1ede164} event:/Combat & Movement/Player/Player - Charged Jump
+{0bd81b4e-a357-4f15-83b1-d483fffe8b1b} event:/Combat & Movement/Player/Player - Footsteps
+{88ef116f-79cf-4693-ad0a-40d9d448999b} event:/Combat & Movement/Player/Player - Ground Slide
+{40ed3207-0818-4284-aed9-4def1c593b12} event:/Combat & Movement/Player/Player - Wall Cling
+{6a89321b-3b7d-41a7-9828-5ced263d9638} event:/Combat & Movement/Player/Player - Wall Slide
+{6968aac9-607f-4ec7-a8b4-3ab888ea3629} event:/Environment/Atmos/Atmos - Level 1
+{a8a77b7f-771b-4e24-a99a-7fdf146bc620} event:/Environment/Atmos/Atmos - Level 2
+{1c87b51f-b24a-447d-b1d4-80d2aee2647c} event:/Environment/Atmos/Atmos - Level 3
+{b1308e77-424a-4894-8713-80ec47edf77c} event:/Environment/Enviro/Enviro - Button
+{8e8fd87b-861c-452a-9e60-57ddce9b76c0} event:/Environment/Enviro/Enviro - Control Panel
+{7c08b147-140d-4da1-be62-18c8a25f3582} event:/Environment/Enviro/Enviro - Conveyor Belt
+{83388fe6-3102-4b3e-9f80-bbe987936ad0} event:/Environment/Enviro/Enviro - Crane Platform
+{c85adbf4-2d80-45c9-b915-e4f450182e36} event:/Environment/Enviro/Enviro - Mech Door
+{29019884-31bd-424b-87a5-1a3f62fc6eb9} event:/Environment/Enviro/Enviro - Moving Platform
+{b25f76f7-56ba-43b1-8e7b-ec8f641e46d3} event:/Environment/Enviro/Enviro - Treadmill
+{42d334a7-3e9d-45da-b1e2-45e1e350eb95} event:/Music/Music - Level 1
+{64c98395-41fa-401d-b403-41d43c2abffc} event:/Music/Music - Main Menu
+{9993956b-35dd-4303-a4aa-4086356c1f52} event:/UI/Menu - Accept
+{3b81f6aa-272c-4e70-beba-537f5c1536a5} event:/UI/Menu - Reject
+{5364e6cf-2386-4020-a0e8-7ee8d5cb86c6} event:/UI/Menu - Return
+{d8261995-3838-4de0-a38e-e8781208d96e} event:/UI/Menu - Switch
+{5ea15454-8f43-4c82-b75b-7ca6223630ac} event:/UI/Menu - Swith 2
+{733ff64d-4620-4e9b-83d7-a5285b629063} bus:/
+{039908b7-9859-47f4-8592-98e37a1564fb} bus:/Reverb
+{4cc64a72-ca7e-4426-a4f6-db855b3fd6a2} bank:/Master Bank
