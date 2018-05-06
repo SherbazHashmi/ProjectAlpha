@@ -10,7 +10,6 @@ public class SecretDoorDisable : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-
         if (other.tag == "Player" && gameObject.tag != "Breakable")
         {
             secretDoor.transform.position = Vector3.MoveTowards(transform.position, moveToPosition.transform.position, speed * Time.deltaTime);

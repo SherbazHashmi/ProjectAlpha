@@ -482,8 +482,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1205135789817510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.2, y: 1.5, z: 0}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.05}
+  m_LocalPosition: {x: 2.735528, y: 1.7261722, z: 0}
+  m_LocalScale: {x: 0.07709896, y: 0.07709894, z: 0.38549477}
   m_Children:
   - {fileID: 4766247212069064}
   m_Father: {fileID: 0}
@@ -635,7 +635,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -70}
+  m_Offset: {x: -1.4405441, y: -42.891235}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -646,7 +646,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 15, y: 28.5}
+  m_Size: {x: 25.214802, y: 109.95697}
   m_EdgeRadius: 0
 --- !u!95 &95649161133848070
 Animator:
@@ -722,7 +722,7 @@ MonoBehaviour:
   AbilityInProgressSfx: {fileID: 0}
   AbilityStopSfx: {fileID: 0}
   AbilityPermitted: 1
-  WalkSpeed: 6
+  WalkSpeed: 10
   TouchTheGroundEffect: {fileID: 0}
   TouchTheGroundSfx: {fileID: 0}
 --- !u!114 &114126487847426988
@@ -852,7 +852,7 @@ MonoBehaviour:
   AbilityInProgressSfx: {fileID: 0}
   AbilityStopSfx: {fileID: 0}
   AbilityPermitted: 1
-  JumpHeight: 3.025
+  JumpHeight: 10
   NumberOfJumps: 3
   JumpRestrictions: 1
   JumpTimeWindow: 0
@@ -1007,7 +1007,7 @@ MonoBehaviour:
   AbilityInProgressSfx: {fileID: 0}
   AbilityStopSfx: {fileID: 0}
   AbilityPermitted: 1
-  LadderClimbingSpeed: 2
+  LadderClimbingSpeed: 5
 --- !u!114 &114834237015923916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1070,7 +1070,7 @@ MonoBehaviour:
   DetachmentMethod: 0
   NumberOfHorizontalRays: 4
   NumberOfVerticalRays: 4
-  RayOffset: 0.05
+  RayOffset: 1
   StickWhenWalkingDownSlopes: 0
   StickyRaycastLength: 0
   AutomaticGravitySettings: 1

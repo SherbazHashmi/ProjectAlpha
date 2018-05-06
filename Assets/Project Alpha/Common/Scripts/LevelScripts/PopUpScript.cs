@@ -9,10 +9,13 @@ public class PopUpScript : MonoBehaviour
     [SerializeField] private GameObject popup;
     [SerializeField] private Text popupText;
 
+    private void Awake()
+    {
+    }
+
     private void Start()
     {
         popup.SetActive(false);
-
         CheckSceneFortext();
     }
 
