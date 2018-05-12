@@ -26,4 +26,7 @@
 {5ea15454-8f43-4c82-b75b-7ca6223630ac} event:/UI/Menu - Swith 2
 {733ff64d-4620-4e9b-83d7-a5285b629063} bus:/
 {039908b7-9859-47f4-8592-98e37a1564fb} bus:/Reverb
+{109ca224-7ace-48d0-b53b-70542fa76974} bank:/Level 1
 {4cc64a72-ca7e-4426-a4f6-db855b3fd6a2} bank:/Master Bank
+{5a20716d-50b0-4588-a2fe-1f382ec6f989} bank:/Level 2
+{1e10f864-fd84-49e9-94a0-23232e38a487} bank:/Level 3
