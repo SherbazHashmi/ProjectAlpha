@@ -40,7 +40,7 @@ public class DifficultyBackgroundChange : MonoBehaviour
 
     public void ConfirmPressed()
     {
-        SceneManager.LoadScene("testScene");                                                    //Loads scene indicated with ""
+        SceneManager.LoadScene("L1 - R1");                                                    //Loads scene indicated with ""
     }
 
     public void CancelPressed()

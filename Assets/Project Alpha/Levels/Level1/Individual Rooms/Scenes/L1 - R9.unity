@@ -192,7 +192,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1801128553}
   m_Script: {fileID: 11500000, guid: 90bd89958d99530459b5d3c67a3ab538, type: 3}
---- !u!1001 &400414888
+--- !u!1001 &244124624
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2

@@ -4612,7 +4612,7 @@ GameObject:
   - component: {fileID: 1355257234}
   - component: {fileID: 1355257236}
   - component: {fileID: 1355257235}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Trigger Event
   m_TagString: Untagged
   m_Icon: {fileID: 0}

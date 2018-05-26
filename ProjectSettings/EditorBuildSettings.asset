@@ -8,15 +8,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/CorgiEngine/Common/SplashScreen.unity
     guid: 7b96552fd1198fa4eaae54a2f975645e
-  - enabled: 1
-    path: Assets/CorgiEngine/Common/LoadingScreen.unity
-    guid: 0564d059eb6550c49a366517853b04dd
   - enabled: 0
     path: Assets/CorgiEngine/Common/StartScreen.unity
     guid: b9cf7e391a5874f80a0485164885fe54
-  - enabled: 0
-    path: Assets/CorgiEngine/Demos/Corgi2D/Mesa1.unity
-    guid: 3255dcacf4a25fc4c8070322156f10cd
   - enabled: 0
     path: Assets/CorgiEngine/Demos/Corgi2D/Mesa2.unity
     guid: 808661879b505b84ca4f4d679b486cd5
@@ -32,6 +26,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/CorgiEngine/Demos/Brobro/BrobroLevel.unity
     guid: a4b03f0bea3ef6444819e45677eee09f
+  - enabled: 0
+    path: Assets/CorgiEngine/Demos/Corgi2D/Mesa1.unity
+    guid: 3255dcacf4a25fc4c8070322156f10cd
   - enabled: 0
     path: Assets/CorgiEngine/Demos/Corgi2D/Sandbox.unity
     guid: 834d2ad12a39c48bba0d203a2d9de965
@@ -81,6 +78,9 @@ EditorBuildSettings:
     path: Assets/CorgiEngine/Demos/Minimal/OneWayLevelVertical.unity
     guid: c8d1ba4ad1f68a5449b10a0921eabb7a
   - enabled: 1
+    path: Assets/Project Alpha/Menu/Auth/Scenes/OpenScene.unity
+    guid: f57aa084708f2f14c804cd911bb18244
+  - enabled: 1
     path: Assets/Project Alpha/Menu/Main Menu/Scenes/MainMenuScene.unity
     guid: f1a42800410906145a06c73b6e31ee1a
   - enabled: 1
@@ -101,6 +101,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Project Alpha/Menu/SaveLoadData/Scenes/loadScene.unity
     guid: c9c60303c9a32f34b835b711d64b41ea
+  - enabled: 1
+    path: Assets/CorgiEngine/Common/LoadingScreen.unity
+    guid: 0564d059eb6550c49a366517853b04dd
   - enabled: 1
     path: Assets/Project Alpha/Levels/Level1/Individual Rooms/Scenes/L1 - R1.unity
     guid: fb6913a59855dbb4baf5fad94e48b28c
@@ -132,6 +135,5 @@ EditorBuildSettings:
     path: Assets/Project Alpha/Levels/Level1/Individual Rooms/Scenes/L1 - R10.unity
     guid: 7a6b5aafa679cef44b91ce3f990365e1
   - enabled: 1
-    path: Assets/Project Alpha/Levels/Level1/Individual Rooms/Scenes/L1 - R11 (Endosynth
-      Exit).unity
-    guid: e4a5463a9dcaa93429bd287569a5539a
+    path: Assets/Project Alpha/Levels/Level1/Individual Rooms/Scenes/ExitScene.unity
+    guid: d95264db7ef1ae242ab8ea67bce3715c

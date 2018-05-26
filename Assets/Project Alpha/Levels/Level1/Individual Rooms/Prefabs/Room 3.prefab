@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 4163406736716136}
   - component: {fileID: 61528041155826018}
   - component: {fileID: 114283811775353736}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: TriggerZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -548,7 +548,7 @@ GameObject:
   - component: {fileID: 4128244301628108}
   - component: {fileID: 61999834025017218}
   - component: {fileID: 114381721755004000}
-  m_Layer: 17
+  m_Layer: 0
   m_Name: FloorTirgger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2522,9 +2522,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   MinDistanceToGoal: 0.1
-  OnlyMovesWhenPlayerIsColliding: 0
+  OnlyMovesWhenPlayerIsColliding: 1
   ResetPositionWhenPlayerRespawns: 0
-  ScriptActivated: 0
+  ScriptActivated: 1
 --- !u!114 &114255423225923180
 MonoBehaviour:
   m_ObjectHideFlags: 1

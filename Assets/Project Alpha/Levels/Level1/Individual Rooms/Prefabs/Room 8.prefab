@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4870328570509688}
   - component: {fileID: 61823405855081250}
   - component: {fileID: 114794834442980220}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Trigger event
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ GameObject:
   - component: {fileID: 4118228501695832}
   - component: {fileID: 61701697811096062}
   - component: {fileID: 114470286975004650}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Trigger Event
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 4797874233206764}
   - component: {fileID: 61930065250353544}
   - component: {fileID: 114406188168066676}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Trigger event
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -435,7 +435,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1415815284801664
 GameObject:
   m_ObjectHideFlags: 1
@@ -4669,7 +4669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e9a0571a618b5d4680ffd26656dbde7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CycleOption: 0
+  CycleOption: 2
   LoopInitialMovementDirection: 0
   PathElements:
   - PathElementPosition: {x: 0, y: 0, z: 0}
@@ -4699,7 +4699,7 @@ MonoBehaviour:
   MinDistanceToGoal: 0.1
   OnlyMovesWhenPlayerIsColliding: 0
   ResetPositionWhenPlayerRespawns: 0
-  ScriptActivated: 0
+  ScriptActivated: 1
 --- !u!114 &114378637378985366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4711,7 +4711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e9a0571a618b5d4680ffd26656dbde7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CycleOption: 0
+  CycleOption: 2
   LoopInitialMovementDirection: 0
   PathElements:
   - PathElementPosition: {x: 0, y: 0, z: 0}
@@ -4741,7 +4741,7 @@ MonoBehaviour:
   MinDistanceToGoal: 0.1
   OnlyMovesWhenPlayerIsColliding: 0
   ResetPositionWhenPlayerRespawns: 0
-  ScriptActivated: 0
+  ScriptActivated: 1
 --- !u!114 &114406188168066676
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4835,7 +4835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e9a0571a618b5d4680ffd26656dbde7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CycleOption: 0
+  CycleOption: 2
   LoopInitialMovementDirection: 0
   PathElements:
   - PathElementPosition: {x: 0, y: 0, z: 0}
@@ -4865,7 +4865,7 @@ MonoBehaviour:
   MinDistanceToGoal: 0.1
   OnlyMovesWhenPlayerIsColliding: 0
   ResetPositionWhenPlayerRespawns: 0
-  ScriptActivated: 0
+  ScriptActivated: 1
 --- !u!114 &114794834442980220
 MonoBehaviour:
   m_ObjectHideFlags: 1
