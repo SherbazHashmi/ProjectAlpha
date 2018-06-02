@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{a8a77b7f-771b-4e24-a99a-7fdf146bc620}">
         <property name="name">
-            <value>Atmos - Level 2 - Cave</value>
+            <value>Atmos - Cave</value>
         </property>
         <property name="outputFormat">
             <value>1</value>
@@ -30,6 +30,9 @@
         </relationship>
         <relationship name="timeline">
             <destination>{dd22bca9-fd15-416a-9683-4526ff49b75b}</destination>
+        </relationship>
+        <relationship name="parameters">
+            <destination>{5f3a1168-d751-41eb-a9f7-2e1f2505bee5}</destination>
         </relationship>
         <relationship name="banks">
             <destination>{5a20716d-50b0-4588-a2fe-1f382ec6f989}</destination>
@@ -72,6 +75,11 @@
         </relationship>
         <relationship name="markers">
             <destination>{5d0cba36-e3ca-46d1-a2c9-f2b9f2ddbb23}</destination>
+        </relationship>
+    </object>
+    <object class="ParameterProxy" id="{5f3a1168-d751-41eb-a9f7-2e1f2505bee5}">
+        <relationship name="preset">
+            <destination>{8e157273-1dcf-4025-9ac0-3e2aea12bf25}</destination>
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{286169fa-c397-4422-bf61-1639a4ddebbf}">
