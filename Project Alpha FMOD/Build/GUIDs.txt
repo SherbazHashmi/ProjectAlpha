@@ -8,7 +8,8 @@
 {2ac2a501-cdce-42bf-84a6-1d83ad2149b7} event:/Combat & Movement/Combat/Player/Combat - Mjolnir
 {3d9698bb-8bc8-465c-b780-2ca80e507875} event:/Combat & Movement/Combat/Player/Combat - Neon Bar
 {228d4394-9486-4385-8b3a-1eba5b1e1ac3} event:/Combat & Movement/Combat/NPC/Combat - Pistol
-{c73e7ad1-cefc-4ebb-b444-f43f9ea56798} event:/Combat & Movement/Combat/NPC/New Event
+{c73e7ad1-cefc-4ebb-b444-f43f9ea56798} event:/Combat & Movement/Combat/NPC/Laser Rifle
+{c6e89332-8ed6-4850-a7b1-bf56b577b7ab} event:/Combat & Movement/Combat/NPC/Single Shot Rifle
 {a8a77b7f-771b-4e24-a99a-7fdf146bc620} event:/Environment/Atmos/Atmos - Cave
 {db060ab0-7eb2-4882-89ae-eb7a8241e7d0} event:/Environment/Atmos/Atmos - Forest, Day
 {0eb3aafa-f9da-46ce-9349-12e7a897da24} event:/Environment/Atmos/Atmos - Forest, Night
