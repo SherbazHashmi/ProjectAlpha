@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{2e541ec2-7bee-440e-869b-9c9bf562ab02}">
+        <property name="assetPath">
+            <value>SFX_Laser.rifle.shot3_1.ogg</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>1.75</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{84f17aee-56b9-4309-b31a-fd967d4c59fd}</destination>
+        </relationship>
+    </object>
+</objects>
