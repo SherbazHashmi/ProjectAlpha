@@ -1,15 +1,17 @@
+{228d4394-9486-4385-8b3a-1eba5b1e1ac3} event:/Combat & Movement/Combat/NPC/Combat - Pistol
+{c73e7ad1-cefc-4ebb-b444-f43f9ea56798} event:/Combat & Movement/Combat/NPC/Combat - Laser Rifle
+{c6e89332-8ed6-4850-a7b1-bf56b577b7ab} event:/Combat & Movement/Combat/NPC/Combat - Combat Rifle
+{8e665456-b31c-4aa4-a44d-9a87830c80dd} event:/Combat & Movement/Combat/NPC/Combat - RPG
+{880cc5aa-369c-44b7-b868-0abd4b25e1b8} event:/Combat & Movement/Combat/NPC/Combat - Pipe
+{e79b9a61-f0cb-406b-8f06-3a963f5ba07b} event:/Combat & Movement/Combat/Player/Combat - Energy Gauntlet
+{2ac2a501-cdce-42bf-84a6-1d83ad2149b7} event:/Combat & Movement/Combat/Player/Combat - Mjolnir
+{3d9698bb-8bc8-465c-b780-2ca80e507875} event:/Combat & Movement/Combat/Player/Combat - Neon Bar
 {78174c42-dd66-4363-8a1c-13095f46d2cd} event:/Combat & Movement/Player/Player - Charged Dash
 {8b8e1cfa-b89c-4ce8-9983-4f52f1ede164} event:/Combat & Movement/Player/Player - Charged Jump
 {0bd81b4e-a357-4f15-83b1-d483fffe8b1b} event:/Combat & Movement/Player/Player - Footsteps
 {88ef116f-79cf-4693-ad0a-40d9d448999b} event:/Combat & Movement/Player/Player - Ground Slide
 {40ed3207-0818-4284-aed9-4def1c593b12} event:/Combat & Movement/Player/Player - Wall Cling
 {6a89321b-3b7d-41a7-9828-5ced263d9638} event:/Combat & Movement/Player/Player - Wall Slide
-{e79b9a61-f0cb-406b-8f06-3a963f5ba07b} event:/Combat & Movement/Combat/Player/Combat - Energy Gauntlet
-{2ac2a501-cdce-42bf-84a6-1d83ad2149b7} event:/Combat & Movement/Combat/Player/Combat - Mjolnir
-{3d9698bb-8bc8-465c-b780-2ca80e507875} event:/Combat & Movement/Combat/Player/Combat - Neon Bar
-{228d4394-9486-4385-8b3a-1eba5b1e1ac3} event:/Combat & Movement/Combat/NPC/Combat - Pistol
-{c73e7ad1-cefc-4ebb-b444-f43f9ea56798} event:/Combat & Movement/Combat/NPC/Laser Rifle
-{c6e89332-8ed6-4850-a7b1-bf56b577b7ab} event:/Combat & Movement/Combat/NPC/Single Shot Rifle
 {a8a77b7f-771b-4e24-a99a-7fdf146bc620} event:/Environment/Atmos/Atmos - Cave
 {db060ab0-7eb2-4882-89ae-eb7a8241e7d0} event:/Environment/Atmos/Atmos - Forest, Day
 {0eb3aafa-f9da-46ce-9349-12e7a897da24} event:/Environment/Atmos/Atmos - Forest, Night
