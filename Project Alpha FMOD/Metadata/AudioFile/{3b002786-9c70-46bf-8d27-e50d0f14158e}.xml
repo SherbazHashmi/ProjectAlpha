@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{3b002786-9c70-46bf-8d27-e50d0f14158e}">
+        <property name="assetPath">
+            <value>SFX_Movement_quantumclothing4_1.ogg</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.44133333333333336</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{84f17aee-56b9-4309-b31a-fd967d4c59fd}</destination>
+        </relationship>
+    </object>
+</objects>
