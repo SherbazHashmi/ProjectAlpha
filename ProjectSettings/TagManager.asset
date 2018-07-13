@@ -7,6 +7,8 @@ TagManager:
   - LevelBounds
   - Music
   - Background
+  - Breakable
+  - Moving Platform
   layers:
   - Default
   - TransparentFX
