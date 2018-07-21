@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{c5fe1159-1934-4aa8-b823-52d81640a2e7}">
+        <property name="assetPath">
+            <value>SFX_Enviro_Glitch_8.ogg</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>1.0346666666666666</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{84f17aee-56b9-4309-b31a-fd967d4c59fd}</destination>
+        </relationship>
+    </object>
+</objects>
