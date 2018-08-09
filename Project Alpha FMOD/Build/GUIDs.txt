@@ -11,11 +11,11 @@
 {db060ab0-7eb2-4882-89ae-eb7a8241e7d0} event:/Environment/Atmos/Atmos - Forest, Day
 {0eb3aafa-f9da-46ce-9349-12e7a897da24} event:/Environment/Atmos/Atmos - Forest, Night
 {6968aac9-607f-4ec7-a8b4-3ab888ea3629} event:/Environment/Atmos/Atmos - Office
-{418072a0-dfbe-4dcb-aa39-3fc2fe390fcc} event:/Environment/Enviro/Cave/Rocks/Cave Rock
+{106aecda-6495-4ef4-9265-da26960674eb} event:/Environment/Enviro/Cave/Animals/Bats Intermitt
+{667413ec-3d61-47e3-82ed-10a7b1403bac} event:/Environment/Enviro/Cave/Animals/Bats Loop
 {39fb69f9-66c3-4fdc-ad99-91dee3964ad0} event:/Environment/Enviro/Cave/Rocks/Cave Rock Roll
 {5344e7e5-ad9e-4abb-a572-68fa31f3ee9f} event:/Environment/Enviro/Cave/Rocks/Cave Rock Slide
-{667413ec-3d61-47e3-82ed-10a7b1403bac} event:/Environment/Enviro/Cave/Animals/Bats Loop
-{106aecda-6495-4ef4-9265-da26960674eb} event:/Environment/Enviro/Cave/Animals/Bats Intermitt
+{418072a0-dfbe-4dcb-aa39-3fc2fe390fcc} event:/Environment/Enviro/Cave/Rocks/Cave Rock
 {7a56f4f0-eb02-4338-8d4e-7832dab76ac0} event:/Environment/Enviro/Factory - Level 1/Enviro - Button (On & Off)
 {b1308e77-424a-4894-8713-80ec47edf77c} event:/Environment/Enviro/Factory - Level 1/Enviro - Button
 {ec70dc0b-378f-4f14-8d98-1f538f1d3d43} event:/Environment/Enviro/Factory - Level 1/Enviro - Circuit Breaker
@@ -24,10 +24,10 @@
 {83388fe6-3102-4b3e-9f80-bbe987936ad0} event:/Environment/Enviro/Factory - Level 1/Enviro - Crane Platform
 {5f9a412e-1909-4b68-b4ea-c5bb86335495} event:/Environment/Enviro/Factory - Level 1/Enviro - Door 1
 {0558be9a-16b4-49cd-888b-38c8cca3ea74} event:/Environment/Enviro/Factory - Level 1/Enviro - Electrical Field
+{c85adbf4-2d80-45c9-b915-e4f450182e36} event:/Environment/Enviro/Factory - Level 1/Enviro - Large Door
 {abb34afc-7790-4c78-8264-7f200ee110b6} event:/Environment/Enviro/Factory - Level 1/Enviro - Machinery Loop 1
 {8940f800-4576-4ee5-b45c-2daf52d01594} event:/Environment/Enviro/Factory - Level 1/Enviro - Machinery Loop 2
 {e5aa0ece-b18c-4950-bb39-471df8c116f9} event:/Environment/Enviro/Factory - Level 1/Enviro - Machinery Moving Loop
-{c85adbf4-2d80-45c9-b915-e4f450182e36} event:/Environment/Enviro/Factory - Level 1/Enviro - Large Door
 {29019884-31bd-424b-87a5-1a3f62fc6eb9} event:/Environment/Enviro/Factory - Level 1/Enviro - Moving Platform
 {b25f76f7-56ba-43b1-8e7b-ec8f641e46d3} event:/Environment/Enviro/Factory - Level 1/Enviro - Treadmill
 {061b7045-6c9e-4b17-95a3-f1e06b91b7ac} event:/Environment/Enviro/VR/VR Glitches
