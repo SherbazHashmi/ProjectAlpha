@@ -62,7 +62,7 @@
             <destination>{86527ce8-40f0-4346-8e3a-e81c52d545c6}</destination>
         </relationship>
         <relationship name="output">
-            <destination>{733ff64d-4620-4e9b-83d7-a5285b629063}</destination>
+            <destination>{3dd086b8-f5e2-4b86-a318-86716989d392}</destination>
         </relationship>
     </object>
     <object class="EventAutomatableProperties" id="{18cceee6-6f17-4efd-a58f-ef04d5ff7399}"/>
@@ -195,6 +195,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{2213b5fe-9a26-49f1-828e-5f7a892b4970}">
+        <property name="volume">
+            <value>-80</value>
+        </property>
         <property name="name">
             <value>Foot - Water</value>
         </property>
@@ -223,7 +226,7 @@
     </object>
     <object class="EventMixerGroup" id="{89ecc33c-dcc1-467d-9975-099530fde8dc}">
         <property name="volume">
-            <value>-3</value>
+            <value>-80</value>
         </property>
         <property name="name">
             <value>Foot - Gravel</value>
@@ -251,6 +254,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{74749794-607b-4318-9d7f-0038576ee598}">
+        <property name="volume">
+            <value>-80</value>
+        </property>
         <property name="name">
             <value>Foot - Dirt</value>
         </property>
@@ -278,6 +284,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{3efd0270-2357-4bb5-aca4-d406ba76cc35}">
+        <property name="volume">
+            <value>-80</value>
+        </property>
         <property name="name">
             <value>Foot - Grass</value>
         </property>
@@ -306,7 +315,7 @@
     </object>
     <object class="EventMixerGroup" id="{e5b49467-4a9b-47c0-9803-f6f02a0e64a2}">
         <property name="volume">
-            <value>-11</value>
+            <value>-35</value>
         </property>
         <property name="name">
             <value>Gyro - Walk</value>
@@ -334,6 +343,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{c1e51c57-6ea5-4fde-aff4-fbc679a7a05a}">
+        <property name="volume">
+            <value>-25</value>
+        </property>
         <property name="name">
             <value>Clothes</value>
         </property>
