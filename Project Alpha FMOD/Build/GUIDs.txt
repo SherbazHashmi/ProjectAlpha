@@ -7,6 +7,10 @@
 {ae36eae1-f633-437b-9c5e-1dc30ca1c9f7} event:/Combat/Player/Combat - Energy Sword
 {2ac2a501-cdce-42bf-84a6-1d83ad2149b7} event:/Combat/Player/Combat - Mjolnir
 {3d9698bb-8bc8-465c-b780-2ca80e507875} event:/Combat/Player/Combat - Neon Bar
+{0f3b0b0a-39f5-48eb-b9d5-c58092ec2062} event:/Combat/Weapon & Impact/Explosion/Explosion - Small
+{fe912a02-b123-4543-be68-481cb7105d69} event:/Combat/Weapon & Impact/Explosion/Explosion - Medium
+{7b1e0283-51b1-40f0-9382-dd3ddb9870ae} event:/Combat/Weapon & Impact/Explosion/Explosion - Large
+{f5383ecc-8bd2-452d-ba13-ced4392b8840} event:/Combat/Weapon & Impact/Explosion/Explosion - Very Large
 {a8a77b7f-771b-4e24-a99a-7fdf146bc620} event:/Environment/Atmos/Atmos - Cave
 {db060ab0-7eb2-4882-89ae-eb7a8241e7d0} event:/Environment/Atmos/Atmos - Forest, Day
 {0eb3aafa-f9da-46ce-9349-12e7a897da24} event:/Environment/Atmos/Atmos - Forest, Night
