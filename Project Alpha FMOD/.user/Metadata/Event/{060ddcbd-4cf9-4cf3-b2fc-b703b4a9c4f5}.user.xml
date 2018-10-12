@@ -4,9 +4,6 @@
         <property name="uiMaxMarkerTracksVisible">
             <value>12</value>
         </property>
-        <relationship name="selectables">
-            <destination>{54a3d8a0-d1f5-49d1-8cd2-f0510f076bd2}</destination>
-        </relationship>
         <relationship name="uiLastParameterSelection">
             <destination>{0dffc651-6913-46a7-8804-705eeb154482}</destination>
         </relationship>
