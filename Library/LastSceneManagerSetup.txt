@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/Project Alpha/Levels/Level1/Individual Rooms/Scenes/Complete Level
-    Design.unity
-  isLoaded: 1
-  isActive: 1
