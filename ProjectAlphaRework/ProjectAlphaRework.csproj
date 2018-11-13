@@ -307,6 +307,11 @@
     <Compile Include="Assets\Scripts\Menu\MenuBehaviour.cs" />
     <Compile Include="Assets\Scripts\Menu\OptionsBehaviour.cs" />
     <Compile Include="Assets\Scripts\Menu\SoundSettings.cs" />
+    <Compile Include="Assets\Scripts\Quantum\Animations\QuantumAnimationControl.cs" />
+    <Compile Include="Assets\Scripts\Quantum\Animations\QuantumSlideAnimation.cs" />
+    <Compile Include="Assets\Scripts\Quantum\Function\QuantumMovementBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Quantum\Function\UnityLessonsScripts\QuantumMovement.cs" />
+    <Compile Include="Assets\Scripts\Quantum\Function\UnityLessonsScripts\QuantumPhysics2D.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
