@@ -4,58 +4,60 @@
     <e p="$PROJECT_DIR$/../../../../../../../Caches/Rider2018.2/extResources" t="IncludeRecursive" />
     <e p="$PROJECT_DIR$/../../../../../../../Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_ProjectAlphaRework.1194795898.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
-      <e p="Assets" t="Include">
-        <e p="Scripts" t="Include">
-          <e p="Gameplay" t="Include">
-            <e p="DoorAnimation.cs" t="Include" />
-            <e p="DoorTrigger.cs" t="Include" />
-            <e p="HuDHandler.cs" t="Include" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets/Scripts" t="Include">
+        <e p="Gameplay" t="Include">
+          <e p="DoorAnimation.cs" t="Include" />
+          <e p="DoorTrigger.cs" t="Include" />
+          <e p="HuDHandler.cs" t="Include" />
+        </e>
+        <e p="General" t="Include">
+          <e p="ListView.cs" t="Include" />
+        </e>
+        <e p="Managers" t="Include">
+          <e p="GameManager.cs" t="Include" />
+          <e p="InputManager.cs" t="Include" />
+          <e p="Singleton.cs" t="Include" />
+        </e>
+        <e p="Menu" t="Include">
+          <e p="AuthHandler.cs" t="Include" />
+          <e p="DifficultyBackgroundChange.cs" t="Include" />
+          <e p="DisplayHandler.cs" t="Include" />
+          <e p="InputBindings.cs" t="Include" />
+          <e p="MenuBehaviour.cs" t="Include" />
+          <e p="OptionsBehaviour.cs" t="Include" />
+          <e p="SoundSettings.cs" t="Include" />
+        </e>
+        <e p="Quantum" t="Include">
+          <e p="Animations" t="Include">
+            <e p="QuantumAnimationControl.cs" t="Include" />
+            <e p="QuantumSlideAnimation.cs" t="Include" />
           </e>
-          <e p="General" t="Include">
-            <e p="ListView.cs" t="Include" />
-          </e>
-          <e p="Managers" t="Include">
-            <e p="GameManager.cs" t="Include" />
-            <e p="InputManager.cs" t="Include" />
-            <e p="Singleton.cs" t="Include" />
-          </e>
-          <e p="Menu" t="Include">
-            <e p="AuthHandler.cs" t="Include" />
-            <e p="DifficultyBackgroundChange.cs" t="Include" />
-            <e p="DisplayHandler.cs" t="Include" />
-            <e p="InputBindings.cs" t="Include" />
-            <e p="MenuBehaviour.cs" t="Include" />
-            <e p="OptionsBehaviour.cs" t="Include" />
-            <e p="SoundSettings.cs" t="Include" />
-          </e>
-          <e p="Quantum" t="Include">
-            <e p="Animations" t="Include">
-              <e p="QuantumAnimationControl.cs" t="Include" />
-              <e p="QuantumSlideAnimation.cs" t="Include" />
+          <e p="Function" t="Include">
+            <e p="QuantumMovementBehaviour.cs" t="Include" />
+            <e p="UnityLessonsScripts" t="Include">
+              <e p="QuantumMovement.cs" t="Include" />
+              <e p="QuantumPhysics2D.cs" t="Include" />
             </e>
-            <e p="Function" t="Include">
-              <e p="QuantumMovementBehaviour.cs" t="Include" />
-              <e p="UnityLessonsScripts" t="Include">
-                <e p="QuantumMovement.cs" t="Include" />
-                <e p="QuantumPhysics2D.cs" t="Include" />
-              </e>
-            </e>
           </e>
-          <e p="Tools" t="Include">
-            <e p="Button.cs" t="Include" />
-            <e p="Events" t="Include">
-              <e p="EventManager.cs" t="Include" />
-            </e>
+        </e>
+        <e p="Tools" t="Include">
+          <e p="Button.cs" t="Include" />
+          <e p="Events" t="Include">
+            <e p="EventListener.cs" t="Include" />
+            <e p="EventListenerBase.cs" t="Include" />
+            <e p="EventManager.cs" t="Include" />
+            <e p="EventRegister.cs" t="Include" />
+            <e p="GameEvent.cs" t="Include" />
           </e>
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
-      <e p="ProjectAlphaRework.csproj" t="IncludeRecursive" />
       <e p="ProjectAlphaRework.sln" t="IncludeFlat" />
       <e p="Temp" t="ExcludeRecursive">
-        <e p="UnityVS_bin/Debug" t="ExcludeRecursive" />
-        <e p="UnityVS_obj/Debug" t="ExcludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
       </e>
     </e>
   </component>
