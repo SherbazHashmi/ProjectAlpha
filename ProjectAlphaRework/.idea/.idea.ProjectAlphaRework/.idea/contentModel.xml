@@ -16,6 +16,7 @@
           </e>
           <e p="Managers" t="Include">
             <e p="GameManager.cs" t="Include" />
+            <e p="InputManager.cs" t="Include" />
             <e p="Singleton.cs" t="Include" />
           </e>
           <e p="Menu" t="Include">
@@ -38,6 +39,12 @@
                 <e p="QuantumMovement.cs" t="Include" />
                 <e p="QuantumPhysics2D.cs" t="Include" />
               </e>
+            </e>
+          </e>
+          <e p="Tools" t="Include">
+            <e p="Button.cs" t="Include" />
+            <e p="Events" t="Include">
+              <e p="EventManager.cs" t="Include" />
             </e>
           </e>
         </e>

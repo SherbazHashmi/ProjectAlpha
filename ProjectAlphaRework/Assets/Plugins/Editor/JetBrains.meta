@@ -1,8 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: ed35610b13d4f4979ba962d412ef0fc2
 folderAsset: yes
 timeCreated: 1542159130
 licenseType: Free
+=======
+guid: b61bd71e7a5ad404cb03164e3ceee2ce
+folderAsset: yes
+>>>>>>> NewEngine
 DefaultImporter:
   externalObjects: {}
   userData: 

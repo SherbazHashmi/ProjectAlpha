@@ -1,7 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 47b43edb11e2c487ca7494c710d7e02f
 timeCreated: 1542159131
 licenseType: Free
+=======
+guid: fce04e84c6a413a469cdd721946452b5
+>>>>>>> NewEngine
 PluginImporter:
   externalObjects: {}
   serializedVersion: 2

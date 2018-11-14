@@ -30,5 +30,6 @@ public class DoorAnimation : MonoBehaviour
 
          StartCoroutine(Move(newTarget));
         
+        
     }
 }
