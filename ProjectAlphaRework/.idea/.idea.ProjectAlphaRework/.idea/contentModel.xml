@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\shado\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\shado\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_ProjectAlphaRework.-1276374401.00" t="ExcludeRecursive" />
+    <e p="C:\Users\shado\Development\Unity\ProjectAlpha\ProjectAlphaRework" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Gameplay" t="Include">
+            <e p="DoorAnimation.cs" t="Include" />
+            <e p="DoorTrigger.cs" t="Include" />
+            <e p="HuDHandler.cs" t="Include" />
+          </e>
+          <e p="General" t="Include">
+            <e p="ListView.cs" t="Include" />
+          </e>
+          <e p="Managers" t="Include">
+            <e p="GameManager.cs" t="Include" />
+            <e p="Singleton.cs" t="Include" />
+          </e>
+          <e p="Menu" t="Include">
+            <e p="AuthHandler.cs" t="Include" />
+            <e p="DifficultyBackgroundChange.cs" t="Include" />
+            <e p="DisplayHandler.cs" t="Include" />
+            <e p="InputBindings.cs" t="Include" />
+            <e p="MenuBehaviour.cs" t="Include" />
+            <e p="OptionsBehaviour.cs" t="Include" />
+            <e p="SoundSettings.cs" t="Include" />
+          </e>
+          <e p="Quantum" t="Include">
+            <e p="Animations" t="Include">
+              <e p="QuantumAnimationControl.cs" t="Include" />
+              <e p="QuantumSlideAnimation.cs" t="Include" />
+            </e>
+            <e p="Function" t="Include">
+              <e p="QuantumMovementBehaviour.cs" t="Include" />
+              <e p="UnityLessonsScripts" t="Include">
+                <e p="QuantumMovement.cs" t="Include" />
+                <e p="QuantumPhysics2D.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="ProjectAlphaRework.sln" t="IncludeFlat" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>

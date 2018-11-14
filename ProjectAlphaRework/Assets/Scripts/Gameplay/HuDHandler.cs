@@ -16,7 +16,7 @@ public class HuDHandler : MonoBehaviour
 
     [Header("Weapon Data")]
     public Image equiptWeaponImage;
-    public Text amooCount;
+    public Text ammoCount;
 
     [Header("Buttons")]
     public Image playerPortrait;
@@ -67,6 +67,6 @@ public class HuDHandler : MonoBehaviour
         //set weapon image here
 
         //update Quantum ammo here
-        amooCount.text = "Quantum Ammo";
+        ammoCount.text = "Quantum Ammo";
     }
 }
