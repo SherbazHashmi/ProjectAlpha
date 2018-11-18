@@ -54,6 +54,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Character\Character.cs" />
+    <Compile Include="Assets\Scripts\Character\CharacterAbility.cs" />
+    <Compile Include="Assets\Scripts\Character\Energy.cs" />
+    <Compile Include="Assets\Scripts\Character\Health.cs" />
     <Compile Include="Assets\Scripts\Gameplay\DoorAnimation.cs" />
     <Compile Include="Assets\Scripts\Gameplay\DoorTrigger.cs" />
     <Compile Include="Assets\Scripts\Gameplay\HuDHandler.cs" />

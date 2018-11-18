@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
-namespace Tools.Events
+namespace UnderwolfStudios.ProjectAlpha
 {
-
+    
     public static class EventManager
     {
         private static Dictionary<Type, List<EventListenerBase>> _subscribers;

@@ -6,6 +6,12 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets/Scripts" t="Include">
+        <e p="Character" t="Include">
+          <e p="Character.cs" t="Include" />
+          <e p="CharacterAbility.cs" t="Include" />
+          <e p="Energy.cs" t="Include" />
+          <e p="Health.cs" t="Include" />
+        </e>
         <e p="Gameplay" t="Include">
           <e p="DoorAnimation.cs" t="Include" />
           <e p="DoorTrigger.cs" t="Include" />

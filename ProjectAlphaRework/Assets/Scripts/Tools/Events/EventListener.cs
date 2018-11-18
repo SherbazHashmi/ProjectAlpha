@@ -1,4 +1,4 @@
-namespace Tools.Events
+namespace UnderwolfStudios.ProjectAlpha
 {
     public interface EventListener<T> : EventListenerBase
     {
