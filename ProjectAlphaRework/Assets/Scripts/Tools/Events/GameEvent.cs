@@ -1,5 +1,4 @@
-namespace Tools.Events
-{
+namespace UnderwolfStudios.ProjectAlpha{
     public struct GameEvent
     {
         public string EventName;
