@@ -9,9 +9,11 @@ namespace UnderwolfStudios.ProjectAlpha
 {
    
     [AddComponentMenu("Corgi Engine/Managers/Game Manager")]
-    public class GameManager : Singleton<GameManager>, EventListener<EngineEvent>,EventListener<PointsEvent>
+    public class GameManager : Singleton<GameManager>, EventListener<EngineEvent>, EventListener<PointsEvent>, EventListener<EnergyEvent>
     {
         public int Points { get; private set; }
+        public float Energy { get; private set; }
+        public float EnergyMax { get; private set; }
         public bool Paused { get; private set; }
         
         public void OnEvent(EngineEvent engineEvent)
@@ -62,6 +64,26 @@ namespace UnderwolfStudios.ProjectAlpha
                     break;
             }
         }
+
+        public void OnEvent(EnergyEvent energyEvent)
+        {
+            switch (energyEvent.EnergyEventType)
+            {
+                case EnergyEventType.AddAll:
+                    Energy = EnergyMax;
+                    break;
+                case EnergyEventType.Add:
+                    Energy++;
+                    break;
+                case EnergyEventType.Remove:
+                    Energy--;
+                    break;
+                case EnergyEventType.RemoveAll:
+                    Energy = 0;
+                    break;
+            }
+        }
+
     }
     
     public enum EngineEventType
@@ -93,6 +115,14 @@ namespace UnderwolfStudios.ProjectAlpha
         RemoveAll
     }
 
+    public enum EnergyEventType
+    {
+        Add,
+        Remove,
+        AddAll,
+        RemoveAll
+    }
+
     public struct PointsEvent
     {
         public PointsEventType PointsEventType;
@@ -103,9 +133,20 @@ namespace UnderwolfStudios.ProjectAlpha
         }
         
     }
-    
-    
-    
-    
+
+    public struct EnergyEvent
+    {
+        public EnergyEventType EnergyEventType;
+
+        public EnergyEvent(EnergyEventType energyEventType)
+        {
+            this.EnergyEventType = energyEventType;
+        }
+
+    }
+
+
+
+
 
 }
