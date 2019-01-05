@@ -4,6 +4,9 @@
         <property name="uiMaxMarkerTracksVisible">
             <value>9</value>
         </property>
+        <relationship name="selectables">
+            <destination>{34c2fc62-5ca8-40ae-a685-df4f08acc2c5}</destination>
+        </relationship>
         <relationship name="uiLastParameterSelection">
             <destination>{50f34c30-1d7c-48d9-84c1-08e2e7dbcb88}</destination>
         </relationship>
@@ -26,7 +29,7 @@
     </object>
     <object class="MixerBusEffectChain" id="{4c5e3669-9974-4911-8ff3-ef60fbf2470b}"/>
     <object class="MixerBusPanner" id="{aa06e945-98f2-4e1d-8402-7314a6864fc0}"/>
-    <object class="SingleSound" id="{6a6b421c-7f69-4f4b-9079-d4bf16e06403}"/>
+    <object class="SingleSound" id="{34c2fc62-5ca8-40ae-a685-df4f08acc2c5}"/>
     <object class="EventMixerGroup" id="{18fa56a4-fabb-42e1-965d-0cc8c214cec5}"/>
     <object class="TempoMarker" id="{2df4e60f-a222-4a04-895c-babf3c8de787}"/>
     <object class="LoopRegion" id="{87b60209-2c17-4f02-a1a4-9204be6a2508}"/>
