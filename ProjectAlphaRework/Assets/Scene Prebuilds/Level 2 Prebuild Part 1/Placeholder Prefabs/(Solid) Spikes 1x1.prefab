@@ -21,8 +21,7 @@ GameObject:
   - component: {fileID: 4080296416298708}
   - component: {fileID: 212937518005835972}
   - component: {fileID: 61437352741239042}
-  - component: {fileID: 114717964542353984}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: (Solid) Spikes 1x1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,30 +66,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114717964542353984
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1157732764675734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76891b3b532f84acaaeed44c357bd00c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TargetLayerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  DamageCaused: 10
-  DamageCausedKnockbackType: 1
-  DamageCausedKnockbackForce: {x: 10, y: 2}
-  InvincibilityDuration: 0.5
-  DamageTakenEveryTime: 0
-  DamageTakenDamageable: 0
-  DamageTakenNonDamageable: 0
-  DamageTakenKnockbackType: 0
-  DamageTakenKnockbackForce: {x: 0, y: 0}
-  DamageTakenInvincibilityDuration: 0.5
 --- !u!212 &212937518005835972
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -123,7 +98,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 600026165
+  m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a4fa06fa76e8c8e49986cd67e165ee5c, type: 3}

@@ -21,8 +21,7 @@ GameObject:
   - component: {fileID: 4846629758703048}
   - component: {fileID: 212279238400138448}
   - component: {fileID: 68638705846685172}
-  - component: {fileID: 114423220959235592}
-  m_Layer: 20
+  m_Layer: 0
   m_Name: (1WayMove) Crumbling Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,20 +58,6 @@ EdgeCollider2D:
   m_Points:
   - {x: 0.5, y: 0.5}
   - {x: -0.5, y: 0.5}
---- !u!114 &114423220959235592
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1239573089259146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ea2ea465c9684f96b42d2d13eefd088, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TimeBeforeFall: 2
-  FallSpeed: 2
-  ShakeIntensity: 2
 --- !u!212 &212279238400138448
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -105,7 +90,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 600026165
+  m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b07e6687f0e97284aa3cc168bcc59682, type: 3}
