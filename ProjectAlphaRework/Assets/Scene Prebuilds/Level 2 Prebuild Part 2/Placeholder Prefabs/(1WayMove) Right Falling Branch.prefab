@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4999990300434256}
   - component: {fileID: 212463218485083780}
   - component: {fileID: 68359066075474334}
-  - component: {fileID: 114982597035902374}
   m_Layer: 20
   m_Name: (1WayMove) Right Falling Branch
   m_TagString: Untagged
@@ -36,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1074315342386816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.0046382, y: 3.7697618, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -59,20 +58,6 @@ EdgeCollider2D:
   m_Points:
   - {x: 0.5, y: 0.5}
   - {x: -0.5, y: 0.5}
---- !u!114 &114982597035902374
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1074315342386816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ea2ea465c9684f96b42d2d13eefd088, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TimeBeforeFall: 2
-  FallSpeed: 2
-  ShakeIntensity: 2
 --- !u!212 &212463218485083780
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -105,7 +90,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 600026165
+  m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1e0adaf77c29bbf40908f77b631d1413, type: 3}
