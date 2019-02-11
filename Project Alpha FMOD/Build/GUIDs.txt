@@ -48,14 +48,16 @@
 {d850d4b6-f87f-47d4-ae4e-3fee04d2a54f} event:/Movement/Player/Player - Jump Land
 {40ed3207-0818-4284-aed9-4def1c593b12} event:/Movement/Player/Player - Wall Cling
 {6a89321b-3b7d-41a7-9828-5ced263d9638} event:/Movement/Player/Player - Wall Slide
-{ce845b2c-0a50-44b6-8a59-db7b5981ab6e} event:/Music/Music - Caverns (Level 2)
-{26c25b35-60b1-46a6-ab74-70b767f6d481} event:/Music/Music - Forest (Level 3)
-{64c98395-41fa-401d-b403-41d43c2abffc} event:/Music/Music - Main Menu
+{b343f28a-6e6b-4715-869e-14bd2033f6cf} event:/Music/Level 1/Music - Level 1 Escape
+{42d334a7-3e9d-45da-b1e2-45e1e350eb95} event:/Music/Level 1/Music - Office (Level 1)
+{3d35b15e-e552-484d-8c5f-de73f5f9af82} event:/Music/Level 1/Music Level 1 Boss
+{01b7da42-dde6-4bba-aef5-44e9a9f1d956} event:/Music/Level 2/Music - Boss (Level 2)
+{ce845b2c-0a50-44b6-8a59-db7b5981ab6e} event:/Music/Level 2/Music - Caverns (Level 2)
+{26c25b35-60b1-46a6-ab74-70b767f6d481} event:/Music/Level 3/Music - Forest (Level 3)
+{c8afcc6a-dbe3-4618-a8fc-f22e48a76bab} event:/Music/Level 3/Music - Skyscraper Cutscene
+{64c98395-41fa-401d-b403-41d43c2abffc} event:/Music/Menu & Other/Music - Main Menu
 {706c8dcd-df29-4c40-b17e-f0c916309c79} event:/Music/Music - Not Assigned
-{42d334a7-3e9d-45da-b1e2-45e1e350eb95} event:/Music/Music - Office (Level 1)
 {060ddcbd-4cf9-4cf3-b2fc-b703b4a9c4f5} event:/Music/Music - Skyscraper
-{b343f28a-6e6b-4715-869e-14bd2033f6cf} event:/Music/Music - Level 1 Escape
-{3d35b15e-e552-484d-8c5f-de73f5f9af82} event:/Music/Music Level 1 Boss
 {9993956b-35dd-4303-a4aa-4086356c1f52} event:/UI/Main Menu/Menu - Accept
 {3b81f6aa-272c-4e70-beba-537f5c1536a5} event:/UI/Main Menu/Menu - Reject
 {5364e6cf-2386-4020-a0e8-7ee8d5cb86c6} event:/UI/Main Menu/Menu - Return

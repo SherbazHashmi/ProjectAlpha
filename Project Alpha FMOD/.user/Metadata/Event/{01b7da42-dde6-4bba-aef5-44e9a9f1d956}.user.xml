@@ -5,7 +5,7 @@
             <value>16</value>
         </property>
         <relationship name="selectables">
-            <destination>{28305ffe-7c12-4c4f-b79d-9a0a882d4b9f}</destination>
+            <destination>{3ab827eb-654d-49ba-b172-7cda232d8d4a}</destination>
         </relationship>
         <relationship name="uiLastParameterSelection">
             <destination>{e08a6e4c-4f66-4c0c-a734-19e31cd9ec40}</destination>
@@ -41,7 +41,7 @@
     <object class="MixerBusEffectChain" id="{9c8545de-01bd-45a2-a311-539d26a38617}"/>
     <object class="MixerBusPanner" id="{14a5cf77-d9d0-4ad0-80ce-7037ab4cf111}"/>
     <object class="SingleSound" id="{4583ef23-8c6e-4ba6-8b5f-b65efb840d38}"/>
-    <object class="SingleSound" id="{28305ffe-7c12-4c4f-b79d-9a0a882d4b9f}"/>
+    <object class="SingleSound" id="{85041321-4cd3-481c-87c0-bcc0b8f492e4}"/>
     <object class="EventMixerGroup" id="{ecd6ca4b-550b-4d4a-a883-986dc20c2e38}"/>
     <object class="SingleSound" id="{af64654e-6cc1-478e-b427-d5c8907b5888}"/>
     <object class="EventMixerGroup" id="{53145a12-6aa8-4a24-a152-e23cfa6575e9}"/>
@@ -60,6 +60,7 @@
     <object class="TransitionRegion" id="{4612f485-b32b-408e-8c6e-11edd2ee61b2}"/>
     <object class="LoopRegion" id="{e3ec6afd-6897-4ba0-a6b2-798d2f344cd7}"/>
     <object class="LoopRegion" id="{00a53f7d-d4f8-47e8-b4c4-a8945d4429bc}"/>
+    <object class="NamedMarker" id="{3ab827eb-654d-49ba-b172-7cda232d8d4a}"/>
     <object class="MixerBusEffectChain" id="{3e1ac6e7-948b-4777-8263-aafaa6378983}"/>
     <object class="MixerBusPanner" id="{af635561-45b1-4745-9c32-e70bdabb4f5d}"/>
     <object class="MixerBusFader" id="{6c1d4837-7578-436f-af4f-9157d2a8a73e}"/>
