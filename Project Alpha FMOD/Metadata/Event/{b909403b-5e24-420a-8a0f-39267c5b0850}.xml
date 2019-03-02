@@ -178,6 +178,9 @@
         <property name="nameOfPropertyBeingModulated">
             <value>pitch</value>
         </property>
+        <property name="amount">
+            <value>2.9000001</value>
+        </property>
     </object>
     <object class="SingleSound" id="{544d0fc3-f68b-4c5c-850d-725f430607c9}">
         <relationship name="audioFile">
@@ -254,8 +257,11 @@
         <property name="lowGain">
             <value>-10.5</value>
         </property>
+        <property name="midGain">
+            <value>-2</value>
+        </property>
         <property name="highGain">
-            <value>2</value>
+            <value>0.5</value>
         </property>
     </object>
     <object class="MixerBusFader" id="{b8a7b283-e879-43fb-b328-4826ef28ab98}"/>

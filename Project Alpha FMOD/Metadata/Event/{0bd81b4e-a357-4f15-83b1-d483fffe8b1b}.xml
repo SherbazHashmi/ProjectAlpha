@@ -285,7 +285,7 @@
     </object>
     <object class="EventMixerGroup" id="{3efd0270-2357-4bb5-aca4-d406ba76cc35}">
         <property name="volume">
-            <value>-80</value>
+            <value>-62</value>
         </property>
         <property name="name">
             <value>Foot - Grass</value>
@@ -344,7 +344,7 @@
     </object>
     <object class="EventMixerGroup" id="{c1e51c57-6ea5-4fde-aff4-fbc679a7a05a}">
         <property name="volume">
-            <value>-25</value>
+            <value>-21</value>
         </property>
         <property name="name">
             <value>Clothes</value>
