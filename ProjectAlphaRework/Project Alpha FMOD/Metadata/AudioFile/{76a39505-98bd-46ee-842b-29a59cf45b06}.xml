@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{76a39505-98bd-46ee-842b-29a59cf45b06}">
+        <property name="assetPath">
+            <value>SFX_Movement_FootstepsHeavy2_1.ogg</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.6000416666666667</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{84f17aee-56b9-4309-b31a-fd967d4c59fd}</destination>
+        </relationship>
+    </object>
+</objects>

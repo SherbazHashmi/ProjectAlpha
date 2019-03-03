@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{96094cdc-d6bf-4a5c-887c-dc1b94514753}">
+        <property name="assetPath">
+            <value>2lvl_forest_demo_1.ogg</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>114.66666666666667</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{84f17aee-56b9-4309-b31a-fd967d4c59fd}</destination>
+        </relationship>
+    </object>
+</objects>
