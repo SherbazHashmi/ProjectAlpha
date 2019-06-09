@@ -71,6 +71,10 @@
     <Compile Include="Assets\Scripts\Gameplay\Level Scripts\Level 1\Interactions\LevelEnterCutscene.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Level Scripts\Level 1\MovingPlatforms\MovingPlatforms.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Level Scripts\Level 1\MovingPlatforms\RoomSevenPlatforms.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Level Scripts\Level 1\Room 9 Boss Fight\ChainMovement.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Level Scripts\Level 1\Room 9 Boss Fight\ConveyorBeltMovement.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Level Scripts\Level 1\Room 9 Boss Fight\RoomNineHandler.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Level Scripts\Level 1\Room 9 Boss Fight\TurretRotation.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Level Scripts\Level 1\SecretDoorTriggers\LevelEightToNineTransition.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Level Scripts\Level 1\SecretDoorTriggers\SecretDoorDestroy.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Level Scripts\Level 1\Tutorial\ToturialTriggerOne.cs" />

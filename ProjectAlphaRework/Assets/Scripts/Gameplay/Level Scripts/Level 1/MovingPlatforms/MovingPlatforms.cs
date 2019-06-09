@@ -7,17 +7,11 @@ public class MovingPlatforms : MonoBehaviour
     [SerializeField] private float speed = 10f;
     [SerializeField] private float timer = 0;
 
-    private GameObject spawner;
-    private GameObject Shredder;
-
     private Transform movingPlatform;
     private EdgeCollider2D edgeCollider;
 
     private void Awake()
     {
-        spawner = GameObject.Find("Spawner");
-        Shredder = GameObject.Find("Shredder");
-
         movingPlatform = GetComponent<Transform>();
         edgeCollider = GetComponent<EdgeCollider2D>();
     }
