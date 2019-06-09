@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{6a89321b-3b7d-41a7-9828-5ced263d9638}">
         <property name="name">
-            <value>Player - Wall Slide</value>
+            <value>Quantum - Wall Slide</value>
         </property>
         <property name="outputFormat">
             <value>2</value>

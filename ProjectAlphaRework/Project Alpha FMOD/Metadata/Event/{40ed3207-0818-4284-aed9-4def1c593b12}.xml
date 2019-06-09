@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{40ed3207-0818-4284-aed9-4def1c593b12}">
         <property name="name">
-            <value>Player - Wall Cling</value>
+            <value>Quantum - Wall Cling</value>
         </property>
         <property name="outputFormat">
             <value>2</value>
