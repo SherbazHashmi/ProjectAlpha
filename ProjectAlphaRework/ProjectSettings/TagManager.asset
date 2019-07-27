@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Shredder
   - righRurret
+  - TutorialOne
+  - TutorialTwo
+  - TutorialThree
+  - TutorialFour
+  - TutorialFive
   layers:
   - Default
   - TransparentFX

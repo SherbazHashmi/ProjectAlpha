@@ -28,8 +28,7 @@ public class DoorAnimation : MonoBehaviour
 
          Vector3 newTarget = target.y == topPosition.y ? botPosition : topPosition;
 
-         StartCoroutine(Move(newTarget));
-        
+         StartCoroutine(Move(newTarget));        
         
     }
 }

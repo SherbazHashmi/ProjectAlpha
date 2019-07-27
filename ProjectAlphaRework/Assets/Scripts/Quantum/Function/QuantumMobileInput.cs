@@ -7,7 +7,7 @@ public class QuantumMobileInput : MonoBehaviour
     [Header ("Movement Vars")]
     public float movementSpeed = 5f;
     public float crouchSpeed = 2.5f;
-    public float jumpForce = 5f;
+    public float jumpForce = 2f;
 
     [HideInInspector] public bool moveLeft;
     [HideInInspector] public bool moveRight;
@@ -16,6 +16,7 @@ public class QuantumMobileInput : MonoBehaviour
     [HideInInspector] public bool isJumping;
 
     private int moveDirection = 0;
+    private float jumpTimer;
 
     private Rigidbody2D rb2d;
     private bool isGrounded;
@@ -51,7 +52,7 @@ public class QuantumMobileInput : MonoBehaviour
         QuantumDirectionalMovement();
         QuantumJump();
 
-        cameraToFollow.transform.position = new Vector3(gameObject.transform.position.x, 0, -10);
+        cameraToFollow.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -10);
     }
 
     /// <summary>
@@ -63,8 +64,15 @@ public class QuantumMobileInput : MonoBehaviour
     /// </summary>
     private void QuantumJump()
     {
+        if (jumpTimer >= 0.6f)
+        {
+            quantumJump = false;
+            jumpTimer = 0;
+        }
+
         if (quantumJump)
         {
+            jumpTimer += 1 * Time.deltaTime;
             rb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
     }

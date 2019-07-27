@@ -4,26 +4,26 @@ using UnityEngine;
 
 public class MovingPlatforms : MonoBehaviour
 {
-    [SerializeField] private float speed = 10f;
-    [SerializeField] private float timer = 0;
+    [SerializeField] private float speed = 10f;     //Sets platform movement speed
+    [SerializeField] private float timer = 0;       //sets timer to enable collider
 
-    private Transform movingPlatform;
-    private EdgeCollider2D edgeCollider;
+    private Transform movingPlatform;               //makes variable platform transform
+    private EdgeCollider2D edgeCollider;            //makes variable for edgecollider
 
     private void Awake()
     {
-        movingPlatform = GetComponent<Transform>();
-        edgeCollider = GetComponent<EdgeCollider2D>();
+        movingPlatform = GetComponent<Transform>();         //gets platform transform
+        edgeCollider = GetComponent<EdgeCollider2D>();      //gets edge collider
     }
 
     private void Start()
     {        
-        edgeCollider.enabled = false;
+        edgeCollider.enabled = false;       //disbales edge collider
     }
 
     void Update ()
     {
-        timer += Time.deltaTime;
+        timer += Time.deltaTime;        //Sets timer to increment 1 per second
         MovePlatform();
         DestroyPlatform();
     }
@@ -33,11 +33,11 @@ public class MovingPlatforms : MonoBehaviour
     /// </summary>
     void MovePlatform()
     {
-        transform.Translate(Vector3.right * speed * Time.deltaTime);
+        transform.Translate(Vector3.right * speed * Time.deltaTime);        //moves platform
 
-        if (timer >= 2.5f)
+        if (timer >= 2.5f)                                                  //checks that timer reaches 2.5 seconds
         {
-            edgeCollider.enabled = true;
+            edgeCollider.enabled = true;                                    //enables edge collider
         }
     }
 
@@ -46,9 +46,9 @@ public class MovingPlatforms : MonoBehaviour
     /// </summary>
     void DestroyPlatform()
     {
-        if (timer >= 19f)
+        if (timer >= 19f)                   //checks that timer reaches 19 seconds
         {
-            Destroy(this.gameObject);
+            Destroy(this.gameObject);       //destrou Platform
         }
     }
 }

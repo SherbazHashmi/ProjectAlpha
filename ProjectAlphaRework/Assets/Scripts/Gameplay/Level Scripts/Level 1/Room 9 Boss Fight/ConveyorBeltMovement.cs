@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class ConveyorBeltMovement : MonoBehaviour
 {
-    [SerializeField] private float speed = 10f;
-    [SerializeField] private float timer = 0;
-    [SerializeField] private float destroyTimer;
+    [SerializeField] private float speed = 10f;                 //platform speed
+    [SerializeField] private float timer = 0;                   //timer that adds up to tiem that platform needs to be destroyed
+    [SerializeField] private float destroyTimer;                //Time to destroy gameObject
 
-    private Transform movingPlatform;
+    private Transform movingPlatform;                           //Makes a var for the object transform
+    private RoomNineHandler roomNineHandler;                    //RoomNinehandler.cs
 
     private void Awake()
     {
-        movingPlatform = GetComponent<Transform>();
+        movingPlatform = GetComponent<Transform>();             //Gets Object Transform
+        roomNineHandler = FindObjectOfType<RoomNineHandler>();  //Finds RoomNinehandler.cs
     }
 
     private void Start()
@@ -21,7 +23,11 @@ public class ConveyorBeltMovement : MonoBehaviour
 
     void Update()
     {
-        timer += Time.deltaTime;
+        if (roomNineHandler.startConveyor)
+        {
+            timer += Time.deltaTime;        //Sets timer to increment 1 each second
+        }
+
         MovePlatform();
         DestroyPlatform();
     }
@@ -31,7 +37,10 @@ public class ConveyorBeltMovement : MonoBehaviour
     /// </summary>
     void MovePlatform()
     {
-        transform.Translate(Vector3.up * speed * Time.deltaTime);
+        if (roomNineHandler.startConveyor)                                  //Check that belt can start moving
+        {
+            transform.Translate(Vector3.up * -speed * Time.deltaTime);      //moves belt 
+        }
     }
 
     /// <summary>
@@ -39,9 +48,9 @@ public class ConveyorBeltMovement : MonoBehaviour
     /// </summary>
     void DestroyPlatform()
     {
-        if (timer >= destroyTimer)
+        if (timer >= destroyTimer)      //checks if timer reaches destroy timer
         {
-            Destroy(this.gameObject);
+            Destroy(this.gameObject);   //Destroy belt
         }
     }
 }

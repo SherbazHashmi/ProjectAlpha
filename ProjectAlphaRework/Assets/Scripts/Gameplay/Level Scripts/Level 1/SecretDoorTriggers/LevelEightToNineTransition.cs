@@ -6,9 +6,9 @@ public class LevelEightToNineTransition : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.tag == "Player")
+        if (coll.gameObject.CompareTag("Player"))   //check if collision is with player
         {
-            Destroy(this.gameObject);
+            Destroy(this.gameObject);               //destroy object
         }
     }
 }

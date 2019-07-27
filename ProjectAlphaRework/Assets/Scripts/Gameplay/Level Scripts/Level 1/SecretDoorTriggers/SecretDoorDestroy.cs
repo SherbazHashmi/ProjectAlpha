@@ -6,47 +6,44 @@ using UnityEngine.Assertions;
 
 public class SecretDoorDestroy : MonoBehaviour
 {
-    [SerializeField] private GameObject secretDoor;
-    [SerializeField] private GameObject hiddenAreaCover;
-    [SerializeField] private Sprite doorSpriteIntact;
-    [SerializeField] private Sprite doorSpriteDamaged;
+    [SerializeField] private GameObject hiddenAreaCover;        //Sets Hidden Area Cover
+    [SerializeField] private Sprite secretDoor;                 //Sets secret door Varible
+    [SerializeField] private Sprite doorSpriteIntact;           //Sets image hit once var
+    [SerializeField] private Sprite doorSpriteDamaged;          //sets image hit twice var
 
-    private int hitCount = 2;
+    private int hitCount = 3;                                   //sets var that tells how many times a door must be hit           
 
-    private SpriteRenderer spriteRenderer;
-
-    private void Awake()
-    {
-        /*Assert.IsNotNull(secretDoor);
-        Assert.IsNotNull(doorSpriteIntact);
-        Assert.IsNotNull(doorSpriteDamaged);
-        Assert.IsNotNull(hiddenAreaCover);*/
-    }
+    private SpriteRenderer spriteRenderer;                      //gets sprite renderer var
 
     private void Start()
     {
-        secretDoor.SetActive(true);
-        hiddenAreaCover.SetActive(true);
+        spriteRenderer = GetComponent<SpriteRenderer>();        //gets sprite renderer component
+
+        hiddenAreaCover.SetActive(true);                        //enables hidden area covers
     }
 
-    private void OnTriggerEnter2D(Collider2D coll)
+    private void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.tag == "Player" && coll.tag == "Mellee" || coll.tag == "PlayerProjectile")
+        if (coll.gameObject.CompareTag("Player") && coll.gameObject.CompareTag("melee") || coll.gameObject.CompareTag("PlayerProjectile"))      //checks if quantum damaged door
         {
-            hitCount--;
+            hitCount--;                                                                                                                         //Subtracts hits to display correct image or destroy
 
-            if (hitCount == 2)
+            if (hitCount == 3)                                                                                                                  //Check if hitcount is 3
             {
-                spriteRenderer.sprite = doorSpriteIntact;
+                spriteRenderer.sprite = secretDoor;                                                                                             //Sets undamaged image
             }
-            else if (hitCount == 1)
+            else if (hitCount == 2)                                                                                                             //checks if hit count is 2
             {
-                spriteRenderer.sprite = doorSpriteDamaged;
+                spriteRenderer.sprite = doorSpriteIntact;                                                                                       //Sets damaged door 1
             }
-            else if(hitCount == 0)
+            else if (hitCount == 1)                                                                                                             //check if hit count is 1
             {
-                hiddenAreaCover.SetActive(false);
-                Destroy(this.gameObject);
+                spriteRenderer.sprite = doorSpriteDamaged;                                                                                      //sets damaged door 2
+            }
+            else if (hitCount == 0)                                                                                                             //check if hit count is 0
+            {
+                hiddenAreaCover.SetActive(false);                                                                                               //uncover hidden area
+                Destroy(this.gameObject);                                                                                                       //destroy door
             }
         }
     }

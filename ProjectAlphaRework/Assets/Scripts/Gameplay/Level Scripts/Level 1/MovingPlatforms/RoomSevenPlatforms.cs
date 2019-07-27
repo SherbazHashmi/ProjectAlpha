@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class RoomSevenPlatforms : MonoBehaviour
 {
-    [SerializeField] private GameObject spawner;                                                                      //Sets Spawner Variable
-    [SerializeField] private Transform shredder;                                                                      //Sets Soawner Variable
-    [SerializeField] private GameObject movingPlatform;                                                               //Sets platform Prefab variable
+    [SerializeField] private GameObject spawner;          //Sets Spawner Variable
+    [SerializeField] private Transform shredder;          //Sets Soawner Variable
+    [SerializeField] private GameObject movingPlatform;   //Sets platform Prefab variable
 
-    [SerializeField] private float timeToSpawn;                                                                       //sets the time between spawn variable
+    [SerializeField] private float timeToSpawn;           //sets the time between spawn variable
 
-    private GameObject platformClone;                                                                                 //creates clone for Moving Platform
+    private GameObject platformClone;                     //creates clone for Moving Platform
 
     private void Start()
     {
-        StartCoroutine(PlatformSpawner());                                                                            //starts the Instantiate Coroutine
+        StartCoroutine(PlatformSpawner());                //starts the Instantiate Coroutine
     }
 
     /// <summary>
@@ -25,7 +25,6 @@ public class RoomSevenPlatforms : MonoBehaviour
     IEnumerator PlatformSpawner()
     {
         platformClone = Instantiate(movingPlatform, spawner.transform.position, Quaternion.identity);                  //instantiates Clone at given location
-        Debug.Log("Script run");
 
         yield return new WaitForSeconds(timeToSpawn);                                                                  // yields for 5 seconds
 

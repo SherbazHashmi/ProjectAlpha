@@ -4,18 +4,39 @@ using UnityEngine;
 
 public class TurretRotation : MonoBehaviour
 {
-    [SerializeField] private float offset = 0.0f;
+    //[SerializeField] private GameObject laserObject;
+    [SerializeField] private GameObject firePoint;
+
+    private RoomNineHandler roomNineHandler;
+    private GameObject laserClone;
 
     private void Start()
     {
+        roomNineHandler = FindObjectOfType<RoomNineHandler>();
     }
 
-    void Update ()
+    private void Update()
     {
-        Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        difference.Normalize();
+    }
 
-        float rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0f, 0f, rotationZ + offset);
-	}
+    private void TargetEnemy()
+    {
+        if (roomNineHandler.laserTargetEnemy)
+        {
+
+        }
+    }
+
+    private void FollowQuantum()
+    {
+        if (roomNineHandler.laserTargerQuantum)
+        {
+
+        }
+    }
+
+    private void ShootLaser()
+    {
+        //laserClone = Instantiate(laserObject, firePoint.transform.position, Quaternion.identity);
+    }
 }
