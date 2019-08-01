@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\Gameplay\DoorAnimation.cs" />
     <Compile Include="Assets\Scripts\Gameplay\DoorTrigger.cs" />
     <Compile Include="Assets\Scripts\Gameplay\HuDHandler.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Level Scripts\cross level script\BreakableBranch.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Level Scripts\Level 1\Interactions\LevelEnterCutscene.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Level Scripts\Level 1\Interactions\RoomSevenDoorLever.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Level Scripts\Level 1\MovingPlatforms\MovingPlatforms.cs" />
@@ -82,6 +83,8 @@
     <Compile Include="Assets\Scripts\Gameplay\Level Scripts\Level 1\SecretDoorTriggers\LevelEightToNineTransition.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Level Scripts\Level 1\SecretDoorTriggers\SecretDoorDestroy.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Level Scripts\Level 1\Tutorial\ToturialTriggerOne.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Level Scripts\NPC Animation Scripts\BirdAnimation.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Level Scripts\NPC Animation Scripts\BirdScatter.cs" />
     <Compile Include="Assets\Scripts\Gameplay\SceneTransition.cs" />
     <Compile Include="Assets\Scripts\General\ListView.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
