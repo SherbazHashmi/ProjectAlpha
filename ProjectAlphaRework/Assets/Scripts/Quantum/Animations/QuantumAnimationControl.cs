@@ -5,7 +5,7 @@ using UnityEngine;
 public class QuantumAnimationControl : MonoBehaviour
 {
     [Header ("Attach Required Scripts")]
-    public QuantumMobileInput quantumMobileInput;
+    public QuantumController quantumMobileInput;
 
     private Animator anim;
     private bool quantumIdle;

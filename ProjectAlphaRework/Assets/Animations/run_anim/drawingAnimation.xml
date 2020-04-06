@@ -1,0 +1,55 @@
+<drawingAnimations>
+ <drawingAnimation spritesheet="sheet_Top" name="run_anim_Top">
+  <drawing node="Quantum_Rig_head" name="3-Quantum_Rig" drwId="1">
+   <drw skinId="0" frame="1" repeat="23" name="3-Quantum_Rig-outline_head_head.png"/>
+  </drawing>
+  <drawing node="Quantum_Rig_R_Hand" name="3-Quantum_Rig" drwId="2">
+   <drw skinId="0" frame="1" repeat="23" name="3-Quantum_Rig-outline_R_Hand_R_Hand.png"/>
+  </drawing>
+  <drawing node="Quantum_Rig_R_ForeArm" name="3-Quantum_Rig" drwId="3">
+   <drw skinId="0" frame="1" repeat="23" name="3-Quantum_Rig-1.png"/>
+  </drawing>
+  <drawing node="Quantum_Rig_R_Arm" name="3-Quantum_Rig" drwId="4">
+   <drw skinId="0" frame="1" repeat="23" name="3-Quantum_Rig-outline_R_Arm_R_Arm.png"/>
+  </drawing>
+  <drawing node="Quantum_Rig_R_Shouder" name="3-Quantum_Rig" drwId="5">
+   <drw skinId="0" frame="1" repeat="23" name="3-Quantum_Rig-outline_R_Shouder_R_Shouder.png"/>
+  </drawing>
+  <drawing node="Quantum_Rig__Torso" name="3-Quantum_Rig" drwId="6">
+   <drw skinId="0" frame="1" repeat="23" name="3-Quantum_Rig-outline__Torso__Torso.png"/>
+  </drawing>
+  <drawing node="Quantum_Rig_L_Hand" name="3-Quantum_Rig" drwId="7">
+   <drw skinId="0" frame="1" repeat="23" name="3-Quantum_Rig-outline_L_Hand_L_Hand.png"/>
+  </drawing>
+  <drawing node="Quantum_Rig_L_ForeArm" name="3-Quantum_Rig" drwId="8">
+   <drw skinId="0" frame="1" repeat="23" name="3-Quantum_Rig-outline_L_ForeArm_BackArm.png"/>
+  </drawing>
+  <drawing node="Quantum_Rig_L_Arm" name="3-Quantum_Rig" drwId="9">
+   <drw skinId="0" frame="1" repeat="23" name="3-Quantum_Rig-outline_L_Arm_L_Arm.png"/>
+  </drawing>
+  <drawing node="Quantum_Rig_L_Shoulder" name="3-Quantum_Rig" drwId="10">
+   <drw skinId="0" frame="1" repeat="23" name="3-Quantum_Rig-outline_L_Shoulder_L_Shoulder.png"/>
+  </drawing>
+  <drawing node="Quantum_Rig_Waist" name="3-Quantum_Rig" drwId="11">
+   <drw skinId="0" frame="1" repeat="23" name="3-Quantum_Rig-outline_Waist_Waist.png"/>
+  </drawing>
+  <drawing node="Quantum_Rig_L_Foot" name="3-Quantum_Rig" drwId="12">
+   <drw skinId="0" frame="1" repeat="23" name="3-Quantum_Rig-outline_L_Foot_L_Foot.png"/>
+  </drawing>
+  <drawing node="Quantum_Rig_L_Shin" name="3-Quantum_Rig" drwId="13">
+   <drw skinId="0" frame="1" repeat="23" name="3-Quantum_Rig-outline_L_Shin_L_Shin.png"/>
+  </drawing>
+  <drawing node="Quantum_Rig_L_Thigh" name="3-Quantum_Rig" drwId="14">
+   <drw skinId="0" frame="1" repeat="23" name="3-Quantum_Rig-outline_L_Thigh_L_Thigh.png"/>
+  </drawing>
+  <drawing node="Quantum_Rig_R_Foot" name="3-Quantum_Rig" drwId="15">
+   <drw skinId="0" frame="1" repeat="23" name="3-Quantum_Rig-outline_R_Foot_R_Foot.png"/>
+  </drawing>
+  <drawing node="Quantum_Rig_R_Shin" name="3-Quantum_Rig" drwId="16">
+   <drw skinId="0" frame="1" repeat="23" name="3-Quantum_Rig-outline_R_Shin_R_Shin.png"/>
+  </drawing>
+  <drawing node="Quantum_Rig_R_Tight" name="3-Quantum_Rig" drwId="17">
+   <drw skinId="0" frame="1" repeat="23" name="3-Quantum_Rig-outline_R_Tight_R_Tight.png"/>
+  </drawing>
+ </drawingAnimation>
+</drawingAnimations>

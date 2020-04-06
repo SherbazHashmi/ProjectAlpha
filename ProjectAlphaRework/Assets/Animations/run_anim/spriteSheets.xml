@@ -1,0 +1,79 @@
+<!DOCTYPE spritesheets>
+<spritesheets>
+ <spritesheet resolution="ipad" width="3690" height="829" name="sheet_Top" filename="spriteSheets/sheet_Top-ipad.png">
+  <sprite scaleY="0.833333" angleDegrees="0" rect="3241,170,449,659" offsetX="-784" offsetY="143.2" name="3-Quantum_Rig-outline__Torso__Torso.png" scaleX="0.833333"/>
+  <sprite scaleY="0.833333" angleDegrees="0" rect="3006,170,235,570" offsetX="766.933" offsetY="-387.733" name="3-Quantum_Rig-outline_L_Shin_L_Shin.png" scaleX="0.833333"/>
+  <sprite scaleY="0.833333" angleDegrees="0" rect="2771,170,235,570" offsetX="-269.867" offsetY="-409.6" name="3-Quantum_Rig-outline_R_Shin_R_Shin.png" scaleX="0.833333"/>
+  <sprite scaleY="0.833333" angleDegrees="0" rect="2524,170,247,537" offsetX="322.133" offsetY="-322.667" name="3-Quantum_Rig-outline_L_Thigh_L_Thigh.png" scaleX="0.833333"/>
+  <sprite scaleY="0.833333" angleDegrees="0" rect="2277,170,247,537" offsetX="-270.4" offsetY="418.133" name="3-Quantum_Rig-outline_R_Tight_R_Tight.png" scaleX="0.833333"/>
+  <sprite scaleY="0.833333" angleDegrees="0" rect="2080,170,197,443" offsetX="664.8" offsetY="290.133" name="3-Quantum_Rig-1.png" scaleX="0.833333"/>
+  <sprite scaleY="0.833333" angleDegrees="0" rect="1883,170,197,443" offsetX="306.4" offsetY="277.333" name="3-Quantum_Rig-outline_L_ForeArm_BackArm.png" scaleX="0.833333"/>
+  <sprite scaleY="0.833333" angleDegrees="0" rect="1682,170,201,340" offsetX="49.3333" offsetY="853.867" name="3-Quantum_Rig-outline_L_Arm_L_Arm.png" scaleX="0.833333"/>
+  <sprite scaleY="0.833333" angleDegrees="0" rect="1481,170,201,340" offsetX="682.933" offsetY="800.533" name="3-Quantum_Rig-outline_R_Arm_R_Arm.png" scaleX="0.833333"/>
+  <sprite scaleY="0.833333" angleDegrees="0" rect="1261,170,220,300" offsetX="-818.933" offsetY="816.8" name="3-Quantum_Rig-outline_head_head.png" scaleX="0.833333"/>
+  <sprite scaleY="0.833333" angleDegrees="0" rect="972,170,289,285" offsetX="-821.067" offsetY="-563.467" name="3-Quantum_Rig-outline_Waist_Waist.png" scaleX="0.833333"/>
+  <sprite scaleY="0.833333" angleDegrees="0" rect="805,170,167,285" offsetX="377.6" offsetY="931.467" name="3-Quantum_Rig-outline_L_Shoulder_L_Shoulder.png" scaleX="0.833333"/>
+  <sprite scaleY="0.833333" angleDegrees="0" rect="626,170,179,242" offsetX="938.667" offsetY="961.333" name="3-Quantum_Rig-outline_R_Shouder_R_Shouder.png" scaleX="0.833333"/>
+  <sprite scaleY="0.833333" angleDegrees="0" rect="313,170,313,181" offsetX="795.733" offsetY="-918.133" name="3-Quantum_Rig-outline_L_Foot_L_Foot.png" scaleX="0.833333"/>
+  <sprite scaleY="0.833333" angleDegrees="0" rect="0,170,313,181" offsetX="269.867" offsetY="-964.533" name="3-Quantum_Rig-outline_R_Foot_R_Foot.png" scaleX="0.833333"/>
+  <sprite scaleY="0.833333" angleDegrees="0" rect="3522,0,168,170" offsetX="397.067" offsetY="536.533" name="3-Quantum_Rig-outline_L_Hand_L_Hand.png" scaleX="0.833333"/>
+  <sprite scaleY="0.833333" angleDegrees="0" rect="3354,0,168,170" offsetX="950.667" offsetY="643.733" name="3-Quantum_Rig-outline_R_Hand_R_Hand.png" scaleX="0.833333"/>
+ </spritesheet>
+ <spritesheet resolution="ipad-retina" width="3675" height="2305" name="sheet_Top" filename="spriteSheets/sheet_Top-ipad-retina.png">
+  <sprite scaleY="0.416667" angleDegrees="0" rect="2789,998,886,1307" offsetX="-1568" offsetY="286.4" name="3-Quantum_Rig-outline__Torso__Torso.png" scaleX="0.416667"/>
+  <sprite scaleY="0.416667" angleDegrees="0" rect="2330,998,459,1129" offsetX="1533.87" offsetY="-775.467" name="3-Quantum_Rig-outline_L_Shin_L_Shin.png" scaleX="0.416667"/>
+  <sprite scaleY="0.416667" angleDegrees="0" rect="1871,998,459,1129" offsetX="-539.733" offsetY="-819.2" name="3-Quantum_Rig-outline_R_Shin_R_Shin.png" scaleX="0.416667"/>
+  <sprite scaleY="0.416667" angleDegrees="0" rect="1388,998,483,1063" offsetX="644.267" offsetY="-645.333" name="3-Quantum_Rig-outline_L_Thigh_L_Thigh.png" scaleX="0.416667"/>
+  <sprite scaleY="0.416667" angleDegrees="0" rect="905,998,483,1063" offsetX="-540.8" offsetY="836.267" name="3-Quantum_Rig-outline_R_Tight_R_Tight.png" scaleX="0.416667"/>
+  <sprite scaleY="0.416667" angleDegrees="0" rect="523,998,382,875" offsetX="1329.6" offsetY="580.267" name="3-Quantum_Rig-1.png" scaleX="0.416667"/>
+  <sprite scaleY="0.416667" angleDegrees="0" rect="141,998,382,875" offsetX="612.8" offsetY="554.667" name="3-Quantum_Rig-outline_L_ForeArm_BackArm.png" scaleX="0.416667"/>
+  <sprite scaleY="0.416667" angleDegrees="0" rect="3285,329,390,669" offsetX="98.6667" offsetY="1707.73" name="3-Quantum_Rig-outline_L_Arm_L_Arm.png" scaleX="0.416667"/>
+  <sprite scaleY="0.416667" angleDegrees="0" rect="2895,329,390,669" offsetX="1365.87" offsetY="1601.07" name="3-Quantum_Rig-outline_R_Arm_R_Arm.png" scaleX="0.416667"/>
+  <sprite scaleY="0.416667" angleDegrees="0" rect="2466,329,429,589" offsetX="-1637.87" offsetY="1633.6" name="3-Quantum_Rig-outline_head_head.png" scaleX="0.416667"/>
+  <sprite scaleY="0.416667" angleDegrees="0" rect="1899,329,567,559" offsetX="-1642.13" offsetY="-1126.93" name="3-Quantum_Rig-outline_Waist_Waist.png" scaleX="0.416667"/>
+  <sprite scaleY="0.416667" angleDegrees="0" rect="1576,329,323,559" offsetX="755.2" offsetY="1862.93" name="3-Quantum_Rig-outline_L_Shoulder_L_Shoulder.png" scaleX="0.416667"/>
+  <sprite scaleY="0.416667" angleDegrees="0" rect="1230,329,346,473" offsetX="1877.33" offsetY="1922.67" name="3-Quantum_Rig-outline_R_Shouder_R_Shouder.png" scaleX="0.416667"/>
+  <sprite scaleY="0.416667" angleDegrees="0" rect="615,329,615,350" offsetX="1591.47" offsetY="-1836.27" name="3-Quantum_Rig-outline_L_Foot_L_Foot.png" scaleX="0.416667"/>
+  <sprite scaleY="0.416667" angleDegrees="0" rect="0,329,615,350" offsetX="539.733" offsetY="-1929.07" name="3-Quantum_Rig-outline_R_Foot_R_Foot.png" scaleX="0.416667"/>
+  <sprite scaleY="0.416667" angleDegrees="0" rect="3351,0,324,329" offsetX="794.133" offsetY="1073.07" name="3-Quantum_Rig-outline_L_Hand_L_Hand.png" scaleX="0.416667"/>
+  <sprite scaleY="0.416667" angleDegrees="0" rect="3027,0,324,329" offsetX="1901.33" offsetY="1287.47" name="3-Quantum_Rig-outline_R_Hand_R_Hand.png" scaleX="0.416667"/>
+ </spritesheet>
+ <spritesheet resolution="iphone" width="1989" height="315" name="sheet_Top" filename="spriteSheets/sheet_Top-iphone.png">
+  <sprite scaleY="1.77778" angleDegrees="0" rect="1773,0,216,315" offsetX="-367.5" offsetY="67.125" name="3-Quantum_Rig-outline__Torso__Torso.png" scaleX="1.77778"/>
+  <sprite scaleY="1.77778" angleDegrees="0" rect="1657,0,116,273" offsetX="359.5" offsetY="-181.75" name="3-Quantum_Rig-outline_L_Shin_L_Shin.png" scaleX="1.77778"/>
+  <sprite scaleY="1.77778" angleDegrees="0" rect="1541,0,116,273" offsetX="-126.5" offsetY="-192" name="3-Quantum_Rig-outline_R_Shin_R_Shin.png" scaleX="1.77778"/>
+  <sprite scaleY="1.77778" angleDegrees="0" rect="1419,0,122,258" offsetX="151" offsetY="-151.25" name="3-Quantum_Rig-outline_L_Thigh_L_Thigh.png" scaleX="1.77778"/>
+  <sprite scaleY="1.77778" angleDegrees="0" rect="1297,0,122,258" offsetX="-126.75" offsetY="196" name="3-Quantum_Rig-outline_R_Tight_R_Tight.png" scaleX="1.77778"/>
+  <sprite scaleY="1.77778" angleDegrees="0" rect="1199,0,98,214" offsetX="311.625" offsetY="136" name="3-Quantum_Rig-1.png" scaleX="1.77778"/>
+  <sprite scaleY="1.77778" angleDegrees="0" rect="1101,0,98,214" offsetX="143.625" offsetY="130" name="3-Quantum_Rig-outline_L_ForeArm_BackArm.png" scaleX="1.77778"/>
+  <sprite scaleY="1.77778" angleDegrees="0" rect="1001,0,100,165" offsetX="23.125" offsetY="400.25" name="3-Quantum_Rig-outline_L_Arm_L_Arm.png" scaleX="1.77778"/>
+  <sprite scaleY="1.77778" angleDegrees="0" rect="901,0,100,165" offsetX="320.125" offsetY="375.25" name="3-Quantum_Rig-outline_R_Arm_R_Arm.png" scaleX="1.77778"/>
+  <sprite scaleY="1.77778" angleDegrees="0" rect="792,0,109,147" offsetX="-383.875" offsetY="382.875" name="3-Quantum_Rig-outline_head_head.png" scaleX="1.77778"/>
+  <sprite scaleY="1.77778" angleDegrees="0" rect="650,0,142,140" offsetX="-384.875" offsetY="-264.125" name="3-Quantum_Rig-outline_Waist_Waist.png" scaleX="1.77778"/>
+  <sprite scaleY="1.77778" angleDegrees="0" rect="566,0,84,140" offsetX="177" offsetY="436.625" name="3-Quantum_Rig-outline_L_Shoulder_L_Shoulder.png" scaleX="1.77778"/>
+  <sprite scaleY="1.77778" angleDegrees="0" rect="476,0,90,120" offsetX="440" offsetY="450.625" name="3-Quantum_Rig-outline_R_Shouder_R_Shouder.png" scaleX="1.77778"/>
+  <sprite scaleY="1.77778" angleDegrees="0" rect="323,0,153,91" offsetX="373" offsetY="-430.375" name="3-Quantum_Rig-outline_L_Foot_L_Foot.png" scaleX="1.77778"/>
+  <sprite scaleY="1.77778" angleDegrees="0" rect="170,0,153,91" offsetX="126.5" offsetY="-452.125" name="3-Quantum_Rig-outline_R_Foot_R_Foot.png" scaleX="1.77778"/>
+  <sprite scaleY="1.77778" angleDegrees="0" rect="85,0,85,86" offsetX="186.125" offsetY="251.5" name="3-Quantum_Rig-outline_L_Hand_L_Hand.png" scaleX="1.77778"/>
+  <sprite scaleY="1.77778" angleDegrees="0" rect="0,0,85,86" offsetX="445.625" offsetY="301.75" name="3-Quantum_Rig-outline_R_Hand_R_Hand.png" scaleX="1.77778"/>
+ </spritesheet>
+ <spritesheet resolution="iphone-retina" width="3731" height="929" name="sheet_Top" filename="spriteSheets/sheet_Top-iphone-retina.png">
+  <sprite scaleY="0.751174" angleDegrees="0" rect="3234,199,497,730" offsetX="-869.75" offsetY="158.863" name="3-Quantum_Rig-outline__Torso__Torso.png" scaleX="0.751174"/>
+  <sprite scaleY="0.751174" angleDegrees="0" rect="2974,199,260,632" offsetX="850.817" offsetY="-430.142" name="3-Quantum_Rig-outline_L_Shin_L_Shin.png" scaleX="0.751174"/>
+  <sprite scaleY="0.751174" angleDegrees="0" rect="2714,199,260,632" offsetX="-299.383" offsetY="-454.4" name="3-Quantum_Rig-outline_R_Shin_R_Shin.png" scaleX="0.751174"/>
+  <sprite scaleY="0.751174" angleDegrees="0" rect="2441,199,273,595" offsetX="357.367" offsetY="-357.958" name="3-Quantum_Rig-outline_L_Thigh_L_Thigh.png" scaleX="0.751174"/>
+  <sprite scaleY="0.751174" angleDegrees="0" rect="2168,199,273,595" offsetX="-299.975" offsetY="463.867" name="3-Quantum_Rig-outline_R_Tight_R_Tight.png" scaleX="0.751174"/>
+  <sprite scaleY="0.751174" angleDegrees="0" rect="1951,199,217,491" offsetX="737.513" offsetY="321.867" name="3-Quantum_Rig-1.png" scaleX="0.751174"/>
+  <sprite scaleY="0.751174" angleDegrees="0" rect="1734,199,217,491" offsetX="339.913" offsetY="307.667" name="3-Quantum_Rig-outline_L_ForeArm_BackArm.png" scaleX="0.751174"/>
+  <sprite scaleY="0.751174" angleDegrees="0" rect="1512,199,222,376" offsetX="54.7292" offsetY="947.258" name="3-Quantum_Rig-outline_L_Arm_L_Arm.png" scaleX="0.751174"/>
+  <sprite scaleY="0.751174" angleDegrees="0" rect="1290,199,222,376" offsetX="757.629" offsetY="888.092" name="3-Quantum_Rig-outline_R_Arm_R_Arm.png" scaleX="0.751174"/>
+  <sprite scaleY="0.751174" angleDegrees="0" rect="1047,199,243,332" offsetX="-908.504" offsetY="906.138" name="3-Quantum_Rig-outline_head_head.png" scaleX="0.751174"/>
+  <sprite scaleY="0.751174" angleDegrees="0" rect="727,199,320,315" offsetX="-910.871" offsetY="-625.096" name="3-Quantum_Rig-outline_Waist_Waist.png" scaleX="0.751174"/>
+  <sprite scaleY="0.751174" angleDegrees="0" rect="543,199,184,315" offsetX="418.9" offsetY="1033.35" name="3-Quantum_Rig-outline_L_Shoulder_L_Shoulder.png" scaleX="0.751174"/>
+  <sprite scaleY="0.751174" angleDegrees="0" rect="346,199,197,268" offsetX="1041.33" offsetY="1066.48" name="3-Quantum_Rig-outline_R_Shouder_R_Shouder.png" scaleX="0.751174"/>
+  <sprite scaleY="0.751174" angleDegrees="0" rect="0,199,346,199" offsetX="882.767" offsetY="-1018.55" name="3-Quantum_Rig-outline_L_Foot_L_Foot.png" scaleX="0.751174"/>
+  <sprite scaleY="0.751174" angleDegrees="0" rect="3385,0,346,199" offsetX="299.383" offsetY="-1070.03" name="3-Quantum_Rig-outline_R_Foot_R_Foot.png" scaleX="0.751174"/>
+  <sprite scaleY="0.751174" angleDegrees="0" rect="3200,0,185,188" offsetX="440.496" offsetY="595.217" name="3-Quantum_Rig-outline_L_Hand_L_Hand.png" scaleX="0.751174"/>
+  <sprite scaleY="0.751174" angleDegrees="0" rect="3015,0,185,188" offsetX="1054.65" offsetY="714.142" name="3-Quantum_Rig-outline_R_Hand_R_Hand.png" scaleX="0.751174"/>
+ </spritesheet>
+</spritesheets>

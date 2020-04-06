@@ -1,0 +1,22 @@
+<stages>
+ <stage name="run_anim_run_anim">
+  <node groupId="0" skinId="0" name="Quantum_Rig_head" drwId="1"/>
+  <node groupId="0" skinId="0" name="Quantum_Rig_R_Hand" drwId="2"/>
+  <node groupId="0" skinId="0" name="Quantum_Rig_R_ForeArm" drwId="3"/>
+  <node groupId="0" skinId="0" name="Quantum_Rig_R_Arm" drwId="4"/>
+  <node groupId="0" skinId="0" name="Quantum_Rig_R_Shouder" drwId="5"/>
+  <node groupId="0" skinId="0" name="Quantum_Rig__Torso" drwId="6"/>
+  <node groupId="0" skinId="0" name="Quantum_Rig_L_Hand" drwId="7"/>
+  <node groupId="0" skinId="0" name="Quantum_Rig_L_ForeArm" drwId="8"/>
+  <node groupId="0" skinId="0" name="Quantum_Rig_L_Arm" drwId="9"/>
+  <node groupId="0" skinId="0" name="Quantum_Rig_L_Shoulder" drwId="10"/>
+  <node groupId="0" skinId="0" name="Quantum_Rig_Waist" drwId="11"/>
+  <node groupId="0" skinId="0" name="Quantum_Rig_L_Foot" drwId="12"/>
+  <node groupId="0" skinId="0" name="Quantum_Rig_L_Shin" drwId="13"/>
+  <node groupId="0" skinId="0" name="Quantum_Rig_L_Thigh" drwId="14"/>
+  <node groupId="0" skinId="0" name="Quantum_Rig_R_Foot" drwId="15"/>
+  <node groupId="0" skinId="0" name="Quantum_Rig_R_Shin" drwId="16"/>
+  <node groupId="0" skinId="0" name="Quantum_Rig_R_Tight" drwId="17"/>
+  <play drawingAnimation="run_anim_Top" name="Top" skeleton="Top" animation="run_anim_Top"/>
+ </stage>
+</stages>
