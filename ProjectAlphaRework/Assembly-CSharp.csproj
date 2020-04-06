@@ -88,8 +88,10 @@
     <Compile Include="Assets\HarmonySDK\Scripts\Xml\XML_Types.cs" />
     <Compile Include="Assets\HarmonySDK\Scripts\Zip\ZIP_AndroidAssets.cs" />
     <Compile Include="Assets\HarmonySDK\Scripts\Zip\ZIP_Operations.cs" />
+    <Compile Include="Assets\InteractableObject.cs" />
     <Compile Include="Assets\orderinlayer.cs" />
     <Compile Include="Assets\PlayAnimation_Harmony.cs" />
+    <Compile Include="Assets\PlayerInteraction.cs" />
     <Compile Include="Assets\PlayerKeyboardInput.cs" />
     <Compile Include="Assets\Scripts\Character\Character.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterAbility.cs" />
@@ -140,6 +142,8 @@
     <Compile Include="Assets\Scripts\Tools\Events\EventManager.cs" />
     <Compile Include="Assets\Scripts\Tools\Events\EventRegister.cs" />
     <Compile Include="Assets\Scripts\Tools\Events\GameEvent.cs" />
+    <Compile Include="Assets\TranslateObject.cs" />
+    <Compile Include="Assets\TranslationTrigger.cs" />
     <None Include="Assets\HarmonySDK\Shaders\LitTransparentPremultCutout.shader" />
     <None Include="Assets\StreamingAssets\PreLoadAssets.txt" />
     <None Include="Assets\Animations\Quantum\spriteSheets.xml" />
