@@ -7,7 +7,7 @@ public class QuantumController : MonoBehaviour
     [Header ("Movement Vars")]
     public float movementSpeed = 5f;
     public float crouchSpeed = 2.5f;
-    public float jumpForce = 5f;
+    public float jumpForce = 4.5f;
     public Animator animator;
     [HideInInspector] public bool moveLeft;
     [HideInInspector] public bool moveRight;
