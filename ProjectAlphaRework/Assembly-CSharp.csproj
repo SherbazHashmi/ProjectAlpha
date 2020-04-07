@@ -89,10 +89,13 @@
     <Compile Include="Assets\HarmonySDK\Scripts\Zip\ZIP_AndroidAssets.cs" />
     <Compile Include="Assets\HarmonySDK\Scripts\Zip\ZIP_Operations.cs" />
     <Compile Include="Assets\InteractableObject.cs" />
+    <Compile Include="Assets\NonPlayableCharacter.cs" />
+    <Compile Include="Assets\NPCHandler.cs" />
     <Compile Include="Assets\orderinlayer.cs" />
     <Compile Include="Assets\PlayAnimation_Harmony.cs" />
     <Compile Include="Assets\PlayerInteraction.cs" />
     <Compile Include="Assets\PlayerKeyboardInput.cs" />
+    <Compile Include="Assets\QuantumAbilityController.cs" />
     <Compile Include="Assets\Scripts\Character\Character.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterAbility.cs" />
     <Compile Include="Assets\Scripts\Character\Energy.cs" />
