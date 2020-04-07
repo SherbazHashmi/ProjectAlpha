@@ -5,13 +5,8 @@ using UnityEngine;
 public class PlayerKeyboardInput : MonoBehaviour
 {
     QuantumController quantumController;
-    // Start is called before the first frame update
-    void Start()
-    {
-        quantumController = this.gameObject.GetComponent<QuantumController>();
-    }
-
-    Dictionary<KeyCode[], string> keybindings = new Dictionary<KeyCode[], string>
+    QuantumAbilityController quantumAbilityController;
+    Dictionary<KeyCode[], string> movementKeybindings = new Dictionary<KeyCode[], string>
     {
         { new[] { KeyCode.Space }, "QuantumJump" },
         { new[] { KeyCode.LeftArrow, KeyCode.A }, "MoveLeft" },
@@ -19,18 +14,61 @@ public class PlayerKeyboardInput : MonoBehaviour
         { new[] { KeyCode.DownArrow, KeyCode.S }, "QuantumCrouch" },
     };
 
-    // Update is called once  per frame
-    void Update()
+    Dictionary<KeyCode[], string> abilityKeybindings = new Dictionary<KeyCode[], string>
     {
-        StartCoroutine(CheckForInput());
+        { new[] { KeyCode.Q }, "Melee" },
+        { new[] { KeyCode.E } , "Interact" }
+
+    };
+    Dictionary<string, Dictionary<KeyCode[], string>> keybindings;
+    // Start is called before the first frame update
+    void Start()
+    {
+        quantumController = GetComponent<QuantumController>();
+        quantumAbilityController = GetComponent<QuantumAbilityController>();
+        keybindings = new Dictionary<string, Dictionary<KeyCode[], string>> {
+            { "movement", movementKeybindings },
+            { "ability",abilityKeybindings }
+        };
     }
 
 
-    // Checks for Input and Responds to It
-    IEnumerator CheckForInput()
+    // Update is called once  per frame
+    void Update()
+    {
+        StartCoroutine(CheckForMovement());
+        StartCoroutine(CheckForAbility());
+    }
+
+
+    IEnumerator CheckForAbility()
     {
         System.Reflection.MethodInfo mi; // Will be used to store method required
-        foreach (KeyValuePair<KeyCode[], string> keybind in keybindings)
+        foreach (KeyValuePair<KeyCode[], string> keybind in abilityKeybindings)
+        {
+            foreach (KeyCode keyCode in keybind.Key)
+            {
+                if (Input.GetKeyDown(keyCode))
+                {
+                    mi = quantumAbilityController.GetType().GetMethod(keybind.Value); // Setting Method
+                    mi.Invoke(quantumAbilityController, null);
+                    yield return new WaitForSeconds(1F); // Waiting to not overwhelm system
+
+                }
+
+                if (Input.GetKeyUp(keyCode))
+                {
+                    
+                }
+            }
+        }
+    }
+
+    // Checks for Input and Responds to It
+    IEnumerator CheckForMovement()
+    {
+        System.Reflection.MethodInfo mi; // Will be used to store method required
+        foreach (KeyValuePair<KeyCode[], string> keybind in movementKeybindings)
         {
             foreach (KeyCode keyCode in keybind.Key)
             {

@@ -22,7 +22,6 @@ public class InteractableObject : MonoBehaviour
     }
     public void action()
     {
-        Debug.Log(tutorialTextObject);
         tutorialTextObject.SetActive(true);
         GameObject textObject = tutorialTextObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject;
         Text text = textObject.GetComponent<Text>();
