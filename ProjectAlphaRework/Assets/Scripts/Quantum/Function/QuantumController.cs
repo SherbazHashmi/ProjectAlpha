@@ -9,6 +9,7 @@ public class QuantumController : MonoBehaviour
     public float crouchSpeed = 2.5f;
     public float jumpForce = 4.5f;
     public Animator animator;
+    public Direction facingDirection;
     [HideInInspector] public bool moveLeft;
     [HideInInspector] public bool moveRight;
     [HideInInspector] public bool quantumJump;
@@ -23,6 +24,7 @@ public class QuantumController : MonoBehaviour
     private bool isGrounded;
     private Vector2 currentPosition;
     private Camera cameraToFollow;
+    
 
     /// <summary>
     /// Gets the Desired Components thats being used on the Quantum Object
@@ -44,6 +46,7 @@ public class QuantumController : MonoBehaviour
         jumpCounter = 0;
         quantumCrouch = false;
         isJumping = false;
+        facingDirection = Direction.RIGHT;
     }
 
     /// <summary>
@@ -226,6 +229,15 @@ public class QuantumController : MonoBehaviour
     /// </summary>
     public void FlipAnimation()
     {
+        if (facingDirection == Direction.RIGHT)
+        {
+            facingDirection = Direction.LEFT;
+        }
+        else
+        {
+            facingDirection = Direction.RIGHT;
+        }
+            
         if (moveLeft && transform.localScale.x > 0)
         {
 
