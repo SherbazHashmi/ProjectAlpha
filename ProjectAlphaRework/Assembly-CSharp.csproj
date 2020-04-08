@@ -53,6 +53,9 @@
     <UnityVersion>2018.4.20f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2018.4.20f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -134,11 +137,13 @@
     <Compile Include="Assets\Scripts\Menu\SoundSettings.cs" />
     <Compile Include="Assets\Scripts\Quantum\Animations\QuantumAnimationControl.cs" />
     <Compile Include="Assets\Scripts\Quantum\Animations\QuantumSlideAnimation.cs" />
+    <Compile Include="Assets\Scripts\Quantum\Function\NeonStriker.cs" />
     <Compile Include="Assets\Scripts\Quantum\Function\QuantumController.cs" />
     <Compile Include="Assets\Scripts\Quantum\Function\QuantumMovementBehaviour.cs" />
     <Compile Include="Assets\Scripts\Quantum\Function\QuantumSpawn.cs" />
     <Compile Include="Assets\Scripts\Quantum\Function\UnityLessonsScripts\QuantumMovement.cs" />
     <Compile Include="Assets\Scripts\Quantum\Function\UnityLessonsScripts\QuantumPhysics2D.cs" />
+    <Compile Include="Assets\Scripts\Quantum\Function\WeaponManager.cs" />
     <Compile Include="Assets\Scripts\Tools\Button.cs" />
     <Compile Include="Assets\Scripts\Tools\Events\EventListener.cs" />
     <Compile Include="Assets\Scripts\Tools\Events\EventListenerBase.cs" />
@@ -177,19 +182,19 @@
     <None Include="Assets\Animations\run_anim\skeleton.xml" />
     <None Include="Assets\HarmonySDK\Shaders\UnlitTransparentPremultCutout.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/sherb/Development/PAlpha/ProjectAlphaRework/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/natha/OneDrive/Documentos/Enrico/ProjectAlpha/ProjectAlphaRework/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/sherb/Development/PAlpha/ProjectAlphaRework/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/natha/OneDrive/Documentos/Enrico/ProjectAlpha/ProjectAlphaRework/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/sherb/Development/PAlpha/ProjectAlphaRework/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/natha/OneDrive/Documentos/Enrico/ProjectAlpha/ProjectAlphaRework/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/sherb/Development/PAlpha/ProjectAlphaRework/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/natha/OneDrive/Documentos/Enrico/ProjectAlpha/ProjectAlphaRework/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/sherb/Development/PAlpha/ProjectAlphaRework/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/natha/OneDrive/Documentos/Enrico/ProjectAlpha/ProjectAlphaRework/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -393,28 +398,28 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.20f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="I18N.CJK">
-      <HintPath>C:/Users/sherb/Development/PAlpha/ProjectAlphaRework/Assets/Plugins/I18N.CJK.dll</HintPath>
+      <HintPath>C:/Users/natha/OneDrive/Documentos/Enrico/ProjectAlpha/ProjectAlphaRework/Assets/Plugins/I18N.CJK.dll</HintPath>
     </Reference>
     <Reference Include="I18N">
-      <HintPath>C:/Users/sherb/Development/PAlpha/ProjectAlphaRework/Assets/Plugins/I18N.dll</HintPath>
+      <HintPath>C:/Users/natha/OneDrive/Documentos/Enrico/ProjectAlpha/ProjectAlphaRework/Assets/Plugins/I18N.dll</HintPath>
     </Reference>
     <Reference Include="I18N.MidEast">
-      <HintPath>C:/Users/sherb/Development/PAlpha/ProjectAlphaRework/Assets/Plugins/I18N.MidEast.dll</HintPath>
+      <HintPath>C:/Users/natha/OneDrive/Documentos/Enrico/ProjectAlpha/ProjectAlphaRework/Assets/Plugins/I18N.MidEast.dll</HintPath>
     </Reference>
     <Reference Include="I18N.Other">
-      <HintPath>C:/Users/sherb/Development/PAlpha/ProjectAlphaRework/Assets/Plugins/I18N.Other.dll</HintPath>
+      <HintPath>C:/Users/natha/OneDrive/Documentos/Enrico/ProjectAlpha/ProjectAlphaRework/Assets/Plugins/I18N.Other.dll</HintPath>
     </Reference>
     <Reference Include="I18N.Rare">
-      <HintPath>C:/Users/sherb/Development/PAlpha/ProjectAlphaRework/Assets/Plugins/I18N.Rare.dll</HintPath>
+      <HintPath>C:/Users/natha/OneDrive/Documentos/Enrico/ProjectAlpha/ProjectAlphaRework/Assets/Plugins/I18N.Rare.dll</HintPath>
     </Reference>
     <Reference Include="I18N.West">
-      <HintPath>C:/Users/sherb/Development/PAlpha/ProjectAlphaRework/Assets/Plugins/I18N.West.dll</HintPath>
+      <HintPath>C:/Users/natha/OneDrive/Documentos/Enrico/ProjectAlpha/ProjectAlphaRework/Assets/Plugins/I18N.West.dll</HintPath>
     </Reference>
     <Reference Include="Ionic.Zip.Reduced">
-      <HintPath>C:/Users/sherb/Development/PAlpha/ProjectAlphaRework/Assets/Plugins/Ionic.Zip.Reduced.dll</HintPath>
+      <HintPath>C:/Users/natha/OneDrive/Documentos/Enrico/ProjectAlpha/ProjectAlphaRework/Assets/Plugins/Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/sherb/Development/PAlpha/ProjectAlphaRework/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/natha/OneDrive/Documentos/Enrico/ProjectAlpha/ProjectAlphaRework/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>

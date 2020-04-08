@@ -5004,9 +5004,10 @@ MonoBehaviour:
   isFriendly: 0
   name: Kevern
   isRanged: 1
-  initialHealth: 100
+  initialHealth: 999999
   initialEnergy: 100
   isDead: 0
+  facingDirection: 1
 --- !u!114 &230426460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5019,7 +5020,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a881774edf7c19f4db7e3085fbd7d1aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meleeDamage: 20
 --- !u!1 &231418019
 GameObject:
   m_ObjectHideFlags: 0
@@ -20264,7 +20264,9 @@ GameObject:
   - component: {fileID: 982254398}
   - component: {fileID: 982254400}
   - component: {fileID: 982254401}
+  - component: {fileID: 982254406}
   - component: {fileID: 982254402}
+  - component: {fileID: 982254405}
   - component: {fileID: 982254403}
   - component: {fileID: 982254404}
   m_Layer: 0
@@ -20345,7 +20347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 1, b: 1, a: 1}
-  projectFolder: C:/Users/sherb/Development/PAlpha/ProjectAlphaRework/Assets/Animations/Quantum
+  projectFolder: C:\Users\natha\OneDrive\Documentos\Enrico\ProjectAlpha\ProjectAlphaRework\Assets\Animations\Quantum
   clipNames:
   - idle_anim_idle
   - idle_anim_run
@@ -20533,7 +20535,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a881774edf7c19f4db7e3085fbd7d1aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meleeDamage: 20
+--- !u!114 &982254405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982254390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54631b01b3e329649ad8fe0ec1e86c0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chooseWeapon: 1
+--- !u!114 &982254406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982254390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6932b801757a0a449c08703982021a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 20
+  range: 20
+  timeBtwAttack: 0.8
 --- !u!1 &985117282
 GameObject:
   m_ObjectHideFlags: 0
@@ -30887,7 +30916,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 1601504464}
+        m_Texture: {fileID: 2108118457}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -33889,38 +33918,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!84 &1601504464
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 1024
-  m_Height: 1024
-  m_AntiAliasing: 1
-  m_DepthFormat: 1
-  m_ColorFormat: 0
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &1601761594
 GameObject:
   m_ObjectHideFlags: 0
@@ -45067,6 +45064,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!84 &2108118457
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 1024
+  m_Height: 1024
+  m_AntiAliasing: 1
+  m_DepthFormat: 1
+  m_ColorFormat: 0
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &2108421267
 GameObject:
   m_ObjectHideFlags: 0
