@@ -5,7 +5,7 @@ using UnityEngine;
 public class WeaponManager : MonoBehaviour
 {
     static public float damage;
-    static public int range;
+    static public float range;
     static public double timeBtwAttack;
     [SerializeField] private int chooseWeapon = 1;
     void Start()
@@ -13,10 +13,10 @@ public class WeaponManager : MonoBehaviour
         switch (chooseWeapon)
         {
             case 1:
-                NeonStriker neonStriker = new NeonStriker();
-                damage = neonStriker.damage;
-                range = neonStriker.range;
-                timeBtwAttack = neonStriker.timeBtwAttack;
+                
+                damage = 20;
+                range = 3;
+                timeBtwAttack = 0.8;
                 break;
         }
     }

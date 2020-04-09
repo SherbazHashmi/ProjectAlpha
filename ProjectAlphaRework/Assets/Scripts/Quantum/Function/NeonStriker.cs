@@ -5,7 +5,7 @@ using UnityEngine;
 public class NeonStriker : MonoBehaviour
 {
     public float damage = 20;
-    public int range = 20;
+    public float range = 3;
     public double timeBtwAttack = 0.8;
     
 

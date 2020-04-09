@@ -12,6 +12,7 @@ TagManager:
   - TutorialFour
   - TutorialFive
   - TutorialPopup
+  - NPC
   layers:
   - Default
   - TransparentFX
