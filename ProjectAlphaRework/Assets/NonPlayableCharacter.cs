@@ -4,6 +4,8 @@ using UnityEngine;
 
 public enum Direction { LEFT, RIGHT };
 
+// private Vector3 knockBackEffect = QuantumAbilityController.knockBackEffect;
+
 public class NonPlayableCharacter : MonoBehaviour
 {
     public bool isFriendly;
@@ -34,7 +36,7 @@ public class NonPlayableCharacter : MonoBehaviour
         if(this.health > 0)
         {
             this.health -= damage;
-            this.gameObject.transform.Translate(new Vector3(1.5F, 1F));
+            this.gameObject.transform.Translate(QuantumAbilityController.knockBackEffect);
         } 
 
         if(!isDead && health <= 0)

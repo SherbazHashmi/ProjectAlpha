@@ -137,7 +137,6 @@
     <Compile Include="Assets\Scripts\Menu\SoundSettings.cs" />
     <Compile Include="Assets\Scripts\Quantum\Animations\QuantumAnimationControl.cs" />
     <Compile Include="Assets\Scripts\Quantum\Animations\QuantumSlideAnimation.cs" />
-    <Compile Include="Assets\Scripts\Quantum\Function\NeonStriker.cs" />
     <Compile Include="Assets\Scripts\Quantum\Function\QuantumController.cs" />
     <Compile Include="Assets\Scripts\Quantum\Function\QuantumMovementBehaviour.cs" />
     <Compile Include="Assets\Scripts\Quantum\Function\QuantumSpawn.cs" />

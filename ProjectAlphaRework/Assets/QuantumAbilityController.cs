@@ -10,17 +10,19 @@ public class QuantumAbilityController : MonoBehaviour
     private float critChance = 15;
     private float rng;
 
+    //knockBack() variables
+    private int counter = 0;
+    static public Vector3 knockBackEffect = new Vector3(1.5F, 1F);
 
-    //attack range and damage variables
-   
+    //attack range and damage variables   
     Vector3 quantumPos;
-    Vector3 inicialPos;
     private float quantumPosX;
     private float quantumPosY;
     private float quantumPosZ;
     private float meleeRange;
     private float meleeDamage = WeaponManager.damage;
-
+    private int chosenWeapon = WeaponManager.chooseWeapon;
+    
    
     
     
@@ -57,9 +59,9 @@ public class QuantumAbilityController : MonoBehaviour
             {
                 if (npc.transform.position.x < quantumAttack.x && !npc.isFriendly)
                 {
-                    
+
                     //crit modifier is calculated before the hit
-                    CritStrike();
+                    selectBonus();
                     npc.Attack(meleeDamage);
                     Debug.Log("damage :" + meleeDamage);
                     Debug.Log("value returned from position" + this.gameObject.transform.position);
@@ -69,6 +71,24 @@ public class QuantumAbilityController : MonoBehaviour
         }
        
     }
+
+    void selectBonus()
+    {
+        
+            switch (chosenWeapon)
+            {
+                case 1:
+                    CritStrike();
+                    break;
+
+                case 2:
+                    knockBack();
+                    break;
+            }
+        
+    }
+
+    //neon striker bonus
     void CritStrike()
     {
         rng = Random.Range(1, 100);
@@ -81,6 +101,28 @@ public class QuantumAbilityController : MonoBehaviour
         else
         {
             meleeDamage = WeaponManager.damage;
+        }
+    }
+
+    //mjolnir bonus
+    void knockBack()
+    {
+        foreach (NonPlayableCharacter npc in npcHandler.nonPlayableCharacters)
+        {
+            if (counter < 2)
+            {
+                //sets knockback from enemy taking damage for the same it already is
+                Debug.Log("knockback is the same");
+                knockBackEffect = new Vector3(1.5F, 1F);
+                counter++;
+            }
+            else
+            {
+                //buffs knockback from enemy taking damage
+                Debug.Log("knockback is buffed");
+                knockBackEffect = new Vector3(4.5F, 1F);
+                counter = 0;
+            }
         }
     }
     public void Interact()
